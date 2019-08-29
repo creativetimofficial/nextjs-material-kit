@@ -1,3 +1,4 @@
+const withPlugins = require('next-compose-plugins');
 const withImages = require('next-images')
 const withSass = require('@zeit/next-sass')
 
@@ -11,4 +12,7 @@ const withSass = require('@zeit/next-sass')
 //   ...require('node-sass')
 // }
 
-module.exports = withSass(withImages())
+module.exports = withPlugins([
+  [withSass],
+  [withImages]
+]);

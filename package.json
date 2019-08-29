@@ -36,10 +36,12 @@
     "@material-ui/core": "4.3.2",
     "@material-ui/icons": "4.2.1",
     "@zeit/next-sass": "1.0.1",
+    "babel-plugin-styled-components": "1.10.6",
     "classnames": "2.2.6",
     "history": "4.9.0",
     "moment": "2.24.0",
     "next": "9.0.5",
+    "next-compose-plugins": "2.2.0",
     "next-images": "1.1.2",
     "node-sass": "4.12.0",
     "nouislider": "14.0.2",
@@ -49,6 +51,7 @@
     "react-dom": "16.9.0",
     "react-router-dom": "5.0.1",
     "react-slick": "0.25.2",
-    "react-swipeable-views": "0.13.3"
+    "react-swipeable-views": "0.13.3",
+    "styled-components": "4.3.2"
   }
 }

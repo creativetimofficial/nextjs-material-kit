@@ -23,6 +23,8 @@ import styles from "../assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "../assets/img/bg7.jpg";
 
+import "../assets/scss/material-kit-react.scss?v=1.8.0";
+
 const useStyles = makeStyles(styles);
 
 export default function LoginPage(props) {
