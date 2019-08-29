@@ -30,6 +30,8 @@ import SectionDownload from "../pages-sections/Components-Sections/SectionDownlo
 
 import styles from "../assets/jss/material-kit-react/views/components.js";
 
+import "../assets/scss/material-kit-react.scss?v=1.8.0";
+
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -75,7 +77,7 @@ export default function Components(props) {
         <SectionCompletedExamples />
         <SectionLogin />
         <GridItem md={12} className={classes.textCenter}>
-          <Link href="/loginpage" className={classes.link}>
+          <Link href="/loginpage">
             <a className={classes.link}>
               <Button color="primary" size="lg" simple>
                 View Login Page
