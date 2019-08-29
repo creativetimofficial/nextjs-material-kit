@@ -1,0 +1,54 @@
+{
+  "name": "next-material-kit",
+  "version": "1.0.0",
+  "description": "NextJS Version of Material Kit React by Creative Tim (https://creative-tim.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/next-material-kit.git"
+  },
+  "keywords": [
+    "next",
+    "nextjs",
+    "react",
+    "reactjs",
+    "npx",
+    "material",
+    "material-design",
+    "material-kit",
+    "material-kit-react",
+    "next-material-kit"
+  ],
+  "author": "Creative Tim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/next-material-kit/issues"
+  },
+  "homepage": "https://github.com/creativetimofficial/next-material-kit#readme",
+  "dependencies": {
+    "@material-ui/core": "4.3.2",
+    "@material-ui/icons": "4.2.1",
+    "classnames": "2.2.6",
+    "history": "4.9.0",
+    "moment": "2.24.0",
+    "next": "9.0.5",
+    "next-images": "1.1.2",
+    "next-sass": "1.0.3",
+    "node-sass": "4.12.0",
+    "nouislider": "14.0.2",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.9.0",
+    "react-router-dom": "5.0.1",
+    "react-slick": "0.25.2",
+    "react-swipeable-views": "0.13.3"
+  }
+}
