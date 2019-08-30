@@ -29,7 +29,6 @@ class MyDocument extends Document {
             href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
             rel="stylesheet"
           />
-          <title>NextJS Material Kit by Creative Tim</title>
         </Head>
         <body>
           <Main />
