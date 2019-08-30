@@ -49,11 +49,12 @@
     width: 2rem;
     height: 2rem;
     vertical-align: text-bottom;
-    border: .25em solid currentColor;
-    border-right-color: transparent;
+    border: .25em solid black;
+    border-right-color: #d40505;
     border-radius: 50%;
     -webkit-animation: spinner-border .75s linear infinite;
     animation: spinner-border .75s linear infinite;
+    z-index: 9999;
     position: absolute;
   }
 }
