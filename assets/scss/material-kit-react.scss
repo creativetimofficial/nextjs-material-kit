@@ -38,7 +38,7 @@
     content: "";
     background-color: white;
     position: fixed;
-    z-index: 9999;
+    z-index: 9998;
     width: 100%;
     height: 100%;
     top: 0;
@@ -54,5 +54,6 @@
     border-radius: 50%;
     -webkit-animation: spinner-border .75s linear infinite;
     animation: spinner-border .75s linear infinite;
+    position: absolute;
   }
 }
