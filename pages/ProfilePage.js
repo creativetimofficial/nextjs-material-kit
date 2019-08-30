@@ -32,8 +32,6 @@ import work5 from "../assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "../assets/jss/material-kit-react/views/profilePage.js";
 
-import "../assets/scss/material-kit-react.scss?v=1.8.0";
-
 const useStyles = makeStyles(styles);
 
 export default function ProfilePage(props) {

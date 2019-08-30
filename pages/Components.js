@@ -30,8 +30,6 @@ import SectionDownload from "../pages-sections/Components-Sections/SectionDownlo
 
 import styles from "../assets/jss/material-kit-react/views/components.js";
 
-import "../assets/scss/material-kit-react.scss?v=1.8.0";
-
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -55,9 +53,9 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
+                <h1 className={classes.title}>NextJS Material Kit.</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
+                  A Badass NextJS Kit based on Material-UI.
                 </h3>
               </div>
             </GridItem>
