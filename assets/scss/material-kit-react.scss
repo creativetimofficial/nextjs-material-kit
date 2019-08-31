@@ -32,8 +32,18 @@
   to { transform: rotate(360deg); }
 }
 
-.page-transition-spinner{
+.body-page-transition{
   overflow: hidden;
+}
+
+#page-transition {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+#page-transition > div{
   &:after{
     content: "";
     background-color: white;
@@ -42,19 +52,5 @@
     width: 100%;
     height: 100%;
     top: 0;
-  }
-  &:before{
-    content: "";
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    vertical-align: text-bottom;
-    border: .25em solid black;
-    border-right-color: #d40505;
-    border-radius: 50%;
-    -webkit-animation: spinner-border .75s linear infinite;
-    animation: spinner-border .75s linear infinite;
-    z-index: 9999;
-    position: absolute;
   }
 }
