@@ -1,6 +1,6 @@
-const withPlugins = require('next-compose-plugins');
-const withImages = require('next-images')
-const withSass = require('@zeit/next-sass')
+const withPlugins = require("next-compose-plugins");
+const withImages = require("next-images");
+const withSass = require("@zeit/next-sass");
 
 // import "./assets/scss/material-kit-react.scss?v=1.8.0";
 
@@ -12,7 +12,4 @@ const withSass = require('@zeit/next-sass')
 //   ...require('node-sass')
 // }
 
-module.exports = withPlugins([
-  [withSass],
-  [withImages]
-]);
+module.exports = withPlugins([[withSass], [withImages]]);

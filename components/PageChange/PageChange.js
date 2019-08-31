@@ -1,17 +1,17 @@
 import React from "react";
 
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import { makeStyles } from "@material-ui/core/styles";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 // core components
-import { infoColor, title } from "../../assets/jss/material-kit-react.js"
+import { infoColor, title } from "../../assets/jss/material-kit-react.js";
 
 const useStyles = makeStyles({
   progress: {
     color: infoColor,
     width: "6rem !important",
-    height: "6rem !important",
+    height: "6rem !important"
   },
   wrapperDiv: {
     margin: "100px auto",
@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function PageChange(props){
+export default function PageChange(props) {
   const classes = useStyles();
   return (
     <div>
@@ -38,7 +38,9 @@ export default function PageChange(props){
         <div className={classes.iconWrapper}>
           <CircularProgress className={classes.progress} />
         </div>
-        <h4 className={classes.title}>Loading page contents for: {props.path}</h4>
+        <h4 className={classes.title}>
+          Loading page contents for: {props.path}
+        </h4>
       </div>
     </div>
   );
