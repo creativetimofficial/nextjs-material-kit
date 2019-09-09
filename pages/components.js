@@ -75,7 +75,7 @@ export default function Components(props) {
         <SectionCompletedExamples />
         <SectionLogin />
         <GridItem md={12} className={classes.textCenter}>
-          <Link href="/loginpage">
+          <Link href="/loginpage" as={"/next-material-kit/loginpage"}>
             <a className={classes.link}>
               <Button color="primary" size="lg" simple>
                 View Login Page
