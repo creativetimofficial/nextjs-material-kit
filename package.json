@@ -10,7 +10,7 @@
     "start": "next start",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev",
     "export": "next export",
-    "deploy": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run build && npm run export && touch out/.nojekyll && gh-pages -d out"
+    "deploy": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run build && npm run export && touch out/.nojekyll && git subtree push --prefix out origin gh-pages"
   },
   "repository": {
     "type": "git",
@@ -39,7 +39,6 @@
     "@material-ui/icons": "4.2.1",
     "@zeit/next-sass": "1.0.1",
     "classnames": "2.2.6",
-    "gh-pages": "2.1.1",
     "history": "4.9.0",
     "moment": "2.24.0",
     "next": "9.0.5",
