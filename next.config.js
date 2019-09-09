@@ -12,4 +12,6 @@ const withSass = require("@zeit/next-sass");
 //   ...require('node-sass')
 // }
 
-module.exports = withPlugins([[withSass], [withImages]]);
+module.exports = withPlugins([[withSass], [withImages]], {
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/next-material-kit' : '',
+});
