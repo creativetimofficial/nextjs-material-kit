@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev",
-    "deploy": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run build && npm run export && touch out/.nojekyll && gh-pages -d out",
+    "deploy": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run build && npm run export && touch out/.nojekyll && touch out/_next/.nojekyll && gh-pages -d out",
     "export": "next export"
   },
   "repository": {
