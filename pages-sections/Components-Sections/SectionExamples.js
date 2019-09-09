@@ -24,7 +24,7 @@ export default function SectionExamples() {
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={6}>
-            <Link href="/landingpage" as={ process.env.BACKEND_URL + '/next-material-kit' }>
+            <Link href="/next-material-kit/landingpage">
               <a className={classes.link}>
                 <img
                   src={landing}
@@ -44,7 +44,7 @@ export default function SectionExamples() {
             </Link>
           </GridItem>
           <GridItem xs={12} sm={12} md={6}>
-            <Link href="/profilepage" as={ process.env.BACKEND_URL + '/next-material-kit' }>
+            <Link href="/profilepage">
               <a className={classes.link}>
                 <img
                   src={profile}
