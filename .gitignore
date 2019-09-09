@@ -8,7 +8,6 @@
 
 # production
 /build
-/out
 
 # misc
 .DS_Store
