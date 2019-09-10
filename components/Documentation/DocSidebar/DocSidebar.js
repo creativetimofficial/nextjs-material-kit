@@ -93,21 +93,23 @@ export default function DocSidebar({ routes }) {
             <List className={classes.innerList}>
               {prop.routes.map((prop, key) => {
                 return (
-                  <a className={classes.navLink} key={key}>
+                  <React.Fragment key={key}>
                     <Link href={prop.path}>
-                      <ListItem className={classes.innerListItem}>
-                        <ListItemText
-                          primary={prop.name}
-                          disableTypography={true}
-                          className={
-                            classes.listItemText +
-                            " " +
-                            (activeRoute(prop.path) ? classes.active : "")
-                          }
-                        />
-                      </ListItem>
+                      <a className={classes.navLink}>
+                        <ListItem className={classes.innerListItem}>
+                          <ListItemText
+                            primary={prop.name}
+                            disableTypography={true}
+                            className={
+                              classes.listItemText +
+                              " " +
+                              (activeRoute(prop.path) ? classes.active : "")
+                            }
+                          />
+                        </ListItem>
+                      </a>
                     </Link>
-                  </a>
+                  </React.Fragment>
                 );
               })}
             </List>
