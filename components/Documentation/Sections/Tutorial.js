@@ -182,7 +182,7 @@ class Tutorial extends React.Component {
         <p>
           Check the{" "}
           <a
-            href="https://github.com/creativetimofficial/material-kit-react/blob/master/CHANGELOG.md?ref=creativetim"
+            href="https://github.com/creativetimofficial/nextjs-material-kit/blob/master/CHANGELOG.md?ref=creativetim"
             target="_blank"
           >
             CHANGELOG
@@ -219,7 +219,7 @@ class Tutorial extends React.Component {
           <li>
             Go to{" "}
             <a
-              href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-tutorial-section-docs"
+              href="https://www.creative-tim.com/product/nextjs-material-kit?ref=mkr-tutorial-section-docs"
               target="_blank"
             >
               material kit react

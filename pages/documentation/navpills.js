@@ -5,9 +5,9 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import NavPillss from "~/components/NavPills/NavPills.js";
+import NavPillss from "components/NavPills/NavPills.js";
 // layout for page
-import Documentation from "~/layouts/Documentation.js";
+import Documentation from "layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -24,7 +24,7 @@ const styles = {
 
 const codeExample = `import React from 'react';
 
-import NavPills from "~/components/NavPills/NavPills.js";
+import NavPills from "components/NavPills/NavPills.js";
 
 export default function Example(){
   return (
@@ -143,7 +143,7 @@ function NavPills({ ...props }) {
         You will find the styles for this component in
         <br />{" "}
         <code>
-          src/assets/jss/material-kit-react/components/navPillsStyle.js
+          src/assets/jss/nextjs-material-kit/components/navPillsStyle.js
         </code>
         .
       </p>

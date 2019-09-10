@@ -28,7 +28,7 @@ import SectionLogin from "pages-sections/Components-Sections/SectionLogin.js";
 import SectionExamples from "pages-sections/Components-Sections/SectionExamples.js";
 import SectionDownload from "pages-sections/Components-Sections/SectionDownload.js";
 
-import styles from "assets/jss/material-kit-react/views/components.js";
+import styles from "assets/jss/nextjs-material-kit/views/components.js";
 
 const useStyles = makeStyles(styles);
 

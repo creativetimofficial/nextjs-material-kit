@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 // core components
-import Button from "~/components/CustomButtons/Button.js";
+import Button from "components/CustomButtons/Button.js";
 
 const styles = {
   socialButtonsIcons: {
@@ -32,7 +32,7 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-const importExamples = `import Button from '~/components/CustomButtons/Button.jsx';`;
+const importExamples = `import Button from 'components/CustomButtons/Button.jsx';`;
 
 const examples = `<Button type="button">Default</Button>
 <Button type="button" color="primary">Primary</Button>
@@ -43,7 +43,7 @@ const examples = `<Button type="button">Default</Button>
 <Button type="button" color="rose">Rose</Button>`;
 
 const importStyle = `import Favorite from '@material-ui/icons/Favorite';
-import Button from '~/components/CustomButtons/Button.jsx';`;
+import Button from 'components/CustomButtons/Button.jsx';`;
 
 const style = `<Button color="primary">Default</Button>
 <Button color="primary" round>Round</Button>
@@ -58,7 +58,7 @@ const socials = `import React from "react";
 // material-ui components
 // @material-ui/icons
 // core components
-import Button from '~/components/CustomButtons/Button.jsx';
+import Button from 'components/CustomButtons/Button.jsx';
 
 export default function Socials(){
   return (
@@ -213,11 +213,11 @@ export default function Buttons() {
       <p>
         You will find the styles for this component in
         <br />{" "}
-        <code>src/assets/jss/material-kit-react/components/buttonStyle.js</code>
+        <code>src/assets/jss/nextjs-material-kit/components/buttonStyle.js</code>
         <br /> and
         <br />
         <code>
-          src/assets/jss/material-kit-react/components/iconButtonStyle.js
+          src/assets/jss/nextjs-material-kit/components/iconButtonStyle.js
         </code>
         .
       </p>

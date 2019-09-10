@@ -7,7 +7,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // core components
-import styles from "assets/jss/material-kit-react/views/componentsSections/downloadStyle.js";
+import styles from "assets/jss/nextjs-material-kit/views/componentsSections/downloadStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -30,7 +30,7 @@ export default function SectionDownload() {
             <Button
               color="primary"
               size="lg"
-              href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-download-section"
+              href="https://www.creative-tim.com/product/nextjs-material-kit?ref=mkr-download-section"
               target="_blank"
             >
               Free React Download

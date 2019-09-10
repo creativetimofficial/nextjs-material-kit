@@ -8,9 +8,9 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import People from "@material-ui/icons/People";
 // core components
-import GridContainer from "~/components/Grid/GridContainer.js";
-import GridItem from "~/components/Grid/GridItem.js";
-import CustomInput from "~/components/CustomInput/CustomInput.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import CustomInput from "components/CustomInput/CustomInput.js";
 
 const styles = {
   bdExample: {
@@ -30,9 +30,9 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import People from "@material-ui/icons/People";
 // core components
-import GridContainer from "~/components/Grid/GridContainer.js";
-import GridItem from "~/components/Grid/GridItem.js";
-import CustomInput from "~/components/CustomInput/CustomInput.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import CustomInput from "components/CustomInput/CustomInput.js";
 
 export default function Example(){
   return (
@@ -127,7 +127,7 @@ class Inputs extends React.Component {
           You will find all the styles for this component in
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/customInputStyle.js
+            src/assets/jss/nextjs-material-kit/components/customInputStyle.js
           </code>
           .
         </p>

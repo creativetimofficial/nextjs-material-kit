@@ -6,8 +6,8 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 // core components
-import Button from "~/components/CustomButtons/Button.js";
-import popoverStyles from "~/assets/jss/material-kit-react/popoverStyles.js";
+import Button from "components/CustomButtons/Button.js";
+import popoverStyles from "assets/jss/nextjs-material-kit/popoverStyles.js";
 
 const styles = {
   ...popoverStyles,
@@ -30,9 +30,9 @@ const codeExample = `import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 // core components
-import Button from "~/components/CustomButtons/Button.js";
+import Button from "components/CustomButtons/Button.js";
 
-import styles from "~/assets/jss/material-kit-react/popoverStyles.js";
+import styles from "assets/jss/nextjs-material-kit/popoverStyles.js";
 
 const useStyles = makeStyles(styles);
 
@@ -158,7 +158,7 @@ export default function Popovers() {
       <p>
         You will find all the styles for these components in
         <br />
-        <code>src/assets/jss/material-kit-react/popoverStyles.js</code>.
+        <code>src/assets/jss/nextjs-material-kit/popoverStyles.js</code>.
       </p>
       <h2>Example</h2>
       <div className={classes.bdExample}>

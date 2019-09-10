@@ -4,10 +4,10 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Button from "~/components/CustomButtons/Button.js";
-import Badge from "~/components/Badge/Badge.js";
+import Button from "components/CustomButtons/Button.js";
+import Badge from "components/Badge/Badge.js";
 // layout for page
-import Documentation from "~/layouts/Documentation.js";
+import Documentation from "layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -24,9 +24,9 @@ const styles = {
 
 const useStyles = makeStyles(styles);
 
-const importExamples = `import Badge from '~/components/Badge/Badge.js';`;
+const importExamples = `import Badge from 'components/Badge/Badge.js';`;
 
-const importStylesExamples = `import badgeStyle from "~/assets/jss/material-kit-react/components/badgeStyle.js"`;
+const importStylesExamples = `import badgeStyle from "assets/jss/nextjs-material-kit/components/badgeStyle.js"`;
 
 const exampleCode = `<Button color="primary">Notifications{" "}<Badge>4</Badge></Button>`;
 
@@ -65,7 +65,7 @@ export default function Badges(props) {
           You will find the styles for this component in
           <br />{" "}
           <code>
-            src/assets/jss/material-kit-react/components/badgeStyle.js
+            src/assets/jss/nextjs-material-kit/components/badgeStyle.js
           </code>
           .
         </p>

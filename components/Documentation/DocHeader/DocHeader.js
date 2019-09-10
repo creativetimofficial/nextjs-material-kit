@@ -4,7 +4,7 @@ import { withStyles, AppBar, Toolbar, Hidden } from "@material-ui/core";
 import { List, Star, CardMembership } from "@material-ui/icons";
 import Link from "next/link";
 
-import Button from "~/components/CustomButtons/Button.js";
+import Button from "components/CustomButtons/Button.js";
 
 const style = theme => ({
   appBar: {
@@ -92,7 +92,7 @@ class DocHeader extends React.Component {
                 v1.8.0
               </Button>
               <a
-                href="https://github.com/creativetimofficial/material-kit-react?ref=mkr-navbar-docs"
+                href="https://github.com/creativetimofficial/nextjs-material-kit?ref=mkr-navbar-docs"
                 className={classes.iconLink}
                 target="_blank"
               >
@@ -123,7 +123,7 @@ class DocHeader extends React.Component {
               </a>
             </Link>
             <a
-              href="https://github.com/creativetimofficial/material-kit-react?ref=creativetim"
+              href="https://github.com/creativetimofficial/nextjs-material-kit?ref=creativetim"
               className={classes.rightLinks}
               target="_blank"
             >
@@ -149,7 +149,7 @@ class DocHeader extends React.Component {
               onClick={e => e.preventDefault()}
             />
             <a
-              href="https://github.com/creativetimofficial/material-kit-react?ref=creativetim"
+              href="https://github.com/creativetimofficial/nextjs-material-kit?ref=creativetim"
               className="github-corner"
               aria-label="View source on Github"
             >

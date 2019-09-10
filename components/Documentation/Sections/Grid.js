@@ -7,7 +7,7 @@ const codeImportContainer = `// instead of importing the container from material
 import Grid from 'material-ui/Grid';
 
 // you would import our component like this
-import GridContainer from "~/components/Grid/GridContainer.js";`;
+import GridContainer from "components/Grid/GridContainer.js";`;
 const codeExampleContainer = `// instead of using the container from material-ui
 <Grid container {...props}>
   ...
@@ -22,7 +22,7 @@ const codeImportItem = `// instead of importing the item from material-ui
 import Grid from 'material-ui/Grid';
 
 // you would import our component like this
-import GridItem from "~/components/Grid/GridItem.js";`;
+import GridItem from "components/Grid/GridItem.js";`;
 const codeExampleItem = `// instead of using the item from material-ui
 <Grid item {...props}>
   ...

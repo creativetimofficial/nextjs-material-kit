@@ -6,7 +6,7 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // @material-ui/icons
 //core components
 // layout for page
-import Documentation from "~/layouts/Documentation.js";
+import Documentation from "layouts/Documentation.js";
 
 const codeCheck = `npm run lint:check`;
 const codeFix = `npm run lint:fix`;

@@ -110,10 +110,10 @@ export default function DateTimePicker() {
         If you want to match the input of this plugin with the inputs from
         Material-UI, please take a look at this issue here:{" "}
         <a
-          href="https://github.com/creativetimofficial/material-kit-react/issues/20?ref=creativetim"
+          href="https://github.com/creativetimofficial/nextjs-material-kit/issues/20?ref=creativetim"
           target="_blank"
         >
-          https://github.com/creativetimofficial/material-kit-react/issues/20
+          https://github.com/creativetimofficial/nextjs-material-kit/issues/20
         </a>
       </p>
       <h2>Example</h2>

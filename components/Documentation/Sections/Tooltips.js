@@ -7,9 +7,9 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
-import Button from "~/components/CustomButtons/Button.js";
+import Button from "components/CustomButtons/Button.js";
 
-import tooltipsStyle from "~/assets/jss/material-kit-react/tooltipsStyle.js";
+import tooltipsStyle from "assets/jss/nextjs-material-kit/tooltipsStyle.js";
 
 const styles = {
   ...tooltipsStyle,
@@ -32,10 +32,10 @@ const tooltip = `import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
-import Button from "~/components/CustomButtons/Button.js";
+import Button from "components/CustomButtons/Button.js";
 
 
-import styles from "~/assets/jss/material-kit-react/tooltipsStyle.js";
+import styles from "assets/jss/nextjs-material-kit/tooltipsStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -90,7 +90,7 @@ export default function Tooltips() {
       <p>
         You will find all the styles for these components in
         <br />
-        <code>src/assets/jss/material-kit-react/tooltipsStyle.js</code>.
+        <code>src/assets/jss/nextjs-material-kit/tooltipsStyle.js</code>.
       </p>
       <h2>Example</h2>
       <div className={classes.bdExample}>

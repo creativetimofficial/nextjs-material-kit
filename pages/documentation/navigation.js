@@ -3,7 +3,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // layout for page
-import Documentation from "~/layouts/Documentation.js";
+import Documentation from "layouts/Documentation.js";
 
 const headerProp = `Header.defaultProps = {
   color: "white"
@@ -56,10 +56,10 @@ export default function Navigation() {
       <p>
         You will find all the styles for these components in
         <br />
-        <code>src/assets/jss/material-kit-react/components/headerStyle.js</code>
+        <code>src/assets/jss/nextjs-material-kit/components/headerStyle.js</code>
         <br />
         <code>
-          src/assets/jss/material-kit-react/components/headerLinksStyle.js
+          src/assets/jss/nextjs-material-kit/components/headerLinksStyle.js
         </code>
         .
       </p>

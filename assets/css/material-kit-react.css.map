@@ -2,7 +2,7 @@
 	"version": 3,
 	"file": "material-kit-react.css",
 	"sources": [
-		"../scss/material-kit-react.scss",
+		"../scss/nextjs-material-kit.scss",
 		"../scss/core/_variables.scss",
 		"../scss/core/variables/_colors.scss",
 		"../scss/core/variables/_shadow.scss",

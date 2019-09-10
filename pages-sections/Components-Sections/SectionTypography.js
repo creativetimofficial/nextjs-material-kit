@@ -18,7 +18,7 @@ import Quote from "components/Typography/Quote.js";
 
 import image from "assets/img/faces/avatar.jpg";
 
-import styles from "assets/jss/material-kit-react/views/componentsSections/typographyStyle.js";
+import styles from "assets/jss/nextjs-material-kit/views/componentsSections/typographyStyle.js";
 
 const useStyles = makeStyles(styles);
 

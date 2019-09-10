@@ -5,9 +5,9 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import CustomLinearProgress from "~/components/CustomLinearProgress/CustomLinearProgress.js";
+import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
 // layout for page
-import Documentation from "~/layouts/Documentation.js";
+import Documentation from "layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -24,7 +24,7 @@ const styles = {
 
 const codeExample = `import React from 'react';
 // core components
-import CustomLinearProgress from "~/components/CustomLinearProgress/CustomLinearProgress.js";
+import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
 
 export default function LinearProgress(){
   return (
@@ -96,7 +96,7 @@ function LinearProgress({ ...props }) {
         You will find the styles for this component in
         <br />{" "}
         <code>
-          src/assets/jss/material-kit-react/components/customLinearProgressStyle.js
+          src/assets/jss/nextjs-material-kit/components/customLinearProgressStyle.js
         </code>
         .
       </p>

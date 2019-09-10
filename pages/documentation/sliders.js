@@ -5,7 +5,7 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // react plugin that creates slider
 import Slider from "nouislider";
 // layout for page
-import Documentation from "~/layouts/Documentation.js";
+import Documentation from "layouts/Documentation.js";
 
 const codeExample = `import React from "react";
 // plugin that creates slider

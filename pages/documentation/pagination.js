@@ -4,9 +4,9 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Paginations from "~/components/Pagination/Pagination.js";
+import Paginations from "components/Pagination/Pagination.js";
 // layout for page
-import Documentation from "~/layouts/Documentation.js";
+import Documentation from "layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -23,7 +23,7 @@ const styles = {
 
 const codeExample = `import React from 'react';
 
-import Paginations from "~/components/Pagination/Pagination.js";
+import Paginations from "components/Pagination/Pagination.js";
 
 export default function Example(){
   return (
@@ -75,7 +75,7 @@ function Pagination({ ...props }) {
         You will find the styles for this component in
         <br />{" "}
         <code>
-          src/assets/jss/material-kit-react/components/paginationStyle.js
+          src/assets/jss/nextjs-material-kit/components/paginationStyle.js
         </code>
         .
       </p>

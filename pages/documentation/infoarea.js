@@ -6,9 +6,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Timeline from "@material-ui/icons/Timeline";
 // core components
-import InfoAreas from "~/components/InfoArea/InfoArea.js";
+import InfoAreas from "components/InfoArea/InfoArea.js";
 // layout for page
-import Documentation from "~/layouts/Documentation.js";
+import Documentation from "layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -29,7 +29,7 @@ const codeExample = `import React from "react";
 import Timeline from "@material-ui/icons/Timeline";
 
 // core components
-import InfoArea from "~/components/InfoArea/InfoArea.js";
+import InfoArea from "components/InfoArea/InfoArea.js";
 
 export default function Example(){
   return (
@@ -74,7 +74,7 @@ function InfoArea({ ...props }) {
       <p>
         You will find the styles for this component in
         <br />{" "}
-        <code>src/assets/jss/material-kit-react/components/infoStyle.js</code>.
+        <code>src/assets/jss/nextjs-material-kit/components/infoStyle.js</code>.
       </p>
       <h2>Example</h2>
       <div className={classes.bdExample}>
