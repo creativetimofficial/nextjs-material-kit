@@ -5,7 +5,7 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // layout for page
 import Documentation from "layouts/Documentation.js";
 
-const files = `material-kit-react
+const files = `nextjs-material-kit
 .
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
