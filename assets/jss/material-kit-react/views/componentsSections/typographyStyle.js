@@ -1,6 +1,6 @@
-import { container, title } from "../../../material-kit-react.js";
+import { container, title } from "assets/jss/material-kit-react.js";
 
-import imagesStyles from "../../imagesStyles.js";
+import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
 const typographyStyle = {
   section: {
