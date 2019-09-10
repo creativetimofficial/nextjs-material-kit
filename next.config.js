@@ -15,7 +15,8 @@ const path = require("path");
 // }
 
 module.exports = withPlugins([[withSass], [withImages]], {
-  assetPrefix: process.env.NODE_ENV === "production" ? "/next-material-kit" : "",
+  assetPrefix:
+    process.env.NODE_ENV === "production" ? "/next-material-kit" : "",
   webpack(config, options) {
     config.resolve.modules.push(path.resolve("./"));
     return config;

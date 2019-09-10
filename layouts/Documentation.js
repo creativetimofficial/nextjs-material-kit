@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -38,7 +38,7 @@ class Documentation extends React.Component {
               minHeight: "calc(100vh - 75px)"
             }}
           >
-            { this.props.children }
+            {this.props.children}
           </GridItem>
           <GridItem
             xs={12}
