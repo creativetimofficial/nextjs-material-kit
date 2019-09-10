@@ -5,7 +5,7 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-import NavPillss from "components/NavPills/NavPills.js";
+import NavPillss from "~/components/NavPills/NavPills.js";
 
 const styles = {
   bdExample: {
@@ -22,7 +22,7 @@ const styles = {
 
 const codeExample = `import React from 'react';
 
-import NavPills from "components/NavPills/NavPills.js";
+import NavPills from "~/components/NavPills/NavPills.js";
 
 export default function Example(){
   return (

@@ -13,7 +13,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Check from "@material-ui/icons/Check";
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 
-import style from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
+import style from "~/assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 const styles = {
   ...style,
@@ -40,7 +40,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import Check from "@material-ui/icons/Check";
 
-import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
+import styles from "~/assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 const useStyles = makeStyles(styles);
 
@@ -149,7 +149,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 
-import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
+import styles from "~/assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 const useStyles = makeStyles(styles);
 
@@ -286,7 +286,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Switch from "@material-ui/core/Switch";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
-import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
+import styles from "~/assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 const useStyles = makeStyles(styles);
 

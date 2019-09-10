@@ -4,7 +4,7 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-import Paginations from "components/Pagination/Pagination.js";
+import Paginations from "~/components/Pagination/Pagination.js";
 
 const styles = {
   bdExample: {
@@ -21,7 +21,7 @@ const styles = {
 
 const codeExample = `import React from 'react';
 
-import Paginations from "components/Pagination/Pagination.js";
+import Paginations from "~/components/Pagination/Pagination.js";
 
 export default function Example(){
   return (

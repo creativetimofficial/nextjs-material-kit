@@ -2,9 +2,9 @@
 import React from "react";
 import { withStyles, AppBar, Toolbar, Hidden } from "@material-ui/core";
 import { List, Star, CardMembership } from "@material-ui/icons";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
-import Button from "components/CustomButtons/Button.js";
+import Button from "~/components/CustomButtons/Button.js";
 
 const style = theme => ({
   appBar: {
@@ -84,9 +84,9 @@ class DocHeader extends React.Component {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.block}>
           <div className={classes.flex}>
-            <NavLink to="/" activeClassName="active" className={classes.title}>
-              Material Kit React
-            </NavLink>
+            <Link href="/">
+              <a className={classes.title}>Material Kit React</a>
+            </Link>
             <Hidden mdDown>
               <Button color="transparent" className={classes.buttonClasses}>
                 v1.8.0
@@ -116,14 +116,12 @@ class DocHeader extends React.Component {
               <CardMembership />{" "}
               <span className={classes.rightLinksText}>Upgrade to PRO</span>
             </a>
-            <NavLink
-              to="/"
-              activeClassName="active"
-              className={classes.rightLinks}
-            >
-              <List />{" "}
-              <span className={classes.rightLinksText}>Live Preview</span>
-            </NavLink>
+            <Link href="/">
+              <a className={classes.rightLinks}>
+                <List />{" "}
+                <span className={classes.rightLinksText}>Live Preview</span>
+              </a>
+            </Link>
             <a
               href="https://github.com/creativetimofficial/material-kit-react?ref=creativetim"
               className={classes.rightLinks}

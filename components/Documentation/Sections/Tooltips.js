@@ -7,9 +7,9 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
-import Button from "components/CustomButtons/Button.js";
+import Button from "~/components/CustomButtons/Button.js";
 
-import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.js";
+import tooltipsStyle from "~/assets/jss/material-kit-react/tooltipsStyle.js";
 
 const styles = {
   ...tooltipsStyle,
@@ -32,10 +32,10 @@ const tooltip = `import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
-import Button from "components/CustomButtons/Button.js";
+import Button from "~/components/CustomButtons/Button.js";
 
 
-import styles from "assets/jss/material-kit-react/tooltipsStyle.js";
+import styles from "~/assets/jss/material-kit-react/tooltipsStyle.js";
 
 const useStyles = makeStyles(styles);
 

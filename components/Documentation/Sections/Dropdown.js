@@ -4,7 +4,7 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import { makeStyles } from "@material-ui/core/styles";
 // import { * } from '@material-ui/icons';
 
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
+import CustomDropdown from "~/components/CustomDropdown/CustomDropdown.js";
 
 const styles = {
   bdExample: {
@@ -23,8 +23,8 @@ const useStyles = makeStyles(styles);
 
 const codeDropdown = `import React from 'react';
 
-import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
-import Badge from 'components/Badge/Badge.js';
+import CustomDropdown from '~/components/CustomDropdown/CustomDropdown.jsx';
+import Badge from '~/components/Badge/Badge.js';
 
 export default function Dropdown(){
   return (
@@ -47,7 +47,7 @@ export default function Dropdown(){
 
 const codeDropup = `import React from 'react';
 
-import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
+import CustomDropdown from '~/components/CustomDropdown/CustomDropdown.jsx';
 
 export default function Dropdup(){
   return (

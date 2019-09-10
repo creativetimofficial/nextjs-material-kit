@@ -9,7 +9,7 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import CustomTabs from "~/components/CustomTabs/CustomTabs.js";
 
 const styles = {
   textCenter: {
@@ -37,7 +37,7 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import CustomTabs from "~/components/CustomTabs/CustomTabs.js";
 
 const styles = {
   textCenter: {

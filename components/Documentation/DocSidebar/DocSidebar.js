@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import { withStyles, List, ListItem, ListItemText } from "@material-ui/core";
 
 const style = theme => ({
@@ -85,46 +85,43 @@ class DocSidebar extends React.Component {
           if (prop.redirect) return null;
           return (
             <div key={key}>
-              <NavLink
-                to={prop.path}
-                activeClassName="active"
-                className={classes.navLink}
-              >
-                <ListItem className={classes.listItem}>
-                  <ListItemText
-                    primary={prop.name}
-                    disableTypography={true}
-                    className={
-                      classes.listItemText +
-                      " " +
-                      classes.listItemTextGroup +
-                      " " +
-                      (this.activeRoute(prop.path) ? classes.active : "")
-                    }
-                  />
-                </ListItem>
-              </NavLink>
+              <Link href={prop.path}>
+                <a className={classes.navLink}>
+                  <ListItem className={classes.listItem}>
+                    <ListItemText
+                      primary={prop.name}
+                      disableTypography={true}
+                      className={
+                        classes.listItemText +
+                        " " +
+                        classes.listItemTextGroup +
+                        " " +
+                        (this.activeRoute(prop.path) ? classes.active : "")
+                      }
+                    />
+                  </ListItem>
+                </a>
+              </Link>
               <List className={classes.innerList}>
                 {prop.routes.map((prop, key) => {
                   return (
-                    <NavLink
-                      to={prop.path}
-                      activeClassName="active"
-                      key={key}
-                      className={classes.navLink}
-                    >
-                      <ListItem className={classes.innerListItem}>
-                        <ListItemText
-                          primary={prop.name}
-                          disableTypography={true}
-                          className={
-                            classes.listItemText +
-                            " " +
-                            (this.activeRoute(prop.path) ? classes.active : "")
-                          }
-                        />
-                      </ListItem>
-                    </NavLink>
+                    <Link href={prop.path}>
+                      <a className={classes.navLink} key={key}>
+                        <ListItem className={classes.innerListItem}>
+                          <ListItemText
+                            primary={prop.name}
+                            disableTypography={true}
+                            className={
+                              classes.listItemText +
+                              " " +
+                              (this.activeRoute(prop.path)
+                                ? classes.active
+                                : "")
+                            }
+                          />
+                        </ListItem>
+                      </a>
+                    </Link>
                   );
                 })}
               </List>

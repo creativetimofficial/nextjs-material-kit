@@ -6,7 +6,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Timeline from "@material-ui/icons/Timeline";
 // core components
-import InfoAreas from "components/InfoArea/InfoArea.js";
+import InfoAreas from "~/components/InfoArea/InfoArea.js";
 
 const styles = {
   bdExample: {
@@ -27,7 +27,7 @@ const codeExample = `import React from "react";
 import Timeline from "@material-ui/icons/Timeline";
 
 // core components
-import InfoArea from "components/InfoArea/InfoArea.js";
+import InfoArea from "~/components/InfoArea/InfoArea.js";
 
 export default function Example(){
   return (

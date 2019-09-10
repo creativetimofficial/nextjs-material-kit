@@ -1,32 +1,28 @@
-/*!
-
-=========================================================
-* Material Kit React - v1.8.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { useRouter } from 'next/router';
 
 import GridContainer from "../components/Grid/GridContainer.js";
 import GridItem from "../components/Grid/GridItem.js";
 
 import DocHeader from "../components/Documentation/DocHeader/DocHeader.js";
-import DocSidebar from "./components/Documentation/DocSidebar/DocSidebar.js";
+import DocSidebar from "../components/Documentation/DocSidebar/DocSidebar.js";
+import Tutorial from "../components/Documentation/Sections/Tutorial.js";
 
-import docRoutes from "routes/documentation.js";
+import docRoutes from "../routes/documentation.js";
 
 class Documentation extends React.Component {
+  getRoute = () => {
+    const router = useRouter();
+    const { pid } = router.query;
+    let route = docRoutes.map((prop,key) => {
+      return prop.map(prop2 => return prop)
+    });
+    console.log(route);
+    // if(route){
+    //   return <route.component />;
+    // }
+    // return <Tutorial />;
+  }
   render() {
     return (
       <div style={{ backgroundColor: "#FFFFFF" }}>
@@ -54,21 +50,9 @@ class Documentation extends React.Component {
               minHeight: "calc(100vh - 75px)"
             }}
           >
-            <Switch>
-              {docRoutes.map((prop, key) => {
-                if (prop.redirect)
-                  return <Redirect from={prop.path} to={prop.to} key={key} />;
-                return prop.routes.map((prop2, key2) => {
-                  return (
-                    <Route
-                      path={prop2.path}
-                      component={prop2.component}
-                      key={key2}
-                    />
-                  );
-                });
-              })}
-            </Switch>
+            {
+              //this.getRoute()
+            }
           </GridItem>
           <GridItem
             xs={12}
