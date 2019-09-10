@@ -33,7 +33,15 @@ export default function SectionDownload() {
               href="https://www.creative-tim.com/product/nextjs-material-kit?ref=mkr-download-section"
               target="_blank"
             >
-              Free React Download
+              Free NextJS Download
+            </Button>
+            <Button
+              color="primary"
+              size="lg"
+              href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-download-section"
+              target="_blank"
+            >
+              Free React Downoad
             </Button>
             <Button
               color="primary"
@@ -51,15 +59,15 @@ export default function SectionDownload() {
           <GridItem xs={12} sm={12} md={8}>
             <h2>Want more?</h2>
             <h4>
-              We{"'"}ve launched{" "}
+              Comming soon{" "}
               <a
-                href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkr-download-section"
-                target="_blank"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
               >
-                Material Kit PRO React{" "}
+                NextJS Material Kit PRO{" "}
               </a>
-              .It has a huge number of components, sections and example pages.
-              Start Your Development With A Badass Material-UI nspired by
+              .It will have a huge number of components, sections and example pages.
+              You Could Start Your Development With A Badass Material-UI and NexJS inspired by
               Material Design.
             </h4>
           </GridItem>
@@ -70,7 +78,7 @@ export default function SectionDownload() {
               href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkr-download-section"
               target="_blank"
             >
-              Material Kit PRO
+              Material Kit PRO React
             </Button>
             <Button
               color="rose"
@@ -78,7 +86,7 @@ export default function SectionDownload() {
               href="https://www.creative-tim.com/product/material-dashboard-pro-react?ref=mkr-download-section"
               target="_blank"
             >
-              Material Dashboard PRO
+              Material Dashboard PRO React
             </Button>
           </GridItem>
         </GridContainer>

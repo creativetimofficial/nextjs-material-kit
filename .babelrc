@@ -7,7 +7,7 @@
             "babel-plugin-root-import"
         ]
     ],
-    "env": { // For React Native
+    "env": {
         "production": {
             "plugins": [
                 "babel-plugin-root-import"

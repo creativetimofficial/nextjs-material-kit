@@ -165,19 +165,25 @@ class Tutorial extends React.Component {
         </p>
         <h2>Getting started</h2>
         <p>
-          <b>Material Kit React</b> is built on top of{" "}
+          <b>NextJS Material Kit</b> is built on top of{" "}
           <a
             href="https://material-ui-next.com/?ref=creativetim"
             target="_blank"
           >
             Material UI
+          </a>{" "}and{" "}
+          <a
+            href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-tutorial-docs"
+            target="_blank"
+          >
+            Material Kit React
           </a>{" "}
           using{" "}
           <a
-            href="https://github.com/facebook/create-react-app?ref=creativetim"
+            href="https://nextjs.org?ref=creativetim"
             target="_blank"
           >
-            create-react-app
+            NextJS
           </a>{" "}
           (at the moment we do not offer support for TypeScript in our React
           themes).
@@ -225,7 +231,7 @@ class Tutorial extends React.Component {
               href="https://www.creative-tim.com/product/nextjs-material-kit?ref=mkr-tutorial-section-docs"
               target="_blank"
             >
-              material kit react
+              NextJS Material Kit
             </a>{" "}
             and press the download button (this will download onto your computer
             a zip file)

@@ -27,12 +27,12 @@ const styles = {
   }
 };
 
-const codeExampleH = `<h1>h1. Material Kit React heading</h1>
-<h2>h2. Material Kit React heading</h2>
-<h3>h3. Material Kit React heading</h3>
-<h4>h4. Material Kit React heading</h4>
-<h5>h5. Material Kit React heading</h5>
-<h6>h6. Material Kit React heading</h6>
+const codeExampleH = `<h1>h1. NextJS Material Kit heading</h1>
+<h2>h2. NextJS Material Kit heading</h2>
+<h3>h3. NextJS Material Kit heading</h3>
+<h4>h4. NextJS Material Kit heading</h4>
+<h5>h5. NextJS Material Kit heading</h5>
+<h6>h6. NextJS Material Kit heading</h6>
 <h2>
   Header with small subtitle<br />
   <small>Use &lt;small&gt; tag for the headers</small>
@@ -98,7 +98,7 @@ function Typography({ ...props }) {
     <Documentation>
       <h1>Typography</h1>
       <p>
-        Documentation and examples for Material Kit React typography, including
+        Documentation and examples for NextJS Material Kit typography, including
         global settings, headings, body text, lists, and more.
       </p>
       <h2>Styles</h2>
@@ -114,12 +114,12 @@ function Typography({ ...props }) {
         <b>Headings</b>
       </h2>
       <div className={classes.bdExample}>
-        <h1>h1. Material Kit React heading</h1>
-        <h2>h2. Material Kit React heading</h2>
-        <h3>h3. Material Kit React heading</h3>
-        <h4>h4. Material Kit React heading</h4>
-        <h5>h5. Material Kit React heading</h5>
-        <h6>h6. Material Kit React heading</h6>
+        <h1>h1. NextJS Material Kit heading</h1>
+        <h2>h2. NextJS Material Kit heading</h2>
+        <h3>h3. NextJS Material Kit heading</h3>
+        <h4>h4. NextJS Material Kit heading</h4>
+        <h5>h5. NextJS Material Kit heading</h5>
+        <h6>h6. NextJS Material Kit heading</h6>
         <h2>
           Header with small subtitle
           <br />

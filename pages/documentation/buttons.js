@@ -204,7 +204,7 @@ export default function Buttons() {
     <Documentation>
       <h1>Buttons</h1>
       <p>
-        Use Material Kit's React custom button styles for actions in forms,
+        Use NextJS Material Kit's custom button styles for actions in forms,
         dialogs, and more with support for multiple states, and more.
       </p>
       <p>
@@ -225,7 +225,7 @@ export default function Buttons() {
       </p>
       <h2>Examples</h2>
       <p>
-        Material Kit React has changed the predefined button styles from
+        NextJS Material Kit has changed the predefined button styles from
         Material UI, each serving its own semantic purpose, with a few extras
         thrown in for more control.
       </p>

@@ -85,7 +85,7 @@ class DocHeader extends React.Component {
         <Toolbar className={classes.block}>
           <div className={classes.flex}>
             <Link href="/">
-              <a className={classes.title}>Material Kit React</a>
+              <a className={classes.title}>NextJS Material Kit</a>
             </Link>
             <Hidden mdDown>
               <Button color="transparent" className={classes.buttonClasses}>
