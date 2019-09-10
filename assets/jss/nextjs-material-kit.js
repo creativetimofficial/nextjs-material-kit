@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Material Kit React - v1.8.0 based on Material Kit - v2.0.2
+ * NextJS Material Kit - v1.0.0 based on Material Kit - v2.0.2 and Material Kit React - v1.8.0
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/nextjs-material-kit

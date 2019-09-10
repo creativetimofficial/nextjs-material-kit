@@ -38,7 +38,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand="NextJS Material Kit"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
