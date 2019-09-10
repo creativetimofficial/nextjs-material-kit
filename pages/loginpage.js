@@ -19,7 +19,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 
-import styles from "assets/jss/nextjs-material-kit/views/loginPage.js";
+import styles from "assets/jss/nextjs-material-kit/pages/loginPage.js";
 
 import image from "assets/img/bg7.jpg";
 

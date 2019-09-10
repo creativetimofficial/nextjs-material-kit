@@ -13,7 +13,7 @@ import Button from "components/CustomButtons/Button.js";
 import landing from "assets/img/landing.jpg";
 import profile from "assets/img/profile.jpg";
 
-import styles from "assets/jss/nextjs-material-kit/views/componentsSections/exampleStyle.js";
+import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/exampleStyle.js";
 
 const useStyles = makeStyles(styles);
 

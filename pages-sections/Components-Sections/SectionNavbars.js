@@ -21,7 +21,7 @@ import Button from "components/CustomButtons/Button.js";
 import image from "assets/img/bg.jpg";
 import profileImage from "assets/img/faces/avatar.jpg";
 
-import styles from "assets/jss/nextjs-material-kit/views/componentsSections/navbarsStyle.js";
+import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/navbarsStyle.js";
 
 const useStyles = makeStyles(styles);
 
