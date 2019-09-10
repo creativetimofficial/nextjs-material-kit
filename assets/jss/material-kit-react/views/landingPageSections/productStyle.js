@@ -1,4 +1,4 @@
-import { title } from "../../../material-kit-react.js";
+import { title } from "assets/jss/material-kit-react.js";
 
 const productStyle = {
   section: {

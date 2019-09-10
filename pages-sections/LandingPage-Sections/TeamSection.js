@@ -7,18 +7,18 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import GridContainer from "../../components/Grid/GridContainer.js";
-import GridItem from "../../components/Grid/GridItem.js";
-import Button from "../../components/CustomButtons/Button.js";
-import Card from "../../components/Card/Card.js";
-import CardBody from "../../components/Card/CardBody.js";
-import CardFooter from "../../components/Card/CardFooter.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import Button from "components/CustomButtons/Button.js";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardFooter from "components/Card/CardFooter.js";
 
-import styles from "../../assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
+import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "../../assets/img/faces/avatar.jpg";
-import team2 from "../../assets/img/faces/christian.jpg";
-import team3 from "../../assets/img/faces/kendall.jpg";
+import team1 from "assets/img/faces/avatar.jpg";
+import team2 from "assets/img/faces/christian.jpg";
+import team3 from "assets/img/faces/kendall.jpg";
 
 const useStyles = makeStyles(styles);
 

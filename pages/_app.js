@@ -5,9 +5,9 @@ import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
 
-import PageChange from "../components/PageChange/PageChange.js";
+import PageChange from "components/PageChange/PageChange.js";
 
-import "../assets/scss/material-kit-react.scss?v=1.8.0";
+import "assets/scss/material-kit-react.scss?v=1.8.0";
 
 Router.events.on("routeChangeStart", url => {
   console.log(`Loading: ${url}`);

@@ -10,7 +10,7 @@ import Icon from "@material-ui/core/Icon";
 import Close from "@material-ui/icons/Close";
 // core components
 
-import styles from "../../assets/jss/material-kit-react/components/snackbarContentStyle.js";
+import styles from "assets/jss/material-kit-react/components/snackbarContentStyle.js";
 
 const useStyles = makeStyles(styles);
 
