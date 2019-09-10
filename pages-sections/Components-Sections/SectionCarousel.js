@@ -14,7 +14,7 @@ import image1 from "assets/img/bg.jpg";
 import image2 from "assets/img/bg2.jpg";
 import image3 from "assets/img/bg3.jpg";
 
-import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
+import styles from "assets/jss/nextjs-material-kit/views/componentsSections/carouselStyle.js";
 
 const useStyles = makeStyles(styles);
 

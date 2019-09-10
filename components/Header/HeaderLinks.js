@@ -18,7 +18,7 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
+import styles from "assets/jss/nextjs-material-kit/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -40,7 +40,7 @@ export default function HeaderLinks(props) {
               <a className={classes.dropdownLink}>All components</a>
             </Link>,
             <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
+              href="https://creativetimofficial.github.io/nextjs-material-kit/#/documentation?ref=mkr-navbar"
               target="_blank"
               className={classes.dropdownLink}
             >
@@ -51,7 +51,7 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=mkr-navbar"
           color="transparent"
           target="_blank"
           className={classes.navLink}

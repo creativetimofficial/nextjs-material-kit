@@ -22,7 +22,7 @@ import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearPr
 import Paginations from "components/Pagination/Pagination.js";
 import Badge from "components/Badge/Badge.js";
 
-import styles from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
+import styles from "assets/jss/nextjs-material-kit/views/componentsSections/basicsStyle.js";
 
 const useStyles = makeStyles(styles);
 

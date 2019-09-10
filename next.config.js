@@ -4,7 +4,7 @@ const withSass = require("@zeit/next-sass");
 const webpack = require("webpack");
 const path = require("path");
 
-// import "./assets/scss/material-kit-react.scss?v=1.8.0";
+// import "./assets/scss/nextjs-material-kit.scss?v=1.8.0";
 
 // module.exports = withImages()
 // module.exports = withImages()

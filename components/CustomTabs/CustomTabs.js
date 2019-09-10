@@ -14,7 +14,7 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 
-import styles from "assets/jss/material-kit-react/components/customTabsStyle.js";
+import styles from "assets/jss/nextjs-material-kit/components/customTabsStyle.js";
 
 const useStyles = makeStyles(styles);
 
