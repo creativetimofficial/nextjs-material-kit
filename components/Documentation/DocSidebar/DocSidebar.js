@@ -1,25 +1,11 @@
-/*!
-
-=========================================================
-* Material Kit React - v1.8.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import Link from "next/link";
-import { withStyles, List, ListItem, ListItemText } from "@material-ui/core";
+import { useRouter } from "next/router";
 
-const style = theme => ({
+import { List, ListItem, ListItemText } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+
+const styles = theme => ({
   list: {
     overflowY: "auto",
     maxHeight: "calc(100vh - 4rem)",
@@ -73,64 +59,61 @@ const style = theme => ({
   }
 });
 
-class DocSidebar extends React.Component {
-  activeRoute(routeName) {
-    return this.props.location.pathname.indexOf(routeName) > -1 ? true : false;
-  }
-  render() {
-    const { classes, routes } = this.props;
-    return (
-      <List className={classes.list}>
-        {routes.map((prop, key) => {
-          if (prop.redirect) return null;
-          return (
-            <div key={key}>
-              <Link href={prop.path}>
-                <a className={classes.navLink}>
-                  <ListItem className={classes.listItem}>
-                    <ListItemText
-                      primary={prop.name}
-                      disableTypography={true}
-                      className={
-                        classes.listItemText +
-                        " " +
-                        classes.listItemTextGroup +
-                        " " +
-                        (this.activeRoute(prop.path) ? classes.active : "")
-                      }
-                    />
-                  </ListItem>
-                </a>
-              </Link>
-              <List className={classes.innerList}>
-                {prop.routes.map((prop, key) => {
-                  return (
-                    <Link href={prop.path}>
-                      <a className={classes.navLink} key={key}>
-                        <ListItem className={classes.innerListItem}>
-                          <ListItemText
-                            primary={prop.name}
-                            disableTypography={true}
-                            className={
-                              classes.listItemText +
-                              " " +
-                              (this.activeRoute(prop.path)
-                                ? classes.active
-                                : "")
-                            }
-                          />
-                        </ListItem>
-                      </a>
-                    </Link>
-                  );
-                })}
-              </List>
-            </div>
-          );
-        })}
-      </List>
-    );
-  }
-}
+const useStyles = makeStyles(styles);
 
-export default withStyles(style)(DocSidebar);
+export default function DocSidebar({ routes }) {
+  const router = useRouter();
+  const activeRoute = routeName => {
+    return router.pathname.indexOf(routeName) > -1 ? true : false;
+  };
+  const classes = useStyles();
+  return (
+    <List className={classes.list}>
+      {routes.map((prop, key) => {
+        if (prop.redirect) return null;
+        return (
+          <div key={key}>
+            <Link href={prop.path}>
+              <a className={classes.navLink}>
+                <ListItem className={classes.listItem}>
+                  <ListItemText
+                    primary={prop.name}
+                    disableTypography={true}
+                    className={
+                      classes.listItemText +
+                      " " +
+                      classes.listItemTextGroup +
+                      " " +
+                      (activeRoute(prop.path) ? classes.active : "")
+                    }
+                  />
+                </ListItem>
+              </a>
+            </Link>
+            <List className={classes.innerList}>
+              {prop.routes.map((prop, key) => {
+                return (
+                  <a className={classes.navLink} key={key}>
+                    <Link href={prop.path}>
+                      <ListItem className={classes.innerListItem}>
+                        <ListItemText
+                          primary={prop.name}
+                          disableTypography={true}
+                          className={
+                            classes.listItemText +
+                            " " +
+                            (activeRoute(prop.path) ? classes.active : "")
+                          }
+                        />
+                      </ListItem>
+                    </Link>
+                  </a>
+                );
+              })}
+            </List>
+          </div>
+        );
+      })}
+    </List>
+  );
+}

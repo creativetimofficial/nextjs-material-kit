@@ -11,18 +11,6 @@ import Tutorial from "../components/Documentation/Sections/Tutorial.js";
 import docRoutes from "../routes/documentation.js";
 
 class Documentation extends React.Component {
-  getRoute = () => {
-    const router = useRouter();
-    const { pid } = router.query;
-    let route = docRoutes.map((prop,key) => {
-      return prop.map(prop2 => return prop)
-    });
-    console.log(route);
-    // if(route){
-    //   return <route.component />;
-    // }
-    // return <Tutorial />;
-  }
   render() {
     return (
       <div style={{ backgroundColor: "#FFFFFF" }}>
@@ -50,9 +38,7 @@ class Documentation extends React.Component {
               minHeight: "calc(100vh - 75px)"
             }}
           >
-            {
-              //this.getRoute()
-            }
+            { this.props.children }
           </GridItem>
           <GridItem
             xs={12}
