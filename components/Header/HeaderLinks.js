@@ -40,11 +40,7 @@ export default function HeaderLinks(props) {
               <a className={classes.dropdownLink}>All components</a>
             </Link>,
             <Link href="/documentation/tutorial">
-              <a
-                className={classes.dropdownLink}
-              >
-                Documentation
-              </a>
+              <a className={classes.dropdownLink}>Documentation</a>
             </Link>
           ]}
         />

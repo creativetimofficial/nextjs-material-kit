@@ -19,7 +19,9 @@ function Footer({ ...props }) {
       <p>
         You will find the styles for this component in
         <br />{" "}
-        <code>src/assets/jss/nextjs-material-kit/components/footerStyle.js</code>
+        <code>
+          src/assets/jss/nextjs-material-kit/components/footerStyle.js
+        </code>
         .
       </p>
       <h2>Props</h2>

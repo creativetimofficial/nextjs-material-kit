@@ -11,116 +11,104 @@ const files = `nextjs-material-kit
 ├── ISSUE_TEMPLATE.md
 ├── LICENSE.md
 ├── README.md
-├── bower.json
-├── gulpfile.js
-├── jsconfig.json
+├── next.config.js
 ├── package.json
 ├── Documentation
 │   ├── assets
-│   │   ├── css
-│   │   ├── img
-│   │   │   └── faces
-│   │   └── js
 │   └── tutorial-components.html
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── index.js
-    ├── logo.svg
-    ├── assets
-    │   ├── css
-    │   │   └── material-kit-react.css.map
-    │   ├── img
-    │   │   ├── examples
-    │   │   └── faces
-    │   ├── jss
-    │   │   ├── material-kit-react
-    │   │   │   ├── components
-    │   │   │   └── views
-    │   │   │       ├── componentsSections
-    │   │   │       ├── landingPageSections
-    │   │   └── material-kit-react.js
-    │   └── scss
-    │       ├── core
-    │       │   ├── mixins
-    │       │   └── variables
-    │       ├── plugins
-    │       └── material-kit-react.scss
-    ├── components
-    │   ├── Badge
-    │   │   └── Badge.js
-    │   ├── Card
-    │   │   ├── Card.js
-    │   │   ├── CardBody.js
-    │   │   ├── CardFooter.js
-    │   │   └── CardHeader.js
-    │   ├── Clearfix
-    │   │   └── Clearfix.js
-    │   ├── CustomButtons
-    │   │   └── Button.js
-    │   ├── CustomDropdown
-    │   │   └── CustomDropdown.js
-    │   ├── CustomInput
-    │   │   └── CustomInput.js
-    │   ├── CustomLinearProgress
-    │   │   └── CustomLinearProgress.js
-    │   ├── CustomTabs
-    │   │   └── CustomTabs.js
-    │   ├── Footer
-    │   │   └── Footer.js
-    │   ├── Grid
-    │   │   ├── GridContainer.js
-    │   │   └── GridItem.js
-    │   ├── Header
-    │   │   ├── Header.js
-    │   │   └── HeaderLinks.js
-    │   ├── InfoArea
-    │   │   └── InfoArea.js
-    │   ├── NavPills
-    │   │   └── NavPills.js
-    │   ├── Pagination
-    │   │   └── Pagination.js
-    │   ├── Parallax
-    │   │   └── Parallax.js
-    │   ├── Snackbar
-    │   │   └── SnackbarContent.js
-    │   └── Typography
-    │       ├── Danger.js
-    │       ├── Info.js
-    │       ├── Muted.js
-    │       ├── Primary.js
-    │       ├── Quote.js
-    │       ├── Small.js
-    │       ├── Success.js
-    │       └── Warning.js
-    └── views
-        ├── Components
-        │   ├── Components.js
-        │   └── Sections
-        │       ├── SectionBasics.js
-        │       ├── SectionCarousel.js
-        │       ├── SectionCompletedExamples.js
-        │       ├── SectionDownload.js
-        │       ├── SectionExamples.js
-        │       ├── SectionJavascript.js
-        │       ├── SectionLogin.js
-        │       ├── SectionNavbars.js
-        │       ├── SectionNotifications.js
-        │       ├── SectionPills.js
-        │       ├── SectionTabs.js
-        │       └── SectionTypography.js
-        ├── LandingPage
-        │   ├── LandingPage.js
-        │   └── Sections
-        │       ├── ProductSection.js
-        │       ├── TeamSection.js
-        │       └── WorkSection.js
-        ├── LoginPage
-        │   └── LoginPage.js
-        └── ProfilePage
-            └── ProfilePage.js`;
+├── assets
+│   ├── css
+│   ├── img
+│   │   ├── examples
+│   │   └── faces
+│   ├── jss
+│   │   ├── nextjs-material-kit
+│   │   │   ├── components
+│   │   │   └── pages
+│   │   │       ├── componentsSections
+│   │   │       └── landingPageSections
+│   │   └── nextjs-material-kit.js
+│   └── scss
+│       ├── core
+│       │   ├── mixins
+│       │   └── variables
+│       ├── plugins
+│       └── nextjs-material-kit.scss
+├── pages
+│   ├── _app.js
+│   ├── _document.js
+│   ├── _error.js
+│   ├── components.js
+│   ├── landingpage.js
+│   ├── loginpage.js
+│   └── profilepage.js
+├── components
+│   ├── Badge
+│   │   └── Badge.js
+│   ├── Card
+│   │   ├── Card.js
+│   │   ├── CardBody.js
+│   │   ├── CardFooter.js
+│   │   └── CardHeader.js
+│   ├── Clearfix
+│   │   └── Clearfix.js
+│   ├── CustomButtons
+│   │   └── Button.js
+│   ├── CustomDropdown
+│   │   └── CustomDropdown.js
+│   ├── CustomInput
+│   │   └── CustomInput.js
+│   ├── CustomLinearProgress
+│   │   └── CustomLinearProgress.js
+│   ├── CustomTabs
+│   │   └── CustomTabs.js
+│   ├── Footer
+│   │   └── Footer.js
+│   ├── Grid
+│   │   ├── GridContainer.js
+│   │   └── GridItem.js
+│   ├── Header
+│   │   ├── Header.js
+│   │   └── HeaderLinks.js
+│   ├── InfoArea
+│   │   └── InfoArea.js
+│   ├── NavPills
+│   │   └── NavPills.js
+│   ├── PageChange
+│   │   └── PageChange.js
+│   ├── Pagination
+│   │   └── Pagination.js
+│   ├── Parallax
+│   │   └── Parallax.js
+│   ├── Snackbar
+│   │   └── SnackbarContent.js
+│   └── Typography
+│       ├── Danger.js
+│       ├── Info.js
+│       ├── Muted.js
+│       ├── Primary.js
+│       ├── Quote.js
+│       ├── Small.js
+│       ├── Success.js
+│       └── Warning.js
+└── pages-sections
+    ├── Components-Sections
+    │   ├── SectionBasics.js
+    │   ├── SectionCarousel.js
+    │   ├── SectionCompletedExamples.js
+    │   ├── SectionDownload.js
+    │   ├── SectionExamples.js
+    │   ├── SectionJavascript.js
+    │   ├── SectionLogin.js
+    │   ├── SectionNavbars.js
+    │   ├── SectionNotifications.js
+    │   ├── SectionPills.js
+    │   ├── SectionTabs.js
+    │   └── SectionTypography.js
+    └── LandingPage-Sections
+        ├── ProductSection.js
+        ├── TeamSection.js
+        └── WorkSection.js`;
 
 class Tutorial extends React.Component {
   render() {
@@ -171,7 +159,8 @@ class Tutorial extends React.Component {
             target="_blank"
           >
             Material UI
-          </a>{" "}and{" "}
+          </a>{" "}
+          and{" "}
           <a
             href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-tutorial-docs"
             target="_blank"
@@ -179,10 +168,7 @@ class Tutorial extends React.Component {
             Material Kit React
           </a>{" "}
           using{" "}
-          <a
-            href="https://nextjs.org?ref=creativetim"
-            target="_blank"
-          >
+          <a href="https://nextjs.org?ref=creativetim" target="_blank">
             NextJS
           </a>{" "}
           (at the moment we do not offer support for TypeScript in our React
@@ -208,6 +194,7 @@ class Tutorial extends React.Component {
           </a>
           .
         </p>
+        <h3>Local development</h3>
         <ul>
           <li>
             Install NodeJs from{" "}
@@ -251,7 +238,7 @@ class Tutorial extends React.Component {
             <SyntaxHighlighter
               language="jsx"
               style={prism}
-            >{`npm start`}</SyntaxHighlighter>
+            >{`npm run dev`}</SyntaxHighlighter>
           </li>
           <li>
             Alternatively you can run{" "}
@@ -259,101 +246,9 @@ class Tutorial extends React.Component {
               language="jsx"
               style={prism}
             >{`npm run install:clean`}</SyntaxHighlighter>{" "}
-            which will delete <code>node_modules</code>,{" "}
-            <code>package-lock.json</code>, automatically run{" "}
-            <code>install</code> script and <code>start</code> script
-          </li>
-          <li>
-            <div>
-              If you have an error something containing
-              <SyntaxHighlighter
-                language="jsx"
-                style={prism}
-              >{`Module not found`}</SyntaxHighlighter>
-              You should check if in your root project folder you have a file
-              named <code>.env</code>.
-              <br />
-              If you do not have it, then create it and add this line in it:{" "}
-              <code>NODE_PATH=./src</code>
-              <br />
-              If that does not work, you need to do the following
-              <SyntaxHighlighter
-                language="jsx"
-                style={prism}
-              >{`npm install --g cross-env`}</SyntaxHighlighter>
-              then change the <code>script</code> inside{" "}
-              <code>package.json</code> by adding <code>NODE_PATH=./src</code>{" "}
-              inside it. For example, the start script would be changed from
-              <SyntaxHighlighter
-                language="jsx"
-                style={prism}
-              >{`"start": "react-scripts start",`}</SyntaxHighlighter>
-              to
-              <SyntaxHighlighter
-                language="jsx"
-                style={prism}
-              >{`"start": "NODE_PATH=./src react-scripts start",`}</SyntaxHighlighter>
-            </div>
-          </li>
-          <li>
-            <div>
-              <p>
-                If you have an error about{" "}
-                <code>props.history is undefined</code>, than you're probably
-                not sending inside the <code>Header</code> component the props
-                that come from the routes (everywhere <code>Header</code> is
-                rendered - we pass the <code>{`{...rest}`}</code> to it).
-              </p>
-              <p>
-                You can also read more about{" "}
-                <a
-                  href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70?ref=creativetim"
-                  target="_blank"
-                >
-                  this issue here
-                </a>
-                .
-              </p>
-            </div>
-          </li>
-          <li>
-            (Optional) You can create a new react application like this
-            <ul>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`npm install -g create-react-app`}</SyntaxHighlighter>
-              </li>
-              <li>Go to the folder where you want to create your app</li>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`create-react-app your-app-name`}</SyntaxHighlighter>
-              </li>
-              <li>
-                Navigate to <code>your-app-name</code>
-              </li>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`npm start`}</SyntaxHighlighter>
-              </li>
-              <li>
-                More information →{" "}
-                <a
-                  href="https://github.com/facebookincubator/create-react-app?ref=creativetim"
-                  target="_blank"
-                >
-                  create-react-app
-                </a>
-              </li>
-            </ul>
+            which will delete <code>node_modules/</code>,{" "}
+            <code>package-lock.json</code>, <code>.next/</code>, automatically
+            run <code>install</code> script and <code>run dev</code> script
           </li>
           <li>
             Navigate to <code>http://localhost:3000</code>
@@ -364,12 +259,64 @@ class Tutorial extends React.Component {
               href="https://reactjs.org/docs/installation.html?ref=creativetim"
               target="_blank"
             >
-              react
+              React
+            </a>
+          </li>
+          <li>
+            More information →{" "}
+            <a href="https://nextjs.org?ref=creativetim" target="_blank">
+              NextJS
             </a>
           </li>
         </ul>
+        <h3>Production</h3>
+        <p>
+          To learn how to deploy a NextJS application you can do the following:
+        </p>
+        <ul>
+          <li>
+            Check the live docs of NextJS
+            <ul>
+              <li>
+                <a href="https://nextjs.org?ref=creativetim" target="_blank">
+                  NextJS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/zeit/next.js/wiki/Deploying-a-Next.js-app-into-GitHub-Pages?ref=creativetim"
+                  target="_blank"
+                >
+                  NextJS Tutorial for Deployment
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://nextjs.org/learn/basics/deploying-a-nextjs-app?ref=creativetim"
+                  target="_blank"
+                >
+                  NextJS for GitHub Pages
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Also, you can check{" "}
+            <a
+              href="https://stackoverflow.com/search?q=nextjs?ref=creativetim"
+              target="_blank"
+            >
+              StackOverflow
+            </a>{" "}
+            for more guidelines.
+          </li>
+        </ul>
+        <h3>Observations</h3>
+        <p>We've used absolute paths in our product.</p>
+        <p>Integrating this app, with another NextJS app that does not make use of absolute paths will break.</p>
+        <p>Please integrate our next.config.js file with your next.config.js file of your application.</p>
         <h2>Files and Folders structure</h2>
-        <SyntaxHighlighter language="jsx" style={prism}>
+        <SyntaxHighlighter language="terminal" style={prism}>
           {files}
         </SyntaxHighlighter>
       </Documentation>

@@ -215,7 +215,9 @@ export default function Buttons() {
       <p>
         You will find the styles for this component in
         <br />{" "}
-        <code>src/assets/jss/nextjs-material-kit/components/buttonStyle.js</code>
+        <code>
+          src/assets/jss/nextjs-material-kit/components/buttonStyle.js
+        </code>
         <br /> and
         <br />
         <code>

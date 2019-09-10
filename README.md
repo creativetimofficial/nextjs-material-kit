@@ -76,7 +76,7 @@ The documentation for the Material Kit React is hosted at our [website](https://
 Within the download you'll find the following directories and files:
 
 ```
-material-kit-react
+nextjs-material-kit
 .
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md

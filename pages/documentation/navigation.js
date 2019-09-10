@@ -56,7 +56,9 @@ export default function Navigation() {
       <p>
         You will find all the styles for these components in
         <br />
-        <code>src/assets/jss/nextjs-material-kit/components/headerStyle.js</code>
+        <code>
+          src/assets/jss/nextjs-material-kit/components/headerStyle.js
+        </code>
         <br />
         <code>
           src/assets/jss/nextjs-material-kit/components/headerLinksStyle.js
