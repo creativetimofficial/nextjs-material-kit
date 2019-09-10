@@ -1,14 +1,14 @@
 import React from "react";
 import { useRouter } from 'next/router';
 
-import GridContainer from "../components/Grid/GridContainer.js";
-import GridItem from "../components/Grid/GridItem.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
 
-import DocHeader from "../components/Documentation/DocHeader/DocHeader.js";
-import DocSidebar from "../components/Documentation/DocSidebar/DocSidebar.js";
-import Tutorial from "../components/Documentation/Sections/Tutorial.js";
+import DocHeader from "components/Documentation/DocHeader/DocHeader.js";
+import DocSidebar from "components/Documentation/DocSidebar/DocSidebar.js";
+import Tutorial from "components/Documentation/Sections/Tutorial.js";
 
-import docRoutes from "../routes/documentation.js";
+import docRoutes from "routes/documentation.js";
 
 class Documentation extends React.Component {
   render() {
