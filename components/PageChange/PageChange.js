@@ -26,7 +26,8 @@ const useStyles = makeStyles({
     display: "block"
   },
   title: {
-    ...title
+    ...title,
+    color: "#FFFFFF"
   }
 });
 

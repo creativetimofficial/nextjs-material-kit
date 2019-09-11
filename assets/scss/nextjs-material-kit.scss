@@ -20,6 +20,7 @@
 
 // Core Components
 @import "core/misc";
+@import "core/page-transition";
 
 // Core Plugins
 
@@ -27,30 +28,3 @@
 @import "plugins/plugin-nouislider";
 @import "plugins/plugin-react-datetime";
 @import "plugins/plugin-react-slick";
-
-@keyframes spinner-border {
-  to { transform: rotate(360deg); }
-}
-
-.body-page-transition{
-  overflow: hidden;
-}
-
-#page-transition {
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  width: 100%;
-}
-
-#page-transition > div{
-  &:after{
-    content: "";
-    background-color: white;
-    position: fixed;
-    z-index: 9998;
-    width: 100%;
-    height: 100%;
-    top: 0;
-  }
-}
