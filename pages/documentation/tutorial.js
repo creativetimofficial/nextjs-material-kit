@@ -251,7 +251,10 @@ class Tutorial extends React.Component {
             run <code>install</code> script and <code>run dev</code> script
           </li>
           <li>
-            Navigate to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
+            Navigate to{" "}
+            <a href="http://localhost:3000" target="_blank">
+              http://localhost:3000
+            </a>
           </li>
           <li>
             More information →{" "}
@@ -276,7 +279,10 @@ class Tutorial extends React.Component {
           </li>
           <li>
             More information →{" "}
-            <a href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-tutorial-page" target="_blank">
+            <a
+              href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-tutorial-page"
+              target="_blank"
+            >
               Material Kit React
             </a>
           </li>
@@ -340,7 +346,8 @@ class Tutorial extends React.Component {
             target="_blank"
           >
             tutorial on absolute paths in NextJS
-          </a>.
+          </a>
+          .
         </p>
         <p>
           The project was started from{" "}
@@ -356,7 +363,8 @@ class Tutorial extends React.Component {
             target="_blank"
           >
             Material Kit React
-          </a>.
+          </a>
+          .
         </p>
         <h2>Files and Folders structure</h2>
         <SyntaxHighlighter language="terminal" style={prism}>
