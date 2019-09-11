@@ -122,7 +122,7 @@ class Tutorial extends React.Component {
         <p>
           Copyright (c) {new Date().getFullYear()}{" "}
           <a
-            href="https://creative-tim.com/?ref=mkr-tutorial-section-docs"
+            href="https://creative-tim.com/?ref=njsmk-tutorial-section-docs"
             target="_blank"
           >
             Creative Tim
@@ -205,7 +205,7 @@ class Tutorial extends React.Component {
           <li>
             Go to{" "}
             <a
-              href="https://www.creative-tim.com/?ref=mkr-tutorial-section-docs"
+              href="https://www.creative-tim.com/?ref=njsmk-tutorial-section-docs"
               target="_blank"
             >
               creative tim website
@@ -215,7 +215,7 @@ class Tutorial extends React.Component {
           <li>
             Go to{" "}
             <a
-              href="https://www.creative-tim.com/product/nextjs-material-kit?ref=mkr-tutorial-section-docs"
+              href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-tutorial-section-docs"
               target="_blank"
             >
               NextJS Material Kit

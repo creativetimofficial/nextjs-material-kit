@@ -30,7 +30,7 @@ export default function SectionDownload() {
             <Button
               color="primary"
               size="lg"
-              href="https://www.creative-tim.com/product/nextjs-material-kit?ref=mkr-download-section"
+              href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-download-section"
               target="_blank"
             >
               Free NextJS Download
@@ -38,7 +38,7 @@ export default function SectionDownload() {
             <Button
               color="primary"
               size="lg"
-              href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-download-section"
+              href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-download-section"
               target="_blank"
             >
               Free React Downoad
@@ -46,7 +46,7 @@ export default function SectionDownload() {
             <Button
               color="primary"
               size="lg"
-              href="https://www.creative-tim.com/product/material-kit?ref=mkr-download-section"
+              href="https://www.creative-tim.com/product/material-kit?ref=njsmk-download-section"
               target="_blank"
             >
               Free HTML Downoad
@@ -72,7 +72,7 @@ export default function SectionDownload() {
             <Button
               color="rose"
               size="lg"
-              href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkr-download-section"
+              href="https://www.creative-tim.com/product/material-kit-pro-react?ref=njsmk-download-section"
               target="_blank"
             >
               Material Kit PRO React
@@ -80,7 +80,7 @@ export default function SectionDownload() {
             <Button
               color="rose"
               size="lg"
-              href="https://www.creative-tim.com/product/material-dashboard-pro-react?ref=mkr-download-section"
+              href="https://www.creative-tim.com/product/material-dashboard-pro-react?ref=njsmk-download-section"
               target="_blank"
             >
               Material Dashboard PRO React

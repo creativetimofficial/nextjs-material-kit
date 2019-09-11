@@ -47,7 +47,7 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=mkr-navbar"
+          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
           color="transparent"
           target="_blank"
           className={classes.navLink}

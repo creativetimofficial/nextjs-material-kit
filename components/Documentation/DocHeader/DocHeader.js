@@ -92,7 +92,7 @@ class DocHeader extends React.Component {
                 v1.8.0
               </Button>
               <a
-                href="https://github.com/creativetimofficial/nextjs-material-kit?ref=mkr-navbar-docs"
+                href="https://github.com/creativetimofficial/nextjs-material-kit?ref=njsmk-navbar-docs"
                 className={classes.iconLink}
                 target="_blank"
               >
@@ -109,7 +109,7 @@ class DocHeader extends React.Component {
           </div>
           <div>
             <a
-              href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkr-navbar-docs"
+              href="https://www.creative-tim.com/product/material-kit-pro-react?ref=njsmk-navbar-docs"
               className={classes.rightLinks}
               target="_blank"
             >
