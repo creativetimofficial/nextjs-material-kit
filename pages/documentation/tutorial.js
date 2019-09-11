@@ -241,7 +241,7 @@ class Tutorial extends React.Component {
             >{`npm run dev`}</SyntaxHighlighter>
           </li>
           <li>
-            Alternatively you can run{" "}
+            Alternatively, if you use a Linux based OS, you can run{" "}
             <SyntaxHighlighter
               language="jsx"
               style={prism}
@@ -251,7 +251,7 @@ class Tutorial extends React.Component {
             run <code>install</code> script and <code>run dev</code> script
           </li>
           <li>
-            Navigate to <code>http://localhost:3000</code>
+            Navigate to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
           </li>
           <li>
             More information →{" "}
@@ -266,6 +266,18 @@ class Tutorial extends React.Component {
             More information →{" "}
             <a href="https://nextjs.org?ref=creativetim" target="_blank">
               NextJS
+            </a>
+          </li>
+          <li>
+            More information →{" "}
+            <a href="https://material-ui.com/?ref=creativetim" target="_blank">
+              Material-UI
+            </a>
+          </li>
+          <li>
+            More information →{" "}
+            <a href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-tutorial-page" target="_blank">
+              Material Kit React
             </a>
           </li>
         </ul>
@@ -313,8 +325,39 @@ class Tutorial extends React.Component {
         </ul>
         <h3>Observations</h3>
         <p>We've used absolute paths in our product.</p>
-        <p>Integrating this app, with another NextJS app that does not make use of absolute paths will break.</p>
-        <p>Please integrate our next.config.js file with your next.config.js file of your application.</p>
+        <p>
+          Integrating this app, with another NextJS app that does not make use
+          of absolute paths will break.
+        </p>
+        <p>
+          Please integrate our next.config.js file with your next.config.js file
+          of your application.
+        </p>
+        <p>
+          For more details about absolute paths inside NextJS we've used this{" "}
+          <a
+            href="https://whoisryosuke.com/blog/2018/nextjs-tip-relative-es6-modules/?ref=creativetim"
+            target="_blank"
+          >
+            tutorial on absolute paths in NextJS
+          </a>.
+        </p>
+        <p>
+          The project was started from{" "}
+          <a
+            href="https://github.com/mui-org/material-ui/tree/master/examples/nextjs?ref=creativetim"
+            target="_blank"
+          >
+            Material UI NextJS example
+          </a>{" "}
+          and on top of that, we've added{" "}
+          <a
+            href="https://github.com/mui-org/material-ui/tree/master/examples/nextjs?ref=njsmk-tutorial-docs"
+            target="_blank"
+          >
+            Material Kit React
+          </a>.
+        </p>
         <h2>Files and Folders structure</h2>
         <SyntaxHighlighter language="terminal" style={prism}>
           {files}
