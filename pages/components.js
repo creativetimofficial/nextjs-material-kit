@@ -55,7 +55,7 @@ export default function Components(props) {
               <div className={classes.brand}>
                 <h1 className={classes.title}>NextJS Material Kit.</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass NextJS Kit based on Material-UI.
+                  A Badass Material Kit based on Material-UI and NextJS.
                 </h3>
               </div>
             </GridItem>

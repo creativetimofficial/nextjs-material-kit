@@ -14,7 +14,7 @@ const componentsStyle = {
   },
   subtitle: {
     fontSize: "1.313rem",
-    maxWidth: "500px",
+    maxWidth: "510px",
     margin: "10px 0 0"
   },
   main: {
