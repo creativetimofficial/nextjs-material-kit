@@ -91,17 +91,25 @@ export default function SectionDownload() {
           <GridContainer justify="center">
             <h3>Thank you for supporting us!</h3>
           </GridContainer>
-          <Button color="twitter">
+          <Button
+            color="twitter"
+            href="https://twitter.com/home?status=NextJS%20Material%20Kit%20is%20a%20NextJS%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design,%20based%20on%20Material%20Kit%20React%20by%20Creative%20Tim%20and%20Material%20UI%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/nextjs-material-kit/%20%23nextjs%20%23material%20%23design%20%23ui%20%23kit%20%23free%20%20via%20%40CreativeTim"
+            target="_blank"
+          >
             <i className={classes.socials + " fab fa-twitter"} /> Tweet
           </Button>
-          <Button color="facebook">
+          <Button
+            color="facebook"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit%2Fcomponents&t=NextJS%20Material%20Kit%20by%20Creative%20Tim"
+            target="_blank"
+          >
             <i className={classes.socials + " fab fa-facebook-square"} /> Share
           </Button>
-          <Button color="google">
-            <i className={classes.socials + " fab fa-google-plus-g"} />
-            Share
-          </Button>
-          <Button color="github">
+          <Button
+            color="github"
+            href="https://github.com/creativetimofficial/nextjs-material-kit"
+            target="_blank"
+          >
             <i className={classes.socials + " fab fa-github"} /> Star
           </Button>
         </div>
