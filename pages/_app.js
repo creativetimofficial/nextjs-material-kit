@@ -20,7 +20,6 @@ import ReactDOM from "react-dom";
 import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
-import NProgress from "nprogress";
 
 import PageChange from "components/PageChange/PageChange.js";
 
