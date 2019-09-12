@@ -93,7 +93,7 @@ export default function SectionDownload() {
           </Button>
           <Button
             color="facebook"
-            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit%2Fcomponents&t=NextJS%20Material%20Kit%20by%20Creative%20Tim"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit%2Fcomponents"
             target="_blank"
           >
             <i className={classes.socials + " fab fa-facebook-square"} /> Share
