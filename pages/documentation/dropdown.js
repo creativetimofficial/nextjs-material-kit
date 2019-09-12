@@ -91,6 +91,9 @@ CustomDropdown.propTypes = {
   caret: PropTypes.bool,
   left: PropTypes.bool,
   noLiPadding: PropTypes.bool,
+  navDropdown: PropTypes.bool,
+  // function that retuns the selected item
+  onClick: PropTypes.func
 };`;
 
 export default function Dropdown() {
