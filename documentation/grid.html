@@ -1,0 +1,946 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="theme-color" content="#000000"/><link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAAFRElEQVR4Ae3ZA5AcWQAG4O/1MnZSl3PMs23btm3btm3btm3bF2ey3p3p891OrXcnuZqq/v415vXfhkQLEolEIpFIJBKJRCKRSCSKFMhLhXqazTxWNUwLSs1uhNn111Xk/xbpZmZjrOZgN3nLp/bRRbPGusKzbnKKXaxsLrPrqcCMV6C3IZayh0u96GvjVYrVudMYzVrVF9IqTfGrb73qGgdby3zmmGFFis1kLms4wn0+NU6ZtPjffGkDUXP/vLNUvT9PqzDJj153nUOsYz4zKzG9FBhgfps6yzO+N1m1uEEqHa+3Js3sHFWN/Ntfy+QnLzjfNpYyRHdB7gS9zGV9p3nBz8rUiptI2sPm16R5PKpO3GTqlJvoAzc4wGrG6qHjCs1pVUd4yA/KGh89K9/ZQNCEFX0ubjEZVVK+cZ+DrWBWBR2Y+CE2cbnPTFMrblUqHK67RhXZxmRxq1Mr5T0X2NxYnbVVMNAGrvatapk2jXqrkRrV13HKxW1KRrUf3WVHswtar4slnOET1TJtHvEjq2jUUDeqFrcjdb5xlrlEWiOY2faeVCbTrtFS9tJJIxb0krS4nZnkGvOLtKTEgk7zmbp2j1TlErNrxMq+FXcgKdeaS9Cc3jZ2v6kdGqfOsxbUQLHtTBJ3KJOdY05Nm9m+3lYn7mC+s4YG+jretBy89J56CAr+TKGiP1MoEhnqRF9KizucqXbTiWyDXKtS3MGkvWQlo61n89+zrf0d8nv2sZIlXOZXGXEOUuFsA8k2l6fV5eTFb3Ozd336e740zqTf84tXPSclzlFq3GMU2Zb0uTgHyUipFE/X1HnJArIUWN+v4jxJxtsWlaWrPU3KowLvyC6gv5Ol8qZA2msWlmUO16jMmwJ1nje/LKM8pjZvCtR6zNyyLOA9cd6kxl1GyrKUb/KoQJVrDVZPZC0/5VGBCueaWT2ltvJrHhUoc4w+6ulqN+PzqEDKnjqrp4f9TcyjAlNsLlJPT4eYlEcFfrWWLN3sbUIOd3JT1WQd+CtNUS6TsxG+sLwshdbzozgnGecuJ7vEre732O95wM3OdaLr/JzDE4nFyDafV6VzcIj/2EnG6qyrHmYx3Aiz6KGLToY5zfc5WQq1HjQX2WZ2gbIO7xset5X+gv+Eel/N4ejwWciEOGT9X6gXrUm1awwmW6mtjevQCe63LraEUs2IZop2D6+Emr8m9c/33xP9mTZUqHSaARpYxBvtXonKPGsvc4q0IOoe1gx3h8n/zfOo7QXKHKCLBmZzmYp2bVKfO88yumiVUBTmD6eEj0JtdoU2FJhqGwUa6GyXNh8LMiZ70LZmEWm1EMKAsFm4I4wL6XYtgZ+trVHLeL9Ne4lKbzneQkq0WSgOc4UDwtNRKsr8U0DrJj/jfctp1BDXq9LaPcGnzrO6foJ2irpFS0bHRS9FU6N0aMuu+hHzaVRX+0m16kj7rSttYBaRDolC1DdaJjosejJMVCPTyll3joGasJqvWnwa8JNbbGmwAjkS9YwWCbu43hfKWlEjZWdFmjCXB9Q283zsS1fb0ijFciyUGGp1h7nTF6Y2+9ijyccb0M8JjexK0yqM86JTrGmQItNL0MMoq9jfzT42wTRV0g1m4+1Ga1KBzYzL+vNpfvWai21tIQNEpr+gm2GWtrlj3OwtP5skpeKvlUu14/XSjMW8JKPWNBN86xmn28SCZlViRivUxxALWt1uTnS1R73uCx/aRKQZsznDhx5zgT2tbIwBivy/gi76mcNI81rEQvpqVokhFjLCQN1EEolEIpFIJBKJRCKRSCQSicT08hsRfuYKWbkoqwAAAABJRU5ErkJggg=="/><link rel="apple-touch-icon" sizes="76x76" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAEHUlEQVR4AezBgQAAAACAoP2pF6kCAAAAAGB27QG6tTYBw+hKUv62bdu2bdu2bdu2bV7btm07bb7ZYwRzbpvkKs9au+Z72jh6MXJUKsGyrMcerFuXhddiL3ZgPZZayJavYl325Dyeoxn9uJEqIlfOjfSjI9/xAtdzNJuxJOUL0IgJlmBTTuFBvqMvU5lDIPArGxC5pfiAwD+lmMlAmvEht3I4G7IsZfPhSMuzLRfxBk0ZQZKQxUiOJEaktqA5IYcUUxhKW17jXHZh9Xk83lJsxVm8QzfGUUOIYBaPsySROoahBKKaw2R68TE3cyirFmm8BKtyHE/RiokkCXXQhLX5v8W4llmEephNf77iSjZnCWLkszircCqfMZRaQj0N4hBi5GwZXiBFyIMUE2jLI+xMJflocfbnXYZTS8iTadxNBTnbgJ8JBTCLlpzO4tS1GGtxEz1IEgrgG1YhZzvTk1AgKfpycR1Hq2IvPmA8oYA6szs5O7rgPwj04wwqidoynEd7koQCm8DZZK2S65hOKLAUbdiTGABxEuBlaRVuZxApQhHUcB+VuY7gi8wmFEGSd9mOYzmX87iG2//hQvbhOcYRiijFR6xGxlbhZ1KEIhnDHwxgFKOZxIx/GEsvphGKjRZsQcY2oguhiFLUEuZTPdiJjO3LQEIJ0IddSCvBmYwmlADd2JG0yrmVKYQSoD3bkFYVL5AklABN2Yy0luBTAqEE+In1SWtlfiKURLsctgGNCCVAihdYhrS2pAWhBEhxH+WktR1tCCVAkuvI2KY0JRRZkpGMYSaz/4mpDGM4cwhFNpnzyNiyfEoooil8wQkcyZlcxY1cwakcwkn8xmxCEQ3lWHLeFzmZUGApBnAvGxDnnyWoIME/i7MLXzODUCRd2Yus7U5fQgHNpAEnsxRRi2sLXonFYuMI/Ovr/vN17/8bLwP1vNC6OVlbhW+pJeRZLYN4im0pY64zxmpGuJFeJEkbK4+Dfc/KZK2Km5lByKMp/MwJLEe9MsLiHMqXTCjgYO+yGDk7kCGEPJhDV+5mY8rIS4ZIsA7X0IwZeR5sDo9TQc7W40dCPSQZyAvsyxIUJINUGmg77qUd00jl6Q6QK6Ic5GoeoIYwl2oZxvscxvIUJSMtwfbcYsQm3jSaWkId9WMvInUKowgR1TCQjzmZlYlT9AxWbbD1vXgWb9OOiaQIRNWA1YnUljQn5JBkMu15iiNZiTjzQ3GWZkfO50VaM47pJPP56J0leSvDUZnDaDrzLuezHUszPxdjWbbiCG7gXVrTn5FMZjaBSZxGgkiVcTnjmEA3fuNFzmRzlqecBbEqlmdtduNUbuQp3uUVNiFyMTblas5nH9aimgQLW3HKqaSaKuLMVTFYlCv1l/bgWAAAAABgkL/1NHZUAAAAAACsBJqa1R3k05fHAAAAAElFTkSuQmCC"/><link rel="canonical" href="https://www.creative-tim.com/product/nextjs-material-kit"/><meta name="keywords" content="react kit, react template, react material-ui template, react material-ui kit, react kit template, react free, react free kit, react free material-ui kit, free kit template, material-ui kit, material-ui kit template, material-ui template, material-ui kit free, material-ui template free, material-ui free kit template, nextjs, next, next kit, nextjs kit, next material, nextjs material kit, nextjs material-ui, next material-ui"/><meta name="description" content="NextJS Material Kit is a Free Material Design Kit made for NextJS version 9.0.5, React version 16.9.0 and Material-UI version 4.3.2."/><meta itemProp="name" content="NextJS Material Kit by Creative Tim"/><meta itemProp="description" content="NextJS Material Kit is a Free Material Design Kit made for NextJS version 9.0.5, React version 16.9.0 and Material-UI version 4.3.2."/><meta itemProp="image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg"/><meta name="twitter:card" content="product"/><meta name="twitter:site" content="@creativetim"/><meta name="twitter:title" content="NextJS Material Kit by Creative Tim"/><meta name="twitter:description" content="NextJS Material Kit is a Free Material Design Kit made for NextJS version 9.0.5, React version 16.9.0 and Material-UI version 4.3.2."/><meta name="twitter:creator" content="@creativetim"/><meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg"/><meta property="fb:app_id" content="655968634437471"/><meta property="og:title" content="NextJS Material Kit by Creative Tim"/><meta property="og:type" content="article"/><meta property="og:url" content="http://demos.creative-tim.com/nextjs-material-kit/components"/><meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg"/><meta property="og:description" content="NextJS Material Kit is a Free Material Design Kit made for NextJS version 9.0.5, React version 16.9.0 and Material-UI version 4.3.2."/><meta property="og:site_name" content="Creative Tim"/><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/><link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet"/><script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NKDMSK6');</script>
+<!-- End Google Tag Manager --></script><script>// Facebook Pixel Code Don't Delete
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+try{
+  fbq('init', '111649226022273');
+  fbq('track', "PageView");
+
+}catch(err) {
+  console.log('Facebook Track Error:', err);
+}</script><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/><meta charSet="utf-8"/><title>NextJS Material Kit by Creative Tim</title><meta name="next-head-count" content="3"/><link rel="preload" href="/next-material-kit/_next/static/PlwELofpRAh2EekyiQhJU/pages/documentation/grid.js" as="script"/><link rel="preload" href="/next-material-kit/_next/static/PlwELofpRAh2EekyiQhJU/pages/_app.js" as="script"/><link rel="preload" href="/next-material-kit/_next/static/runtime/webpack-4b444dab214c6491079c.js" as="script"/><link rel="preload" href="/next-material-kit/_next/static/chunks/commons.41f3a22bf3ab83065d04.js" as="script"/><link rel="preload" href="/next-material-kit/_next/static/runtime/main-c043ea8275e3b4883533.js" as="script"/><link rel="preload" href="/next-material-kit/_next/static/chunks/styles.6e0de4e6adf34787a67e.js" as="script"/><link rel="stylesheet" href="/next-material-kit/_next/static/css/styles.adfa778a.chunk.css"/><style id="jss-server-side">.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.MuiGrid-item {
+  margin: 0;
+  box-sizing: border-box;
+}
+.MuiGrid-zeroMinWidth {
+  min-width: 0;
+}
+.MuiGrid-direction-xs-column {
+  flex-direction: column;
+}
+.MuiGrid-direction-xs-column-reverse {
+  flex-direction: column-reverse;
+}
+.MuiGrid-direction-xs-row-reverse {
+  flex-direction: row-reverse;
+}
+.MuiGrid-wrap-xs-nowrap {
+  flex-wrap: nowrap;
+}
+.MuiGrid-wrap-xs-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.MuiGrid-align-items-xs-center {
+  align-items: center;
+}
+.MuiGrid-align-items-xs-flex-start {
+  align-items: flex-start;
+}
+.MuiGrid-align-items-xs-flex-end {
+  align-items: flex-end;
+}
+.MuiGrid-align-items-xs-baseline {
+  align-items: baseline;
+}
+.MuiGrid-align-content-xs-center {
+  align-content: center;
+}
+.MuiGrid-align-content-xs-flex-start {
+  align-content: flex-start;
+}
+.MuiGrid-align-content-xs-flex-end {
+  align-content: flex-end;
+}
+.MuiGrid-align-content-xs-space-between {
+  align-content: space-between;
+}
+.MuiGrid-align-content-xs-space-around {
+  align-content: space-around;
+}
+.MuiGrid-justify-xs-center {
+  justify-content: center;
+}
+.MuiGrid-justify-xs-flex-end {
+  justify-content: flex-end;
+}
+.MuiGrid-justify-xs-space-between {
+  justify-content: space-between;
+}
+.MuiGrid-justify-xs-space-around {
+  justify-content: space-around;
+}
+.MuiGrid-justify-xs-space-evenly {
+  justify-content: space-evenly;
+}
+.MuiGrid-spacing-xs-1 {
+  width: calc(100% + 8px);
+  margin: -4px;
+}
+.MuiGrid-spacing-xs-1 > .MuiGrid-item {
+  padding: 4px;
+}
+.MuiGrid-spacing-xs-2 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+  padding: 8px;
+}
+.MuiGrid-spacing-xs-3 {
+  width: calc(100% + 24px);
+  margin: -12px;
+}
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+  padding: 12px;
+}
+.MuiGrid-spacing-xs-4 {
+  width: calc(100% + 32px);
+  margin: -16px;
+}
+.MuiGrid-spacing-xs-4 > .MuiGrid-item {
+  padding: 16px;
+}
+.MuiGrid-spacing-xs-5 {
+  width: calc(100% + 40px);
+  margin: -20px;
+}
+.MuiGrid-spacing-xs-5 > .MuiGrid-item {
+  padding: 20px;
+}
+.MuiGrid-spacing-xs-6 {
+  width: calc(100% + 48px);
+  margin: -24px;
+}
+.MuiGrid-spacing-xs-6 > .MuiGrid-item {
+  padding: 24px;
+}
+.MuiGrid-spacing-xs-7 {
+  width: calc(100% + 56px);
+  margin: -28px;
+}
+.MuiGrid-spacing-xs-7 > .MuiGrid-item {
+  padding: 28px;
+}
+.MuiGrid-spacing-xs-8 {
+  width: calc(100% + 64px);
+  margin: -32px;
+}
+.MuiGrid-spacing-xs-8 > .MuiGrid-item {
+  padding: 32px;
+}
+.MuiGrid-spacing-xs-9 {
+  width: calc(100% + 72px);
+  margin: -36px;
+}
+.MuiGrid-spacing-xs-9 > .MuiGrid-item {
+  padding: 36px;
+}
+.MuiGrid-spacing-xs-10 {
+  width: calc(100% + 80px);
+  margin: -40px;
+}
+.MuiGrid-spacing-xs-10 > .MuiGrid-item {
+  padding: 40px;
+}
+.MuiGrid-grid-xs-auto {
+  flex-grow: 0;
+  max-width: none;
+  flex-basis: auto;
+}
+.MuiGrid-grid-xs-true {
+  flex-grow: 1;
+  max-width: 100%;
+  flex-basis: 0;
+}
+.MuiGrid-grid-xs-1 {
+  flex-grow: 0;
+  max-width: 8.333333%;
+  flex-basis: 8.333333%;
+}
+.MuiGrid-grid-xs-2 {
+  flex-grow: 0;
+  max-width: 16.666667%;
+  flex-basis: 16.666667%;
+}
+.MuiGrid-grid-xs-3 {
+  flex-grow: 0;
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.MuiGrid-grid-xs-4 {
+  flex-grow: 0;
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
+}
+.MuiGrid-grid-xs-5 {
+  flex-grow: 0;
+  max-width: 41.666667%;
+  flex-basis: 41.666667%;
+}
+.MuiGrid-grid-xs-6 {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.MuiGrid-grid-xs-7 {
+  flex-grow: 0;
+  max-width: 58.333333%;
+  flex-basis: 58.333333%;
+}
+.MuiGrid-grid-xs-8 {
+  flex-grow: 0;
+  max-width: 66.666667%;
+  flex-basis: 66.666667%;
+}
+.MuiGrid-grid-xs-9 {
+  flex-grow: 0;
+  max-width: 75%;
+  flex-basis: 75%;
+}
+.MuiGrid-grid-xs-10 {
+  flex-grow: 0;
+  max-width: 83.333333%;
+  flex-basis: 83.333333%;
+}
+.MuiGrid-grid-xs-11 {
+  flex-grow: 0;
+  max-width: 91.666667%;
+  flex-basis: 91.666667%;
+}
+.MuiGrid-grid-xs-12 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .jss58 {
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .jss162 {
+    width: 100%;
+    position: relative;
+    flex-basis: auto;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+  }
+  .MuiPaper-rounded {
+    border-radius: 4px;
+  }
+  .MuiPaper-elevation0 {
+    box-shadow: none;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation2 {
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation3 {
+    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 3px 3px -2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation4 {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation5 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation6 {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation7 {
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation8 {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation9 {
+    box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation10 {
+    box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation11 {
+    box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation12 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation13 {
+    box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation14 {
+    box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation15 {
+    box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation16 {
+    box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation17 {
+    box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation18 {
+    box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation19 {
+    box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation20 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation21 {
+    box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation22 {
+    box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation23 {
+    box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+  }
+  .MuiPaper-elevation24 {
+    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #3f51b5;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #f50057;
+  }
+  .MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiSvgIcon-colorError {
+    color: #f44336;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+  }
+  .MuiList-root {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+  }
+  .MuiList-padding {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .MuiList-subheader {
+    padding-top: 0;
+  }
+  .MuiListItem-root {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  .MuiListItem-root.Mui-focusVisible {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+  .MuiListItem-root.Mui-disabled {
+    opacity: 0.5;
+  }
+  .MuiListItem-container {
+    position: relative;
+  }
+  .MuiListItem-dense {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .MuiListItem-alignItemsFlexStart {
+    align-items: flex-start;
+  }
+  .MuiListItem-divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-clip: padding-box;
+  }
+  .MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .MuiListItem-button {
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiListItem-button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+  .MuiListItem-secondaryAction {
+    padding-right: 48px;
+  }
+  .MuiListItemText-root {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .MuiListItemText-multiline {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .MuiListItemText-inset {
+    padding-left: 56px;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+  .jss1 {
+    color: #fff;
+    box-shadow: 0 12px 20px -10px rgba(0, 188, 212, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(0, 188, 212, 0.2);
+    background-color: #00acc1 !important;
+  }
+  .jss2 {
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    font-size: 1.125rem;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 46px;
+    text-decoration: none;
+  }
+  .jss2:hover, .jss2:active {
+    opacity: 0.8;
+  }
+  .jss2, .jss2:hover, .jss2:active {
+    color: inherit;
+  }
+  .jss3 {
+    font-size: 18px;
+    margin-top: -4px;
+    line-height: 20px;
+    margin-left: 12px;
+    text-decoration: none;
+  }
+  .jss3:hover, .jss3:active {
+    opacity: 0.8;
+  }
+  .jss3, .jss3:hover, .jss3:active {
+    color: inherit;
+  }
+  .jss4 {
+    top: 2px;
+    display: inline-flex;
+    position: relative;
+    font-size: 12px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin-left: 12px;
+    text-decoration: none;
+  }
+  .jss4:hover, .jss4:active {
+    opacity: 0.8;
+  }
+  .jss4, .jss4:hover, .jss4:active {
+    color: inherit;
+  }
+  .jss5 {
+    position: relative;
+  }
+@media (min-width:960px) {
+  .jss6 {
+    flex: 1;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss7 {
+    display: block;
+  }
+}
+  .jss8 {
+    padding: 12px;
+    margin-left: 12px;
+  }
+  .jss163 {
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    padding-top: 40px;
+    border-right: 1px solid rgba(0,0,0,.1);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: .25rem;
+  }
+@media (min-width:960px) {
+  .jss163 {
+    position: fixed;
+    padding-top: 15px;
+  }
+}
+  .jss164 {
+    display: block;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 18px;
+  }
+  .jss165 {
+    color: rgba(0,0,0,.65);
+    display: block;
+    padding: 0!important;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+  .jss166 {
+    color: rgba(0,0,0,.85);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .jss167 {
+    color: rgba(0,0,0,.85);
+    font-weight: 500;
+    background-color: transparent;
+  }
+  .jss168 {
+    text-decoration: none;
+  }
+  .jss169 {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+  .jss170 {
+    padding-top: .25rem;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: .25rem;
+  }</style></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page-transition"></div><div id="__next"><div style="background-color:#FFFFFF"><header class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed jss1 MuiAppBar-colorPrimary mui-fixed"><div class="MuiToolbar-root MuiToolbar-regular jss7 MuiToolbar-gutters"><div class="jss6"><a class="jss2" href="/nextjs-material-kit/components">NextJS Material Kit</a></div><div><a href="https://www.creative-tim.com/product/material-kit-pro-react?ref=njsmk-navbar-docs" class="jss4" target="_blank"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M20 2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h4v5l4-2 4 2v-5h4c1.11 0 2-.89 2-2V4c0-1.11-.89-2-2-2zm0 13H4v-2h16v2zm0-5H4V4h16v6z"></path></svg> <span class="jss5">Upgrade to PRO</span></a><a class="jss4" href="/nextjs-material-kit/components"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path></svg> <span class="jss5">Live Preview</span></a><a href="https://github.com/creativetimofficial/nextjs-material-kit?ref=creativetim" class="jss4" target="_blank"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path fill="none" d="M0 0h24v24H0z"></path></svg> <span class="jss5">Help with a star</span></a><a href="#pablo" class="jss4" target="_blank"></a><a href="#pablo" class="jss4" target="_blank"></a><a href="#pablo" class="jss4" target="_blank"></a><a href="https://github.com/creativetimofficial/nextjs-material-kit?ref=creativetim" class="github-corner" aria-label="View source on Github"><svg width="64" height="100%" viewBox="0 0 250 250" style="fill:#fff;color:#26c6da;position:absolute;top:0;border:0;right:0" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a></div></div></header><div class="MuiGrid-root jss58  MuiGrid-container"><div class="MuiGrid-root jss162  MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 MuiGrid-grid-lg-2 MuiGrid-grid-xl-2" style="margin-top:75px;margin-bottom:75px"><ul class="MuiList-root jss163 MuiList-padding"><div><a class="jss168" href="/nextjs-material-kit/documentation/tutorial"><li class="MuiListItem-root jss169 MuiListItem-gutters"><div class="MuiListItemText-root jss165 jss166 ">Getting started</div></li></a><ul class="MuiList-root jss164 MuiList-padding"><a class="jss168" href="/nextjs-material-kit/documentation/tutorial"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Tutorial</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/styles"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Styles</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/lintcommands"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Lint Commands</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/buildtools"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Build Tools</div></li></a></ul></div><div><a class="jss168" href="/nextjs-material-kit/documentation/badges"><li class="MuiListItem-root jss169 MuiListItem-gutters"><div class="MuiListItemText-root jss165 jss166 ">Components</div></li></a><ul class="MuiList-root jss164 MuiList-padding"><a class="jss168" href="/nextjs-material-kit/documentation/badges"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Badges</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/buttons"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Buttons</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/cards"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Cards</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/checkboxradioswitch"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Checkbox Radio Switch</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/clearfix"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Clearfix</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/dropdown"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Dropdown</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/footer"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Footer</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/grid"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 jss167">Grid</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/icons"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Icons</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/infoarea"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">InfoAreas</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/inputs"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Inputs</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/linearprogress"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Linear Progress</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/modal"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Modals</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/navigation"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Navigation</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/navpills"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">NavPills</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/notifications"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Notifications</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/pagination"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Pagination</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/parallax"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Parallax</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/popovers"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Popovers</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/tabs"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Tabs</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/tooltips"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Tooltips</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/typography"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Typography</div></li></a></ul></div><div><a class="jss168" href="/nextjs-material-kit/documentation/carousel"><li class="MuiListItem-root jss169 MuiListItem-gutters"><div class="MuiListItemText-root jss165 jss166 ">Plugins</div></li></a><ul class="MuiList-root jss164 MuiList-padding"><a class="jss168" href="/nextjs-material-kit/documentation/carousel"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Carousel</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/datetimepicker"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Date Picker</div></li></a><a class="jss168" href="/nextjs-material-kit/documentation/sliders"><li class="MuiListItem-root jss170 MuiListItem-gutters"><div class="MuiListItemText-root jss165 ">Sliders</div></li></a></ul></div></ul></div><div class="MuiGrid-root jss162  MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-7 MuiGrid-grid-lg-7 MuiGrid-grid-xl-5" style="margin-top:75px;margin-bottom:75px;min-height:calc(100vh - 75px)"><h1>Grid</h1><p>We&#x27;ve decided to extend the default <code>Grid</code> component from<!-- --> <a href="https://material-ui-next.com/layout/grid/?ref=creativetim" target="_blank">Material-UI</a>.</p><p>We&#x27;ve done this so we could add some personal styles to them.</p><h2>GridContainer</h2><p>It&#x27;s the same as <code>&lt;Grid container&gt;</code> component from Material-UI but with some extra styling, to make flow better with our components.</p><h3>Usage</h3><pre style="color:black;background:#f5f2f0;text-shadow:0 1px white;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto"><code style="color:black;background:none;text-shadow:0 1px white;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="token" style="color:slategray">// instead of importing the container from material-ui</span>
+<span class="token" style="color:#07a">import</span> Grid <span class="token" style="color:#07a">from</span> <span class="token" style="color:#690">&#x27;material-ui/Grid&#x27;</span><span class="token" style="color:#999">;</span>
+
+<span class="token" style="color:slategray">// you would import our component like this</span>
+<span class="token" style="color:#07a">import</span> GridContainer <span class="token" style="color:#07a">from</span> <span class="token" style="color:#690">&quot;components/Grid/GridContainer.js&quot;</span><span class="token" style="color:#999">;</span></code></pre><pre style="color:black;background:#f5f2f0;text-shadow:0 1px white;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto"><code style="color:black;background:none;text-shadow:0 1px white;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="token" style="color:slategray">// instead of using the container from material-ui</span>
+<span class="token" style="color:#905"><span class="token" style="color:#905"><span class="token" style="color:#999">&lt;</span>Grid</span> <span class="token" style="color:#690">container</span> <span class="token,spread"><span class="token" style="color:#999">{</span><span class="token" style="color:#999">...</span><span class="token" style="color:#07a">props</span><span class="token" style="color:#999">}</span></span><span class="token" style="color:#999">&gt;</span></span><span class="token,plain-text">
+  ...
+</span><span class="token" style="color:#905"><span class="token" style="color:#905"><span class="token" style="color:#999">&lt;/</span>Grid</span> <span class="token" style="color:#690">container</span> <span class="token,spread"><span class="token" style="color:#999">{</span><span class="token" style="color:#999">...</span><span class="token" style="color:#07a">props</span><span class="token" style="color:#999">}</span></span><span class="token" style="color:#999">&gt;</span></span>
+
+<span class="token" style="color:slategray">// you would use our component like this</span>
+<span class="token" style="color:#905"><span class="token" style="color:#905"><span class="token" style="color:#999">&lt;</span>GridContainer</span> <span class="token,spread"><span class="token" style="color:#999">{</span><span class="token" style="color:#999">...</span><span class="token" style="color:#07a">props</span><span class="token" style="color:#999">}</span></span><span class="token" style="color:#999">&gt;</span></span><span class="token,plain-text">
+  ...
+</span><span class="token" style="color:#905"><span class="token" style="color:#905"><span class="token" style="color:#999">&lt;/</span>GridContainer</span> <span class="token,spread"><span class="token" style="color:#999">{</span><span class="token" style="color:#999">...</span><span class="token" style="color:#07a">props</span><span class="token" style="color:#999">}</span></span><span class="token" style="color:#999">&gt;</span></span></code></pre><h2>GridItem</h2><p>It&#x27;s the same as <code>&lt;Grid item&gt;</code> component from Material-UI but with some extra styling, to make flow better with our components.</p><h3>Usage</h3><pre style="color:black;background:#f5f2f0;text-shadow:0 1px white;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto"><code style="color:black;background:none;text-shadow:0 1px white;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="token" style="color:slategray">// instead of importing the item from material-ui</span>
+<span class="token" style="color:#07a">import</span> Grid <span class="token" style="color:#07a">from</span> <span class="token" style="color:#690">&#x27;material-ui/Grid&#x27;</span><span class="token" style="color:#999">;</span>
+
+<span class="token" style="color:slategray">// you would import our component like this</span>
+<span class="token" style="color:#07a">import</span> GridItem <span class="token" style="color:#07a">from</span> <span class="token" style="color:#690">&quot;components/Grid/GridItem.js&quot;</span><span class="token" style="color:#999">;</span></code></pre><pre style="color:black;background:#f5f2f0;text-shadow:0 1px white;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;overflow:auto"><code style="color:black;background:none;text-shadow:0 1px white;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none"><span class="token" style="color:slategray">// instead of using the item from material-ui</span>
+<span class="token" style="color:#905"><span class="token" style="color:#905"><span class="token" style="color:#999">&lt;</span>Grid</span> <span class="token" style="color:#690">item</span> <span class="token,spread"><span class="token" style="color:#999">{</span><span class="token" style="color:#999">...</span><span class="token" style="color:#07a">props</span><span class="token" style="color:#999">}</span></span><span class="token" style="color:#999">&gt;</span></span><span class="token,plain-text">
+  ...
+</span><span class="token" style="color:#905"><span class="token" style="color:#905"><span class="token" style="color:#999">&lt;/</span>Grid</span><span class="token" style="color:#999">&gt;</span></span>
+
+<span class="token" style="color:slategray">// you would use our component like this</span>
+<span class="token" style="color:#905"><span class="token" style="color:#905"><span class="token" style="color:#999">&lt;</span>GridItem</span> <span class="token,spread"><span class="token" style="color:#999">{</span><span class="token" style="color:#999">...</span><span class="token" style="color:#07a">props</span><span class="token" style="color:#999">}</span></span><span class="token" style="color:#999">&gt;</span></span><span class="token,plain-text">
+  ...
+</span><span class="token" style="color:#905"><span class="token" style="color:#905"><span class="token" style="color:#999">&lt;/</span>GridItem</span><span class="token" style="color:#999">&gt;</span></span></code></pre></div><div class="MuiGrid-root jss162  MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-2 MuiGrid-grid-lg-3 MuiGrid-grid-xl-2" style="margin-top:75px"></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"dataManager":"[]","props":{"pageProps":{}},"page":"/documentation/grid","query":{},"buildId":"PlwELofpRAh2EekyiQhJU","assetPrefix":"/next-material-kit","nextExport":true}</script><script async="" data-next-page="/documentation/grid" src="/next-material-kit/_next/static/PlwELofpRAh2EekyiQhJU/pages/documentation/grid.js"></script><script async="" data-next-page="/_app" src="/next-material-kit/_next/static/PlwELofpRAh2EekyiQhJU/pages/_app.js"></script><script src="/next-material-kit/_next/static/runtime/webpack-4b444dab214c6491079c.js" async=""></script><script src="/next-material-kit/_next/static/chunks/commons.41f3a22bf3ab83065d04.js" async=""></script><script src="/next-material-kit/_next/static/runtime/main-c043ea8275e3b4883533.js" async=""></script><script src="/next-material-kit/_next/static/chunks/styles.6e0de4e6adf34787a67e.js" async=""></script></body></html>
