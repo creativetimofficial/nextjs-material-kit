@@ -73,7 +73,14 @@ export default function DocSidebar({ routes }) {
         if (prop.redirect) return null;
         return (
           <div key={key}>
-            <Link href={prop.path}>
+            <Link
+              href={prop.path}
+              as={
+                (process.env.NODE_ENV === "production"
+                  ? "/nextjs-material-kit"
+                  : "") + prop.path
+              }
+            >
               <a className={classes.navLink}>
                 <ListItem className={classes.listItem}>
                   <ListItemText
@@ -94,7 +101,14 @@ export default function DocSidebar({ routes }) {
               {prop.routes.map((prop, key) => {
                 return (
                   <React.Fragment key={key}>
-                    <Link href={prop.path}>
+                    <Link
+                      href={prop.path}
+                      as={
+                        (process.env.NODE_ENV === "production"
+                          ? "/nextjs-material-kit"
+                          : "") + prop.path
+                      }
+                    >
                       <a className={classes.navLink}>
                         <ListItem className={classes.innerListItem}>
                           <ListItemText

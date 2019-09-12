@@ -36,10 +36,24 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link href="/components" as={"/next-material-kit/components"}>
+            <Link
+              href="/components"
+              as={
+                (process.env.NODE_ENV === "production"
+                  ? "/nextjs-material-kit"
+                  : "") + "/components"
+              }
+            >
               <a className={classes.dropdownLink}>All components</a>
             </Link>,
-            <Link href="/documentation/tutorial">
+            <Link
+              href="/documentation/tutorial"
+              as={
+                (process.env.NODE_ENV === "production"
+                  ? "/nextjs-material-kit"
+                  : "") + "/documentation/tutorial"
+              }
+            >
               <a className={classes.dropdownLink}>Documentation</a>
             </Link>
           ]}

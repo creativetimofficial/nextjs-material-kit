@@ -84,7 +84,14 @@ class DocHeader extends React.Component {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.block}>
           <div className={classes.flex}>
-            <Link href="/">
+            <Link
+              href="/components"
+              as={
+                (process.env.NODE_ENV === "production"
+                  ? "/nextjs-material-kit"
+                  : "") + "/components"
+              }
+            >
               <a className={classes.title}>NextJS Material Kit</a>
             </Link>
             <Hidden mdDown>
@@ -116,7 +123,14 @@ class DocHeader extends React.Component {
               <CardMembership />{" "}
               <span className={classes.rightLinksText}>Upgrade to PRO</span>
             </a>
-            <Link href="/">
+            <Link
+              href="/components"
+              as={
+                (process.env.NODE_ENV === "production"
+                  ? "/nextjs-material-kit"
+                  : "") + "/components"
+              }
+            >
               <a className={classes.rightLinks}>
                 <List />{" "}
                 <span className={classes.rightLinksText}>Live Preview</span>
