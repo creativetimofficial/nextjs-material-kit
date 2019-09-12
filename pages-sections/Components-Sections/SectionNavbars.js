@@ -62,6 +62,7 @@ export default function SectionNavbars() {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <CustomDropdown
+                      navDropdown
                       buttonText="Dropdown"
                       dropdownHeader="Dropdown Header"
                       buttonProps={{
@@ -105,6 +106,7 @@ export default function SectionNavbars() {
                   <ListItem className={classes.listItem}>
                     <CustomDropdown
                       left
+                      navDropdown
                       hoverColor="info"
                       dropdownHeader="Dropdown Header"
                       buttonIcon="settings"
