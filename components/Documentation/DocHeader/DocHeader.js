@@ -115,14 +115,6 @@ class DocHeader extends React.Component {
             </Hidden>
           </div>
           <div>
-            <a
-              href="https://www.creative-tim.com/product/material-kit-pro-react?ref=njsmk-navbar-docs"
-              className={classes.rightLinks}
-              target="_blank"
-            >
-              <CardMembership />{" "}
-              <span className={classes.rightLinksText}>Upgrade to PRO</span>
-            </a>
             <Link
               href="/components"
               as={
