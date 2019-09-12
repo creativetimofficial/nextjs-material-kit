@@ -1,4 +1,4 @@
-import { container, title } from "assets/jss/nextjs-material-kit.js";
+import { container, title, grayColor } from "assets/jss/nextjs-material-kit.js";
 import headerLinksStyle from "assets/jss/nextjs-material-kit/components/headerLinksStyle.js";
 
 const navbarsStyle = theme => ({
@@ -29,7 +29,11 @@ const navbarsStyle = theme => ({
     minHeight: "740px"
   },
   formControl: {
-    margin: "0 !important",
+    [theme.breakpoints.down("md")]: {
+      margin: "10px 0 0 15px !important",
+      color: grayColor
+    },
+    margin: "10px 0 0 0 !important",
     paddingTop: "0"
   },
   inputRootCustomClasses: {
@@ -47,6 +51,10 @@ const navbarsStyle = theme => ({
     borderRadius: "50%"
   },
   imageDropdownButton: {
+    [theme.breakpoints.down("md")]: {
+      top: "0",
+      margin: "5px 15px"
+    },
     padding: "0px",
     top: "4px",
     borderRadius: "50%",

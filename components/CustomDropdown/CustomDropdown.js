@@ -55,7 +55,8 @@ export default function CustomDropdown(props) {
     hoverColor,
     left,
     rtlActive,
-    noLiPadding
+    noLiPadding,
+    navDropdown
   } = props;
   const caretClasses = classNames({
     [classes.caret]: true,
@@ -111,7 +112,8 @@ export default function CustomDropdown(props) {
         }
         className={classNames({
           [classes.popperClose]: !anchorEl,
-          [classes.popperResponsive]: true
+          [classes.popperResponsive]: true,
+          [classes.pooperNav]: Boolean(anchorEl) && navDropdown
         })}
       >
         {() => (
@@ -190,6 +192,7 @@ CustomDropdown.propTypes = {
   caret: PropTypes.bool,
   left: PropTypes.bool,
   noLiPadding: PropTypes.bool,
+  navDropdown: PropTypes.bool,
   // function that retuns the selected item
   onClick: PropTypes.func
 };

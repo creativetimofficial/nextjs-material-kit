@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -60,7 +61,11 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = (
+    <Link href="/components" as="/components">
+      <Button className={classes.title}>{brand}</Button>
+    </Link>
+  );
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
