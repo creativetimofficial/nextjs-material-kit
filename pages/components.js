@@ -76,11 +76,11 @@ export default function Components(props) {
         <SectionLogin />
         <GridItem md={12} className={classes.textCenter}>
           <Link
-            href="/loginpage"
+            href="/login"
             as={
               (process.env.NODE_ENV === "production"
                 ? "/nextjs-material-kit"
-                : "") + "/loginpage"
+                : "") + "/login"
             }
           >
             <a className={classes.link}>

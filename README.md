@@ -54,7 +54,7 @@ This new design has elements that have been the result of research regarding ink
 
 | Login Page | Landing Page | Profile Page  |
 | --- | --- | ---  |
-| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit/login-page.png)](https://demos.creative-tim.com/nextjs-material-kit/loginpage?ref=njsmk-readme)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/landing-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/landingpage?ref=njsmk-readme)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/profile-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/profilepage?ref=njsmk-readme)  
+| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit/login-page.png)](https://demos.creative-tim.com/nextjs-material-kit/login?ref=njsmk-readme)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/landing-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/landing?ref=njsmk-readme)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/profile-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/profile?ref=njsmk-readme)  
 
 [View More](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)
 

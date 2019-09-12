@@ -25,11 +25,11 @@ export default function SectionExamples() {
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={6}>
             <Link
-              href="/landingpage"
+              href="/landing"
               as={
                 (process.env.NODE_ENV === "production"
                   ? "/nextjs-material-kit"
-                  : "") + "/landingpage"
+                  : "") + "/landing"
               }
             >
               <a className={classes.link}>
@@ -52,11 +52,11 @@ export default function SectionExamples() {
           </GridItem>
           <GridItem xs={12} sm={12} md={6}>
             <Link
-              href="/profilepage"
+              href="/profile"
               as={
                 (process.env.NODE_ENV === "production"
                   ? "/nextjs-material-kit"
-                  : "") + "/profilepage"
+                  : "") + "/profile"
               }
             >
               <a className={classes.link}>
