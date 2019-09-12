@@ -96,7 +96,7 @@ class DocHeader extends React.Component {
             </Link>
             <Hidden mdDown>
               <Button color="transparent" className={classes.buttonClasses}>
-                v1.8.0
+                v1.0.0
               </Button>
               <a
                 href="https://github.com/creativetimofficial/nextjs-material-kit?ref=njsmk-navbar-docs"
