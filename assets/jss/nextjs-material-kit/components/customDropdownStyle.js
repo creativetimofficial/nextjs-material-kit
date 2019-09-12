@@ -18,6 +18,24 @@ const customDropdownStyle = theme => ({
   popperClose: {
     pointerEvents: "none"
   },
+  pooperNav: {
+    [theme.breakpoints.down("sm")]: {
+      position: "static !important",
+      left: "unset !important",
+      top: "unset !important",
+      transform: "none !important",
+      willChange: "none !important",
+      "& > div": {
+        boxShadow: "none !important",
+        marginLeft: "1.5rem",
+        marginRight: "1.5rem",
+        transition: "none !important",
+        marginTop: "0px !important",
+        marginBottom: "5px !important",
+        padding: "0px !important"
+      }
+    }
+  },
   dropdown: {
     borderRadius: "3px",
     border: "0",

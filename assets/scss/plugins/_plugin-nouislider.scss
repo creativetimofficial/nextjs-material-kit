@@ -154,6 +154,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .noUi-active {
   box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
 }
+.noUi-handle.noUi-active{
+  transform: scale3d(1.5,1.5,1);
+}
 /* Disabled state;
  */
 [disabled] .noUi-connect {

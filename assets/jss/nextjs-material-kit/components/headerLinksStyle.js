@@ -64,7 +64,11 @@ const headerLinksStyle = theme => ({
     }
   },
   notificationNavLink: {
-    color: "inherit",
+    [theme.breakpoints.down("md")]: {
+      top: "0",
+      margin: "5px 15px"
+    },
+    color: "#FFF",
     padding: "0.9375rem",
     fontWeight: "400",
     fontSize: "12px",
@@ -76,6 +80,10 @@ const headerLinksStyle = theme => ({
     top: "4px"
   },
   registerNavLink: {
+    [theme.breakpoints.down("md")]: {
+      top: "0",
+      margin: "5px 15px"
+    },
     top: "3px",
     position: "relative",
     fontWeight: "400",
