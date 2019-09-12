@@ -26,7 +26,7 @@ export default function SectionLogin() {
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={6} md={4}>
             <Card>
               <form className={classes.form}>
                 <CardHeader color="primary" className={classes.cardHeader}>
