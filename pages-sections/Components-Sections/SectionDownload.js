@@ -43,14 +43,6 @@ export default function SectionDownload() {
             >
               Free React Downoad
             </Button>
-            <Button
-              color="primary"
-              size="lg"
-              href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-download-section"
-              target="_blank"
-            >
-              Free React Downoad
-            </Button>
           </GridItem>
         </GridContainer>
         <br />
