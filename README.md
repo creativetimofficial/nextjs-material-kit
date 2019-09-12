@@ -110,6 +110,7 @@ nextjs-material-kit
 │   ├── _document.js
 │   ├── _error.js
 │   ├── components.js
+│   ├── index.js
 │   ├── landingpage.js
 │   ├── loginpage.js
 │   └── profilepage.js
