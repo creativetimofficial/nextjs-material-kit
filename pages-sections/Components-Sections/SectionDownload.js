@@ -33,15 +33,15 @@ export default function SectionDownload() {
               href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-download-section"
               target="_blank"
             >
-              Free React Download
+              Free NextJS Download
             </Button>
             <Button
               color="primary"
               size="lg"
-              href="https://www.creative-tim.com/product/material-kit?ref=njsmk-download-section"
+              href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-download-section"
               target="_blank"
             >
-              Free HTML Downoad
+              Free React Downoad
             </Button>
           </GridItem>
         </GridContainer>
@@ -51,34 +51,32 @@ export default function SectionDownload() {
           <GridItem xs={12} sm={12} md={8}>
             <h2>Want more?</h2>
             <h4>
-              We{"'"}ve launched{" "}
-              <a
-                href="https://www.creative-tim.com/product/material-kit-pro-react?ref=njsmk-download-section"
-                target="_blank"
-              >
-                Material Kit PRO React{" "}
+              Comming soon{" "}
+              <a href="#pablo" onClick={e => e.preventDefault()}>
+                NextJS Material Kit PRO{" "}
               </a>
-              .It has a huge number of components, sections and example pages.
-              Start Your Development With A Badass Material-UI nspired by
-              Material Design.
+              .It will have a huge number of components, sections and example
+              pages. You Could Start Your Development With A Badass Material-UI
+              and NexJS inspired by Material Design.
             </h4>
           </GridItem>
-          <GridItem xs={12} sm={8} md={6}>
+          <GridItem xs={12} sm={8} md={10}>
+            <Button
+              color="rose"
+              size="lg"
+              disabled
+              href="https://www.creative-tim.com/product/material-kit-pro-react?ref=njsmk-download-section"
+              target="_blank"
+            >
+              NextJS Material Kit PRO
+            </Button>
             <Button
               color="rose"
               size="lg"
               href="https://www.creative-tim.com/product/material-kit-pro-react?ref=njsmk-download-section"
               target="_blank"
             >
-              Material Kit PRO
-            </Button>
-            <Button
-              color="rose"
-              size="lg"
-              href="https://www.creative-tim.com/product/material-dashboard-pro-react?ref=njsmk-download-section"
-              target="_blank"
-            >
-              Material Dashboard PRO
+              Material Kit PRO React
             </Button>
           </GridItem>
         </GridContainer>
