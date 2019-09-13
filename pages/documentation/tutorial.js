@@ -359,7 +359,7 @@ class Tutorial extends React.Component {
           </a>{" "}
           and on top of that, we've added{" "}
           <a
-            href="https://github.com/mui-org/material-ui/tree/master/examples/nextjs?ref=njsmk-tutorial-docs"
+            href="https://www.creative-tim.com/product/material-kit-react?ref=njsmk-tutorial-page"
             target="_blank"
           >
             Material Kit React
