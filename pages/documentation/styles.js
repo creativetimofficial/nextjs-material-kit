@@ -37,6 +37,8 @@ const restyledComponents = `├── components
    │   └── InfoArea.js
    ├── NavPills
    │   └── NavPills.js
+   ├── PageChange
+   │   └── PageChange.js
    ├── Pagination
    │   └── Pagination.js
    ├── Parallax
