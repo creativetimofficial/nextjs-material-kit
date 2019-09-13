@@ -10,8 +10,8 @@ export default function BuildTools() {
         Build tools
       </h1>
       <p className="bd-lead">
-        Learn how to use Black Dashboard Pro React to build your admin theme,
-        compile SCSS, change brand-colors and more.
+        Learn how to use NextJS Material Kit to build your website, change
+        brand-colors and more.
       </p>
       <h3 id="change-brand-colors">
         <div>Change brand colors</div>
@@ -20,7 +20,11 @@ export default function BuildTools() {
         <li>
           You will find all the branding colors inside{" "}
           <code className="highlighter-rouge">
-            src/assets/scss/black-dashboard-pro-react/custom/_variables.scss
+            assets/scss/core/variables/_colors.scss
+          </code>{" "}
+          and inside{" "}
+          <code className="highlighter-rouge">
+            assets/jss/nextjs-material-kit.js
           </code>
           .
         </li>
@@ -72,7 +76,7 @@ export default function BuildTools() {
               <td className="text-left">
                 Runs the test watcher in an interactive mode. (Note that we have
                 not implemented any tests - this command is by default from the
-                create-react-app)
+                initialization of package.json)
               </td>
               <td className="text-right">
                 <a
@@ -156,7 +160,8 @@ export default function BuildTools() {
                 This command will remove the{" "}
                 <code className="highlighter-rouge">node_modules</code> folder
                 and <code className="highlighter-rouge">package_lock.json</code>{" "}
-                file, will install a fresh copy of them and will determinate the start of your development server.
+                file, will install a fresh copy of them and will determinate the
+                start of your development server.
               </td>
               <td className="text-right" />
             </tr>

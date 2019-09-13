@@ -9,10 +9,6 @@ const docRoutes = [
       },
       { path: "/documentation/styles", name: "Styles" },
       {
-        path: "/documentation/lintcommands",
-        name: "Lint Commands"
-      },
-      {
         path: "/documentation/buildtools",
         name: "Build Tools"
       }
