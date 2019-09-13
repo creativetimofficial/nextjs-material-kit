@@ -11,7 +11,10 @@ const codeProps = `Parallax.propTypes = {
   filter: PropTypes.bool,
   children: PropTypes.node,
   style: PropTypes.string,
-  image: PropTypes.string
+  image: PropTypes.string,
+  small: PropTypes.bool,
+  // this will add a min-height of 660px on small screens
+  responsive: PropTypes.bool
 };`;
 
 class Parallax extends React.Component {
