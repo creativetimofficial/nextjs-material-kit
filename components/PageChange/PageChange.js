@@ -7,7 +7,14 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 // core components
 import { infoColor, title } from "assets/jss/nextjs-material-kit.js";
 
+import image from 'assets/img/bg7.jpg';
+
 const useStyles = makeStyles({
+  background: {
+    '&::after': {
+      backgroundImage: 'url(' + image + ')'
+    }
+  },
   progress: {
     color: infoColor,
     width: "6rem !important",
@@ -34,7 +41,7 @@ const useStyles = makeStyles({
 export default function PageChange(props) {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.background}>
       <div className={classes.wrapperDiv}>
         <div className={classes.iconWrapper}>
           <CircularProgress className={classes.progress} />
