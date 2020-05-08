@@ -4,7 +4,7 @@
 ### Bug fixing
 - `https://github.com/creativetimofficial/nextjs-material-kit/issues/10` (changed the `title`, from simple `string` to `node`, so now, you can pass a title like so `title={<Link href="/"><a>Free Chat</a></Link>}` if you want to have link functionality - NOTE: the `node` that you pass to the `InfoArea` component will have to be styled)
 - `https://github.com/creativetimofficial/nextjs-material-kit/issues/6` (check `https://github.com/creativetimofficial/nextjs-material-kit/pull/7` for more info)
-- ``
+- `https://github.com/creativetimofficial/nextjs-material-kit/issues/5`
 ### Major style changes
 - `assets/jss/nextjs-material-kit.js`
 - `assets/jss/nextjs-material-kit/components/buttonStyle.js`
