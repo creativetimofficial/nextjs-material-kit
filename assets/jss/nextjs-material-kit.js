@@ -1,11 +1,11 @@
 /*!
 
  =========================================================
- * NextJS Material Kit - v1.0.0 based on Material Kit - v2.0.2 and Material Kit React - v1.8.0
+ * NextJS Material Kit - v1.1.0 based on Material Kit - v2.0.2 and Material Kit React - v1.8.0
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/nextjs-material-kit
- * Copyright 2019 Creative Tim (https://www.creative-tim.com)
+ * Copyright 2020 Creative Tim (https://www.creative-tim.com)
  * Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/master/LICENSE.md)
 
  =========================================================
@@ -25,17 +25,19 @@ const hexColorToRGB = function(hexColor) {
   });
 
   const hex_array = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexColor); // #000000 to #ffffff
-  return hex_array ? {
-    r: parseInt(hex_array[1], 16), // 0-255
-    g: parseInt(hex_array[2], 16), // 0-255
-    b: parseInt(hex_array[3], 16) // 0-255
-  } : null;
-}
+  return hex_array
+    ? {
+        r: parseInt(hex_array[1], 16), // 0-255
+        g: parseInt(hex_array[2], 16), // 0-255
+        b: parseInt(hex_array[3], 16) // 0-255
+      }
+    : null;
+};
 
 const hexToRGBAlpha = function(hexColor, alpha) {
   let rgb = hexColorToRGB(hexColor);
-  return `rgba(${rgb.r},${rgb.g},${rgb.b},${alpha})`
-}
+  return `rgba(${rgb.r},${rgb.g},${rgb.b},${alpha})`;
+};
 
 const drawerWidth = 260;
 
@@ -97,28 +99,55 @@ const roseColor = "#e91e63";
 const grayColor = "#999999";
 
 const primaryBoxShadow = {
-  boxShadow:
-    `0 12px 20px -10px ${hexToRGBAlpha(primaryColor, 0.28)}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(primaryColor, 0.2)}`
+  boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
+    primaryColor,
+    0.28
+  )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
+    primaryColor,
+    0.2
+  )}`
 };
 const infoBoxShadow = {
-  boxShadow:
-    `0 12px 20px -10px ${hexToRGBAlpha(infoColor, 0.28)}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(infoColor, 0.2)}`
+  boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
+    infoColor,
+    0.28
+  )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
+    infoColor,
+    0.2
+  )}`
 };
 const successBoxShadow = {
-  boxShadow:
-    `0 12px 20px -10px ${hexToRGBAlpha(successColor, 0.28)}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(successColor, 0.2)}`
+  boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
+    successColor,
+    0.28
+  )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
+    successColor,
+    0.2
+  )}`
 };
 const warningBoxShadow = {
-  boxShadow:
-    `0 12px 20px -10px ${hexToRGBAlpha(warningColor, 0.28)}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(warningColor, 0.2)}`
+  boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
+    warningColor,
+    0.28
+  )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
+    warningColor,
+    0.2
+  )}`
 };
 const dangerBoxShadow = {
-  boxShadow:
-    `0 12px 20px -10px ${hexToRGBAlpha(dangerColor, 0.28)}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(dangerColor, 0.2)}`
+  boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
+    dangerColor,
+    0.28
+  )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
+    dangerColor,
+    0.2
+  )}`
 };
 const roseBoxShadow = {
-  boxShadow:
-    `0 4px 20px 0px ${hexToRGBAlpha('#000', 0.14)}, 0 7px 10px -5px ${hexToRGBAlpha(roseColor, 0.4)}`
+  boxShadow: `0 4px 20px 0px ${hexToRGBAlpha(
+    "#000",
+    0.14
+  )}, 0 7px 10px -5px ${hexToRGBAlpha(roseColor, 0.4)}`
 };
 
 const warningCardHeader = {
