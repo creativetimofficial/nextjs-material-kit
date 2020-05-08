@@ -1,10 +1,12 @@
 import {
+  hexToRGBAlpha,
   grayColor,
   primaryColor,
   infoColor,
   successColor,
   warningColor,
-  dangerColor
+  dangerColor,
+  roseColor
 } from "assets/jss/nextjs-material-kit.js";
 
 const paginationStyle = {
@@ -56,8 +58,13 @@ const paginationStyle = {
       backgroundColor: primaryColor,
       borderColor: primaryColor,
       color: "#FFFFFF",
-      boxShadow:
-        "0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2)"
+      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
+        primaryColor,
+        0.14
+      )}, 0 1px 10px 0 ${hexToRGBAlpha(
+        primaryColor,
+        0.12
+      )}, 0 2px 4px -1px ${hexToRGBAlpha(primaryColor, 0.2)}`
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -69,8 +76,13 @@ const paginationStyle = {
       backgroundColor: infoColor,
       borderColor: infoColor,
       color: "#FFFFFF",
-      boxShadow:
-        "0 4px 5px 0 rgba(0, 188, 212, 0.14), 0 1px 10px 0 rgba(0, 188, 212, 0.12), 0 2px 4px -1px rgba(0, 188, 212, 0.2)"
+      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
+        infoColor,
+        0.14
+      )}, 0 1px 10px 0 ${hexToRGBAlpha(
+        infoColor,
+        0.12
+      )}, 0 2px 4px -1px ${hexToRGBAlpha(infoColor, 0.2)}`
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -82,8 +94,13 @@ const paginationStyle = {
       backgroundColor: successColor,
       borderColor: successColor,
       color: "#FFFFFF",
-      boxShadow:
-        "0 4px 5px 0 rgba(76, 175, 80, 0.14), 0 1px 10px 0 rgba(76, 175, 80, 0.12), 0 2px 4px -1px rgba(76, 175, 80, 0.2)"
+      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
+        successColor,
+        0.14
+      )}, 0 1px 10px 0 ${hexToRGBAlpha(
+        successColor,
+        0.12
+      )}, 0 2px 4px -1px ${hexToRGBAlpha(successColor, 0.2)}`
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -95,8 +112,13 @@ const paginationStyle = {
       backgroundColor: warningColor,
       borderColor: warningColor,
       color: "#FFFFFF",
-      boxShadow:
-        "0 4px 5px 0 rgba(255, 152, 0, 0.14), 0 1px 10px 0 rgba(255, 152, 0, 0.12), 0 2px 4px -1px rgba(255, 152, 0, 0.2)"
+      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
+        warningColor,
+        0.14
+      )}, 0 1px 10px 0 ${hexToRGBAlpha(
+        warningColor,
+        0.12
+      )}, 0 2px 4px -1px ${hexToRGBAlpha(warningColor, 0.2)}`
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -108,8 +130,31 @@ const paginationStyle = {
       backgroundColor: dangerColor,
       borderColor: dangerColor,
       color: "#FFFFFF",
-      boxShadow:
-        "0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2)"
+      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
+        dangerColor,
+        0.14
+      )}, 0 1px 10px 0 ${hexToRGBAlpha(
+        dangerColor,
+        0.12
+      )}, 0 2px 4px -1px ${hexToRGBAlpha(dangerColor, 0.2)}`
+    },
+    "&:hover,&:focus": {
+      zIndex: "2",
+      cursor: "default"
+    }
+  },
+  rose: {
+    "&,&:hover,&:focus": {
+      backgroundColor: roseColor,
+      borderColor: roseColor,
+      color: "#FFFFFF",
+      boxShadow: `0 4px 5px 0 ${hexToRGBAlpha(
+        roseColor,
+        0.14
+      )}, 0 1px 10px 0 ${hexToRGBAlpha(
+        roseColor,
+        0.12
+      )}, 0 2px 4px -1px ${hexToRGBAlpha(roseColor, 0.2)}`
     },
     "&:hover,&:focus": {
       zIndex: "2",

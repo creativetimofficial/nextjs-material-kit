@@ -2,20 +2,21 @@ import {
   primaryColor,
   dangerColor,
   roseColor,
-  grayColor
+  grayColor,
+  hexToRGBAlpha
 } from "assets/jss/nextjs-material-kit.js";
 
 const customCheckboxRadioSwitch = {
   checkRoot: {
     padding: "12px",
     "&:hover": {
-      backgroundColor: "unset"
+      backgroundColor: hexToRGBAlpha(primaryColor, 0.04) + "!important"
     }
   },
   radioRoot: {
     padding: "12px",
     "&:hover": {
-      backgroundColor: "unset"
+      backgroundColor: hexToRGBAlpha(primaryColor, 0.04) + "!important"
     }
   },
   labelRoot: {
