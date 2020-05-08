@@ -6,6 +6,7 @@
 - `https://github.com/creativetimofficial/nextjs-material-kit/issues/6` (check `https://github.com/creativetimofficial/nextjs-material-kit/pull/7` for more info)
 - `https://github.com/creativetimofficial/nextjs-material-kit/issues/5`
 - `https://github.com/creativetimofficial/nextjs-material-kit/issues/4`
+- `https://github.com/creativetimofficial/nextjs-material-kit/issues/2`
 ### Major style changes
 - `assets/jss/nextjs-material-kit.js`
 - `assets/jss/nextjs-material-kit/components/buttonStyle.js`
