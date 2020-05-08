@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
+import Icon from "@material-ui/core/Icon";
 
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
@@ -48,6 +49,16 @@ export default function HeaderLinks(props) {
             </a>
           ]}
         />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+          <Icon className={classes.icons}>unarchive</Icon> Upgrade to PRO
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
