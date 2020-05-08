@@ -72,38 +72,50 @@ const headerStyle = {
   primary: {
     backgroundColor: primaryColor,
     color: "#FFFFFF",
-    boxShadow:
-      `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(primaryColor, 0.46)}`
+    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
+      primaryColor,
+      0.46
+    )}`
   },
   info: {
     backgroundColor: infoColor,
     color: "#FFFFFF",
-    boxShadow:
-      `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(infoColor, 0.46)}`
+    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
+      infoColor,
+      0.46
+    )}`
   },
   success: {
     backgroundColor: successColor,
     color: "#FFFFFF",
-    boxShadow:
-      `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(successColor, 0.46)}`
+    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
+      successColor,
+      0.46
+    )}`
   },
   warning: {
     backgroundColor: warningColor,
     color: "#FFFFFF",
-    boxShadow:
-      `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(warningColor, 0.46)}`
+    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
+      warningColor,
+      0.46
+    )}`
   },
   danger: {
     backgroundColor: dangerColor,
     color: "#FFFFFF",
-    boxShadow:
-      `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(dangerColor, 0.46)}`
+    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
+      dangerColor,
+      0.46
+    )}`
   },
   rose: {
     backgroundColor: roseColor,
     color: "#FFFFFF",
-    boxShadow:
-      `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(roseColor, 0.46)}`
+    boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${hexToRGBAlpha(
+      roseColor,
+      0.46
+    )}`
   },
   transparent: {
     backgroundColor: "transparent !important",

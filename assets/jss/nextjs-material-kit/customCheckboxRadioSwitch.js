@@ -10,13 +10,13 @@ const customCheckboxRadioSwitch = {
   checkRoot: {
     padding: "12px",
     "&:hover": {
-      backgroundColor: hexToRGBAlpha(primaryColor,0.04) + "!important"
+      backgroundColor: hexToRGBAlpha(primaryColor, 0.04) + "!important"
     }
   },
   radioRoot: {
     padding: "12px",
     "&:hover": {
-      backgroundColor: hexToRGBAlpha(primaryColor,0.04) + "!important"
+      backgroundColor: hexToRGBAlpha(primaryColor, 0.04) + "!important"
     }
   },
   labelRoot: {

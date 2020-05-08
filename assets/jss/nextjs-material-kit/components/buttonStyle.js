@@ -77,62 +77,122 @@ const buttonStyle = {
   },
   primary: {
     backgroundColor: primaryColor,
-    boxShadow:
-      `0 2px 2px 0 ${hexToRGBAlpha(primaryColor, 0.14)}, 0 3px 1px -2px ${hexToRGBAlpha(primaryColor, 0.2)}, 0 1px 5px 0 ${hexToRGBAlpha(primaryColor, 0.12)}`,
+    boxShadow: `0 2px 2px 0 ${hexToRGBAlpha(
+      primaryColor,
+      0.14
+    )}, 0 3px 1px -2px ${hexToRGBAlpha(
+      primaryColor,
+      0.2
+    )}, 0 1px 5px 0 ${hexToRGBAlpha(primaryColor, 0.12)}`,
     "&:hover,&:focus": {
       backgroundColor: primaryColor,
-      boxShadow:
-        `0 14px 26px -12px ${hexToRGBAlpha(primaryColor, 0.42)}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(primaryColor, 0.2)}`
+      boxShadow: `0 14px 26px -12px ${hexToRGBAlpha(
+        primaryColor,
+        0.42
+      )}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(
+        primaryColor,
+        0.2
+      )}`
     }
   },
   info: {
     backgroundColor: infoColor,
-    boxShadow:
-      `0 2px 2px 0 ${hexToRGBAlpha(infoColor, 0.14)}, 0 3px 1px -2px ${hexToRGBAlpha(infoColor, 0.2)}, 0 1px 5px 0 ${hexToRGBAlpha(infoColor, 0.12)}`,
+    boxShadow: `0 2px 2px 0 ${hexToRGBAlpha(
+      infoColor,
+      0.14
+    )}, 0 3px 1px -2px ${hexToRGBAlpha(
+      infoColor,
+      0.2
+    )}, 0 1px 5px 0 ${hexToRGBAlpha(infoColor, 0.12)}`,
     "&:hover,&:focus": {
       backgroundColor: infoColor,
-      boxShadow:
-        `0 14px 26px -12px ${hexToRGBAlpha(infoColor, 0.42)}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(infoColor, 0.2)}`
+      boxShadow: `0 14px 26px -12px ${hexToRGBAlpha(
+        infoColor,
+        0.42
+      )}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(
+        infoColor,
+        0.2
+      )}`
     }
   },
   success: {
     backgroundColor: successColor,
-    boxShadow:
-      `0 2px 2px 0 ${hexToRGBAlpha(successColor, 0.14)}, 0 3px 1px -2px ${hexToRGBAlpha(successColor, 0.2)}, 0 1px 5px 0 ${hexToRGBAlpha(successColor, 0.12)}`,
+    boxShadow: `0 2px 2px 0 ${hexToRGBAlpha(
+      successColor,
+      0.14
+    )}, 0 3px 1px -2px ${hexToRGBAlpha(
+      successColor,
+      0.2
+    )}, 0 1px 5px 0 ${hexToRGBAlpha(successColor, 0.12)}`,
     "&:hover,&:focus": {
       backgroundColor: successColor,
-      boxShadow:
-        `0 14px 26px -12px ${hexToRGBAlpha(successColor, 0.42)}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(successColor, 0.2)}`
+      boxShadow: `0 14px 26px -12px ${hexToRGBAlpha(
+        successColor,
+        0.42
+      )}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(
+        successColor,
+        0.2
+      )}`
     }
   },
   warning: {
     backgroundColor: warningColor,
-    boxShadow:
-      `0 2px 2px 0 ${hexToRGBAlpha(warningColor, 0.14)}, 0 3px 1px -2px ${hexToRGBAlpha(warningColor, 0.2)}, 0 1px 5px 0 ${hexToRGBAlpha(warningColor, 0.12)}`,
+    boxShadow: `0 2px 2px 0 ${hexToRGBAlpha(
+      warningColor,
+      0.14
+    )}, 0 3px 1px -2px ${hexToRGBAlpha(
+      warningColor,
+      0.2
+    )}, 0 1px 5px 0 ${hexToRGBAlpha(warningColor, 0.12)}`,
     "&:hover,&:focus": {
       backgroundColor: warningColor,
-      boxShadow:
-        `0 14px 26px -12px ${hexToRGBAlpha(warningColor, 0.42)}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(warningColor, 0.2)}`
+      boxShadow: `0 14px 26px -12px ${hexToRGBAlpha(
+        warningColor,
+        0.42
+      )}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(
+        warningColor,
+        0.2
+      )}`
     }
   },
   danger: {
     backgroundColor: dangerColor,
-    boxShadow:
-      `0 2px 2px 0 ${hexToRGBAlpha(dangerColor, 0.14)}, 0 3px 1px -2px ${hexToRGBAlpha(dangerColor, 0.2)}, 0 1px 5px 0 ${hexToRGBAlpha(dangerColor, 0.12)}`,
+    boxShadow: `0 2px 2px 0 ${hexToRGBAlpha(
+      dangerColor,
+      0.14
+    )}, 0 3px 1px -2px ${hexToRGBAlpha(
+      dangerColor,
+      0.2
+    )}, 0 1px 5px 0 ${hexToRGBAlpha(dangerColor, 0.12)}`,
     "&:hover,&:focus": {
       backgroundColor: dangerColor,
-      boxShadow:
-        `0 14px 26px -12px ${hexToRGBAlpha(dangerColor, 0.42)}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(dangerColor, 0.2)}`
+      boxShadow: `0 14px 26px -12px ${hexToRGBAlpha(
+        dangerColor,
+        0.42
+      )}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(
+        dangerColor,
+        0.2
+      )}`
     }
   },
   rose: {
     backgroundColor: roseColor,
-    boxShadow:
-      `0 2px 2px 0 ${hexToRGBAlpha(primaryColor, 0.14)}, 0 3px 1px -2px ${hexToRGBAlpha(primaryColor, 0.2)}, 0 1px 5px 0 ${hexToRGBAlpha(primaryColor, 0.12)}`,
+    boxShadow: `0 2px 2px 0 ${hexToRGBAlpha(
+      primaryColor,
+      0.14
+    )}, 0 3px 1px -2px ${hexToRGBAlpha(
+      primaryColor,
+      0.2
+    )}, 0 1px 5px 0 ${hexToRGBAlpha(primaryColor, 0.12)}`,
     "&:hover,&:focus": {
       backgroundColor: roseColor,
-      boxShadow:
-        `0 14px 26px -12px ${hexToRGBAlpha(primaryColor, 0.42)}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(primaryColor, 0.2)}`
+      boxShadow: `0 14px 26px -12px ${hexToRGBAlpha(
+        primaryColor,
+        0.42
+      )}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${hexToRGBAlpha(
+        primaryColor,
+        0.2
+      )}`
     }
   },
   white: {
