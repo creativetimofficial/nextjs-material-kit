@@ -15,13 +15,9 @@
 - `assets/jss/nextjs-material-kit/components/paginationStyle.js`
 - `assets/jss/nextjs-material-kit/components/paginationStyle.js`
 ### Deleted components
-
 ### Added components
-
 ### Deleted dependencies
-
 ### Added dependencies
-
 ### Updated dependencies
 ```
 @material-ui/core        4.3.2   →    4.9.13
