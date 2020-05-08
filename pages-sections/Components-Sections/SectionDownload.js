@@ -55,9 +55,9 @@ export default function SectionDownload() {
               <a href="#pablo" onClick={e => e.preventDefault()}>
                 NextJS Material Kit PRO{" "}
               </a>
-              .It has a huge number of components, sections and example
-              pages. Start Your Development With A Badass Material-UI
-              and NexJS Kit inspired by Material Design.
+              .It has a huge number of components, sections and example pages.
+              Start Your Development With A Badass Material-UI and NexJS Kit
+              inspired by Material Design.
             </h4>
           </GridItem>
           <GridItem xs={12} sm={8} md={10}>
