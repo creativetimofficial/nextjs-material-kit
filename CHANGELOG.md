@@ -1,5 +1,25 @@
 # Change Log
 
+## [1.1.0] 2020-05-08
+### Bug fixing
+
+### Major style changes
+
+### Deleted components
+
+### Added components
+
+### Deleted dependencies
+
+### Added dependencies
+
+### Updated dependencies
+```
+
+```
+### Warning
+_If needed_
+
 ## [1.0.0] 2019-09-13
 ### Original Release
 - Started project with NextJS
