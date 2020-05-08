@@ -145,7 +145,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
               height="0"
               width="0"
-              style="display:none;visibility:hidden"
+              style={{display:"none",visibility:"hidden"}}
             ></iframe>
           </noscript>
           {/* End Google Tag Manager (noscript) */}
