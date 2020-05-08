@@ -2,7 +2,7 @@
 
 ## [1.1.0] 2020-05-08
 ### Bug fixing
-
+- `https://github.com/creativetimofficial/nextjs-material-kit/issues/10` (changed the `title`, from simple `string` to `node`, so now, you can pass a title like so `title={<Link href="/"><a>Free Chat</a></Link>}` if you want to have link functionality - NOTE: the `node` that you pass to the `InfoArea` component will have to be styled)
 ### Major style changes
 
 ### Deleted components
