@@ -1,6 +1,6 @@
 {
   "name": "next-material-kit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "NextJS Version of Material Kit React by Creative Tim (https://creative-tim.com)",
   "main": "index.js",
   "scripts": {
