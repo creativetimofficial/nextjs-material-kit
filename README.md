@@ -217,7 +217,7 @@ We use GitHub Issues as the official bug tracker for the NextJS Material Kit. He
 
 ## Licensing
 
-- Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=njsmk-readme)
+- Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=njsmk-readme)
 
 - Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/master/LICENSE.md)
 
