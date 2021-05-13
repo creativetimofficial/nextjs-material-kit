@@ -52,7 +52,7 @@ export default function SectionDownload() {
             <h2>Want more?</h2>
             <h4>
               We've just launched{" "}
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a href="#pablo" onClick={(e) => e.preventDefault()}>
                 NextJS Material Kit PRO{" "}
               </a>
               .It has a huge number of components, sections and example pages.
