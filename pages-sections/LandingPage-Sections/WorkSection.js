@@ -10,7 +10,7 @@ import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
+import styles from "styles/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
 
 const useStyles = makeStyles(styles);
 
