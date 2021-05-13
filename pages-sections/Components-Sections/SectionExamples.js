@@ -10,10 +10,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 
-import landing from "assets/img/landing.jpg";
-import profile from "assets/img/profile.jpg";
-
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/exampleStyle.js";
+import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/exampleStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -27,7 +24,7 @@ export default function SectionExamples() {
             <Link href="/landing">
               <a className={classes.link}>
                 <img
-                  src={landing}
+                  src="/img/landing.jpg"
                   alt="..."
                   className={
                     classes.imgRaised +
@@ -47,7 +44,7 @@ export default function SectionExamples() {
             <Link href="/profile">
               <a className={classes.link}>
                 <img
-                  src={profile}
+                  src="/img/profile.jpg"
                   alt="..."
                   className={
                     classes.imgRaised +
