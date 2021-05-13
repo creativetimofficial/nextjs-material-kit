@@ -1,4 +1,4 @@
-import { title } from "assets/jss/nextjs-material-kit.js";
+import { title } from "styles/jss/nextjs-material-kit.js";
 
 const productStyle = {
   section: {
