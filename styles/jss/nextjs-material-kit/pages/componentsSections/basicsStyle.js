@@ -1,5 +1,5 @@
-import { container, title } from "assets/jss/nextjs-material-kit.js";
-import customCheckboxRadioSwitch from "assets/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
+import { container, title } from "styles/jss/nextjs-material-kit.js";
+import customCheckboxRadioSwitch from "styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
 
 const basicsStyle = {
   sections: {
