@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   progress: {
     color: infoColor,
     width: "6rem !important",
-    height: "6rem !important"
+    height: "6rem !important",
   },
   wrapperDiv: {
     margin: "100px auto",
@@ -20,15 +20,15 @@ const useStyles = makeStyles({
     textAlign: "center",
     position: "relative",
     zIndex: "9999",
-    top: "0"
+    top: "0",
   },
   iconWrapper: {
-    display: "block"
+    display: "block",
   },
   title: {
     ...title,
-    color: "#FFFFFF"
-  }
+    color: "#FFFFFF",
+  },
 });
 
 export default function PageChange(props) {
