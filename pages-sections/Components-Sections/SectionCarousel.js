@@ -22,7 +22,7 @@ export default function SectionCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
   };
   return (
     <div className={classes.section}>
@@ -32,7 +32,11 @@ export default function SectionCarousel() {
             <Card carousel>
               <Carousel {...settings}>
                 <div>
-                  <img src="/img/bg.jpg" alt="First slide" className="slick-image" />
+                  <img
+                    src="/img/bg.jpg"
+                    alt="First slide"
+                    className="slick-image"
+                  />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
@@ -54,7 +58,11 @@ export default function SectionCarousel() {
                   </div>
                 </div>
                 <div>
-                  <img src="/img/bg3.jpg" alt="Third slide" className="slick-image" />
+                  <img
+                    src="/img/bg3.jpg"
+                    alt="Third slide"
+                    className="slick-image"
+                  />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
