@@ -16,7 +16,7 @@ import CardFooter from "components/Card/CardFooter.js";
 import Button from "components/CustomButtons/Button.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/loginStyle.js";
+import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/loginStyle.js";
 
 const useStyles = makeStyles(styles);
 
