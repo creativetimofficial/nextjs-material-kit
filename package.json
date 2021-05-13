@@ -53,5 +53,8 @@
     "react-slick": "0.28.1",
     "styled-components": "5.3.0",
     "webpack": "4.46.0"
+  },
+  "devDependencies": {
+    "babel-plugin-root-import": "6.6.0"
   }
 }
