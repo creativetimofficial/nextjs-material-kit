@@ -39,11 +39,11 @@ export default function LandingPage(props) {
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
-    <Parallax filter responsive image="/img/landing-bg.jpg">
+      <Parallax filter responsive image="/img/landing-bg.jpg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
