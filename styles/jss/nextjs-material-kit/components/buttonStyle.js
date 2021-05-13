@@ -7,7 +7,7 @@ import {
   successColor,
   warningColor,
   dangerColor
-} from "assets/jss/nextjs-material-kit.js";
+} from "styles/jss/nextjs-material-kit.js";
 
 const buttonStyle = {
   button: {
