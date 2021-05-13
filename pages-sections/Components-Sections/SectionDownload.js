@@ -7,7 +7,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // core components
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/downloadStyle.js";
+import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/downloadStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -52,7 +52,7 @@ export default function SectionDownload() {
             <h2>Want more?</h2>
             <h4>
               We've just launched{" "}
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a href="#pablo" onClick={(e) => e.preventDefault()}>
                 NextJS Material Kit PRO{" "}
               </a>
               .It has a huge number of components, sections and example pages.
