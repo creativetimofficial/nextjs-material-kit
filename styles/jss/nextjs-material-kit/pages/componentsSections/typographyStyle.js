@@ -1,6 +1,6 @@
-import { container, title } from "assets/jss/nextjs-material-kit.js";
+import { container, title } from "styles/jss/nextjs-material-kit.js";
 
-import imagesStyles from "assets/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
 
 const typographyStyle = {
   section: {
