@@ -19,9 +19,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 
-import styles from "assets/jss/nextjs-material-kit/pages/loginPage.js";
-
-import image from "assets/img/bg7.jpg";
+import styles from "styles/jss/nextjs-material-kit/pages/loginPage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -44,7 +42,7 @@ export default function LoginPage(props) {
       <div
         className={classes.pageHeader}
         style={{
-          backgroundImage: "url(" + image + ")",
+          backgroundImage: "url('/img/bg7.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "top center"
         }}
