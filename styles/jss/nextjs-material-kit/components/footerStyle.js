@@ -1,4 +1,4 @@
-import { container, primaryColor } from "assets/jss/nextjs-material-kit.js";
+import { container, primaryColor } from "styles/jss/nextjs-material-kit.js";
 
 const footerStyle = {
   block: {
