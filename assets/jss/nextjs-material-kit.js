@@ -1,12 +1,12 @@
 /*!
 
  =========================================================
- * NextJS Material Kit - v1.1.0 based on Material Kit - v2.0.2 and Material Kit React - v1.8.0
+ * NextJS Material Kit - v1.2.0 based on Material Kit - v2.0.2 and Material Kit React - v1.8.0
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/nextjs-material-kit
- * Copyright 2020 Creative Tim (https://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/master/LICENSE.md)
+ * Copyright 2021 Creative Tim (https://www.creative-tim.com)
+ * Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/main/LICENSE.md)
 
  =========================================================
 
