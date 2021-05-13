@@ -1,4 +1,4 @@
-const parallaxStyle = theme => ({
+const parallaxStyle = (theme) => ({
   parallax: {
     height: "90vh",
     maxHeight: "1000px",
@@ -10,11 +10,11 @@ const parallaxStyle = theme => ({
     padding: "0",
     border: "0",
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
   },
   filter: {
     "&:before": {
-      background: "rgba(0, 0, 0, 0.5)"
+      background: "rgba(0, 0, 0, 0.5)",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -24,17 +24,17 @@ const parallaxStyle = theme => ({
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   small: {
-    height: "380px"
+    height: "380px",
   },
   parallaxResponsive: {
     [theme.breakpoints.down("md")]: {
-      minHeight: "660px"
-    }
-  }
+      minHeight: "660px",
+    },
+  },
 });
 
 export default parallaxStyle;
