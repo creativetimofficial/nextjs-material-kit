@@ -18,7 +18,7 @@ import IconButton from "@material-ui/core/IconButton";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "assets/jss/nextjs-material-kit/components/headerLinksStyle.js";
+import styles from "styles/jss/nextjs-material-kit/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
