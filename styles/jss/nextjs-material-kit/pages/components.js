@@ -1,4 +1,4 @@
-import { container } from "assets/jss/nextjs-material-kit.js";
+import { container } from "styles/jss/nextjs-material-kit.js";
 
 const componentsStyle = {
   container,
