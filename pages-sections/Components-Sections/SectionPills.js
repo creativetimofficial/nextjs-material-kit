@@ -12,7 +12,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
 
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/pillsStyle.js";
+import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/pillsStyle.js";
 
 const useStyles = makeStyles(styles);
 
