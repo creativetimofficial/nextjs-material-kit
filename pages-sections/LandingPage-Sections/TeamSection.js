@@ -33,7 +33,11 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src="/img/faces/avatar.jpg" alt="..." className={imageClasses} />
+                <img
+                  src="/img/faces/avatar.jpg"
+                  alt="..."
+                  className={imageClasses}
+                />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Gigi Hadid
@@ -76,7 +80,11 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src="/img/faces/christian.jpg" alt="..." className={imageClasses} />
+                <img
+                  src="/img/faces/christian.jpg"
+                  alt="..."
+                  className={imageClasses}
+                />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Christian Louboutin
@@ -112,7 +120,11 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src="/img/faces/kendall.jpg" alt="..." className={imageClasses} />
+                <img
+                  src="/img/faces/kendall.jpg"
+                  alt="..."
+                  className={imageClasses}
+                />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Kendall Jenner
