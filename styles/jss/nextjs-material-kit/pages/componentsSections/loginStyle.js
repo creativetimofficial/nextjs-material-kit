@@ -1,6 +1,4 @@
-import { container } from "assets/jss/nextjs-material-kit.js";
-
-import image from "assets/img/sign.jpg";
+import { container } from "styles/jss/nextjs-material-kit.js";
 
 const loginStyle = {
   section: {
@@ -14,7 +12,7 @@ const loginStyle = {
     border: "0",
     display: "flex",
     alignItems: "center",
-    backgroundImage: "url(" + image + ")"
+    backgroundImage: "url('/img/sign.jpg')"
   },
   container,
   form: {
