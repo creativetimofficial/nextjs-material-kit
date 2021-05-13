@@ -18,9 +18,9 @@
 // // // Variables - Styles that are used on more than one component
 // #############################
 
-const hexColorToRGB = function(hexColor) {
+const hexColorToRGB = function (hexColor) {
   let detectShorthand = /^#?([a-f\d])([a-f\d])([a-f\d])$/i; // #000 vs #000000
-  hexColor = hexColor.replace(detectShorthand, function(m, r, g, b) {
+  hexColor = hexColor.replace(detectShorthand, function (m, r, g, b) {
     return r + r + g + g + b + b;
   });
 
@@ -29,12 +29,12 @@ const hexColorToRGB = function(hexColor) {
     ? {
         r: parseInt(hex_array[1], 16), // 0-255
         g: parseInt(hex_array[2], 16), // 0-255
-        b: parseInt(hex_array[3], 16) // 0-255
+        b: parseInt(hex_array[3], 16), // 0-255
       }
     : null;
 };
 
-const hexToRGBAlpha = function(hexColor, alpha) {
+const hexToRGBAlpha = function (hexColor, alpha) {
   let rgb = hexColorToRGB(hexColor);
   return `rgba(${rgb.r},${rgb.g},${rgb.b},${alpha})`;
 };
@@ -42,7 +42,7 @@ const hexToRGBAlpha = function(hexColor, alpha) {
 const drawerWidth = 260;
 
 const transition = {
-  transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)"
+  transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)",
 };
 
 const containerFluid = {
@@ -50,27 +50,27 @@ const containerFluid = {
   paddingLeft: "15px",
   marginRight: "auto",
   marginLeft: "auto",
-  width: "100%"
+  width: "100%",
 };
 const container = {
   ...containerFluid,
   "@media (min-width: 576px)": {
-    maxWidth: "540px"
+    maxWidth: "540px",
   },
   "@media (min-width: 768px)": {
-    maxWidth: "720px"
+    maxWidth: "720px",
   },
   "@media (min-width: 992px)": {
-    maxWidth: "960px"
+    maxWidth: "960px",
   },
   "@media (min-width: 1200px)": {
-    maxWidth: "1140px"
-  }
+    maxWidth: "1140px",
+  },
 };
 
 const boxShadow = {
   boxShadow:
-    "0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
+    "0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
 };
 
 const card = {
@@ -81,13 +81,13 @@ const card = {
   boxShadow: "0 1px 4px 0 rgba(0, 0, 0, 0.14)",
   borderRadius: "3px",
   color: "rgba(0, 0, 0, 0.87)",
-  background: "#fff"
+  background: "#fff",
 };
 
 const defaultFont = {
   fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
   fontWeight: "300",
-  lineHeight: "1.5em"
+  lineHeight: "1.5em",
 };
 
 const primaryColor = "#9c27b0";
@@ -105,7 +105,7 @@ const primaryBoxShadow = {
   )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
     primaryColor,
     0.2
-  )}`
+  )}`,
 };
 const infoBoxShadow = {
   boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
@@ -114,7 +114,7 @@ const infoBoxShadow = {
   )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
     infoColor,
     0.2
-  )}`
+  )}`,
 };
 const successBoxShadow = {
   boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
@@ -123,7 +123,7 @@ const successBoxShadow = {
   )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
     successColor,
     0.2
-  )}`
+  )}`,
 };
 const warningBoxShadow = {
   boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
@@ -132,7 +132,7 @@ const warningBoxShadow = {
   )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
     warningColor,
     0.2
-  )}`
+  )}`,
 };
 const dangerBoxShadow = {
   boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
@@ -141,57 +141,57 @@ const dangerBoxShadow = {
   )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
     dangerColor,
     0.2
-  )}`
+  )}`,
 };
 const roseBoxShadow = {
   boxShadow: `0 4px 20px 0px ${hexToRGBAlpha(
     "#000",
     0.14
-  )}, 0 7px 10px -5px ${hexToRGBAlpha(roseColor, 0.4)}`
+  )}, 0 7px 10px -5px ${hexToRGBAlpha(roseColor, 0.4)}`,
 };
 
 const warningCardHeader = {
   color: "#fff",
   background: "linear-gradient(60deg, #ffa726, #fb8c00)",
-  ...warningBoxShadow
+  ...warningBoxShadow,
 };
 const successCardHeader = {
   color: "#fff",
   background: "linear-gradient(60deg, #66bb6a, #43a047)",
-  ...successBoxShadow
+  ...successBoxShadow,
 };
 const dangerCardHeader = {
   color: "#fff",
   background: "linear-gradient(60deg, #ef5350, #e53935)",
-  ...dangerBoxShadow
+  ...dangerBoxShadow,
 };
 const infoCardHeader = {
   color: "#fff",
   background: "linear-gradient(60deg, #26c6da, #00acc1)",
-  ...infoBoxShadow
+  ...infoBoxShadow,
 };
 const primaryCardHeader = {
   color: "#fff",
   background: "linear-gradient(60deg, #ab47bc, #8e24aa)",
-  ...primaryBoxShadow
+  ...primaryBoxShadow,
 };
 const roseCardHeader = {
   color: "#fff",
   background: "linear-gradient(60deg, #ec407a, #d81b60)",
-  ...roseBoxShadow
+  ...roseBoxShadow,
 };
 const cardActions = {
   margin: "0 20px 10px",
   paddingTop: "10px",
   borderTop: "1px solid #eeeeee",
   height: "auto",
-  ...defaultFont
+  ...defaultFont,
 };
 
 const cardHeader = {
   margin: "-30px 15px 0",
   borderRadius: "3px",
-  padding: "15px"
+  padding: "15px",
 };
 
 const defaultBoxShadow = {
@@ -200,7 +200,7 @@ const defaultBoxShadow = {
   boxShadow:
     "0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
   padding: "10px 0",
-  transition: "all 150ms ease 0s"
+  transition: "all 150ms ease 0s",
 };
 
 const title = {
@@ -208,23 +208,23 @@ const title = {
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "700",
-  fontFamily: `"Roboto Slab", "Times New Roman", serif`
+  fontFamily: `"Roboto Slab", "Times New Roman", serif`,
 };
 
 const cardTitle = {
   ...title,
-  marginTop: ".625rem"
+  marginTop: ".625rem",
 };
 
 const cardLink = {
   "& + $cardLink": {
-    marginLeft: "1.25rem"
-  }
+    marginLeft: "1.25rem",
+  },
 };
 
 const cardSubtitle = {
   marginBottom: "0",
-  marginTop: "-.375rem"
+  marginTop: "-.375rem",
 };
 
 export {
@@ -262,5 +262,5 @@ export {
   title,
   cardTitle,
   cardLink,
-  cardSubtitle
+  cardSubtitle,
 };
