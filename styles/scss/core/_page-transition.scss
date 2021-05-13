@@ -13,7 +13,7 @@
   #page-transition > div{
     &:after{
       content: "";
-      background-image: url("../img/bg7.jpg");
+      background-image: url("/img/bg7.jpg");
       background-size: cover;
       position: fixed;
       z-index: 9998;
