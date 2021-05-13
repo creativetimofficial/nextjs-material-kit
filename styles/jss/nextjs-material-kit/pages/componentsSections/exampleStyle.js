@@ -1,6 +1,6 @@
-import { containerFluid } from "assets/jss/nextjs-material-kit.js";
+import { containerFluid } from "styles/jss/nextjs-material-kit.js";
 
-import imagesStyle from "assets/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyle from "styles/jss/nextjs-material-kit/imagesStyles.js";
 
 const exampleStyle = {
   section: {
