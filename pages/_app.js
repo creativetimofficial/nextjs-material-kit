@@ -23,7 +23,7 @@ import Router from "next/router";
 
 import PageChange from "components/PageChange/PageChange.js";
 
-import "assets/scss/nextjs-material-kit.scss?v=1.2.0";
+import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
 
 Router.events.on("routeChangeStart", url => {
   console.log(`Loading: ${url}`);
@@ -78,6 +78,10 @@ export default class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
           <title>NextJS Material Kit by Creative Tim</title>
         </Head>
         <Component {...pageProps} />
