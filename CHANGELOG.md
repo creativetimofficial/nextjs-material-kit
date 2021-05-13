@@ -2,9 +2,9 @@
 
 ## [1.2.0] 2021-05-17
 ### Bug fixing
-
+- Moved all images inside `public` folder (i.e. moved from `assets/img` to `public/img`)
 ### Major style changes
-
+- Moved all of the styles inside `styles` folder (i.e. moved from `assets/scss`, `assets/css`, `assets/jss` to `styles/scss`, `styles/css` and `styles/jss`)
 ### Deleted components
 
 ### Added components
