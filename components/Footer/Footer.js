@@ -11,7 +11,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 
-import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
+import styles from "styles/jss/nextjs-material-kit/components/footerStyle.js";
 
 const useStyles = makeStyles(styles);
 
