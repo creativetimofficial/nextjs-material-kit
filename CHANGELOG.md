@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.2.0] 2021-05-17
+## [1.2.0] 2021-05-14
 ### Bug fixing
 - Moved all images inside `public` folder (i.e. moved from `assets/img` to `public/img`)
 ### Major style changes
