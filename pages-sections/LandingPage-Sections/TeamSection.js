@@ -14,11 +14,7 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
-import styles from "assets/jss/nextjs-material-kit/pages/landingPageSections/teamStyle.js";
-
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import styles from "styles/jss/nextjs-material-kit/pages/landingPageSections/teamStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -37,7 +33,11 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team1} alt="..." className={imageClasses} />
+                <img
+                  src="/img/faces/avatar.jpg"
+                  alt="..."
+                  className={imageClasses}
+                />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Gigi Hadid
@@ -80,7 +80,11 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team2} alt="..." className={imageClasses} />
+                <img
+                  src="/img/faces/christian.jpg"
+                  alt="..."
+                  className={imageClasses}
+                />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Christian Louboutin
@@ -116,7 +120,11 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
+                <img
+                  src="/img/faces/kendall.jpg"
+                  alt="..."
+                  className={imageClasses}
+                />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Kendall Jenner

@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 // core components
-import styles from "assets/jss/nextjs-material-kit/components/customLinearProgressStyle.js";
+import styles from "styles/jss/nextjs-material-kit/components/customLinearProgressStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -18,14 +18,14 @@ export default function CustomLinearProgress(props) {
       {...rest}
       classes={{
         root: classes.root + " " + classes[color + "Background"],
-        bar: classes.bar + " " + classes[color]
+        bar: classes.bar + " " + classes[color],
       }}
     />
   );
 }
 
 CustomLinearProgress.defaultProps = {
-  color: "gray"
+  color: "gray",
 };
 
 CustomLinearProgress.propTypes = {
@@ -36,6 +36,6 @@ CustomLinearProgress.propTypes = {
     "success",
     "info",
     "rose",
-    "gray"
-  ])
+    "gray",
+  ]),
 };

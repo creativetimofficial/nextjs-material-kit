@@ -11,7 +11,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 
-import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
+import styles from "styles/jss/nextjs-material-kit/components/footerStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -20,11 +20,11 @@ export default function Footer(props) {
   const { whiteFont } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   const aClasses = classNames({
     [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   return (
     <footer className={footerClasses}>
@@ -87,5 +87,5 @@ export default function Footer(props) {
 }
 
 Footer.propTypes = {
-  whiteFont: PropTypes.bool
+  whiteFont: PropTypes.bool,
 };
