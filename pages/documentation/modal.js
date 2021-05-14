@@ -16,7 +16,7 @@ import Button from "components/CustomButtons/Button.js";
 // layout for page
 import Documentation from "layouts/Documentation.js";
 
-import modalStyle from "assets/jss/nextjs-material-kit/modalStyle.js";
+import modalStyle from "styles/jss/nextjs-material-kit/modalStyle.js";
 
 const styles = {
   ...modalStyle,
@@ -48,7 +48,7 @@ import Close from "@material-ui/icons/Close";
 // core components
 import Button from "components/CustomButtons/Button.js";
 
-import modalStyle from "assets/jss/material-dashboard-pro-react/modalStyle.js";
+import modalStyle from "styles/jss/material-dashboard-pro-react/modalStyle.js";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;

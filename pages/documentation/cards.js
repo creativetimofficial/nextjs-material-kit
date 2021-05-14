@@ -13,13 +13,13 @@ import Quote from "components/Typography/Quote.js";
 // layout for page
 import Documentation from "layouts/Documentation.js";
 
-import imagesStyles from "assets/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
 
 import {
   cardTitle,
   cardLink,
   cardSubtitle
-} from "assets/jss/nextjs-material-kit.js";
+} from "styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -55,9 +55,9 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import Button from "components/CustomButtons/Button.js";
 
-import imagesStyles from "assets/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
 
-import { cardTitle } from "assets/jss/nextjs-material-kit.js";
+import { cardTitle } from "styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -98,7 +98,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 
-import { cardTitle, cardLink, cardSubtitle } from "assets/jss/nextjs-material-kit.js";
+import { cardTitle, cardLink, cardSubtitle } from "styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -146,7 +146,7 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import Button from "components/CustomButtons/Button.js";
 
-import { cardTitle } from "assets/jss/nextjs-material-kit.js";
+import { cardTitle } from "styles/jss/nextjs-material-kit.js";
 
 const styles = {
   cardTitle,
@@ -204,7 +204,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import Button from "components/CustomButtons/Button.js";
 
-import { cardTitle } from "assets/jss/nextjs-material-kit.js";
+import { cardTitle } from "styles/jss/nextjs-material-kit.js";
 
 const styles = {
   cardTitle,
@@ -246,7 +246,7 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import Button from "components/CustomButtons/Button.js";
 
-import { cardTitle } from "assets/jss/nextjs-material-kit.js";
+import { cardTitle } from "styles/jss/nextjs-material-kit.js";
 
 const styles = {
   cardTitle,
@@ -305,9 +305,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 
-import imagesStyles from "assets/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
 
-import { cardTitle } from "assets/jss/nextjs-material-kit.js";
+import { cardTitle } from "styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -349,9 +349,9 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Card from "components/Card/Card.js";
 
-import imagesStyles from "assets/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
 
-import { cardTitle } from "assets/jss/nextjs-material-kit.js";
+import { cardTitle } from "styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,

@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 // core components
 import Button from "components/CustomButtons/Button.js";
-import popoverStyles from "assets/jss/nextjs-material-kit/popoverStyles.js";
+import popoverStyles from "styles/jss/nextjs-material-kit/popoverStyles.js";
 // layout for page
 import Documentation from "layouts/Documentation.js";
 
@@ -34,7 +34,7 @@ import Popover from "@material-ui/core/Popover";
 // core components
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "assets/jss/nextjs-material-kit/popoverStyles.js";
+import styles from "styles/jss/nextjs-material-kit/popoverStyles.js";
 
 const useStyles = makeStyles(styles);
 

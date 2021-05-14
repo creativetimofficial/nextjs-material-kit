@@ -26,7 +26,7 @@ const useStyles = makeStyles(styles);
 
 const importExamples = `import Badge from 'components/Badge/Badge.js';`;
 
-const importStylesExamples = `import badgeStyle from "assets/jss/nextjs-material-kit/components/badgeStyle.js"`;
+const importStylesExamples = `import badgeStyle from "styles/jss/nextjs-material-kit/components/badgeStyle.js"`;
 
 const exampleCode = `<Button color="primary">Notifications{" "}<Badge>4</Badge></Button>`;
 

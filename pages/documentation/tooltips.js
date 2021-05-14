@@ -11,7 +11,7 @@ import Button from "components/CustomButtons/Button.js";
 // layout for page
 import Documentation from "layouts/Documentation.js";
 
-import tooltipsStyle from "assets/jss/nextjs-material-kit/tooltipsStyle.js";
+import tooltipsStyle from "styles/jss/nextjs-material-kit/tooltipsStyle.js";
 
 const styles = {
   ...tooltipsStyle,
@@ -37,7 +37,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Button from "components/CustomButtons/Button.js";
 
 
-import styles from "assets/jss/nextjs-material-kit/tooltipsStyle.js";
+import styles from "styles/jss/nextjs-material-kit/tooltipsStyle.js";
 
 const useStyles = makeStyles(styles);
 
