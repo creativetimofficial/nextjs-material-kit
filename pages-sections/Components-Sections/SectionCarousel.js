@@ -10,11 +10,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
-
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/carouselStyle.js";
+import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/carouselStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -26,7 +22,7 @@ export default function SectionCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
   };
   return (
     <div className={classes.section}>
@@ -36,7 +32,11 @@ export default function SectionCarousel() {
             <Card carousel>
               <Carousel {...settings}>
                 <div>
-                  <img src={image1} alt="First slide" className="slick-image" />
+                  <img
+                    src="/img/bg.jpg"
+                    alt="First slide"
+                    className="slick-image"
+                  />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
@@ -46,7 +46,7 @@ export default function SectionCarousel() {
                 </div>
                 <div>
                   <img
-                    src={image2}
+                    src="/img/bg2.jpg"
                     alt="Second slide"
                     className="slick-image"
                   />
@@ -58,7 +58,11 @@ export default function SectionCarousel() {
                   </div>
                 </div>
                 <div>
-                  <img src={image3} alt="Third slide" className="slick-image" />
+                  <img
+                    src="/img/bg3.jpg"
+                    alt="Third slide"
+                    className="slick-image"
+                  />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />

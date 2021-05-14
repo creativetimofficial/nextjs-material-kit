@@ -1,0 +1,37 @@
+.body-page-transition{
+  overflow: hidden;
+  #page-transition {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #page-transition > div{
+    &:after{
+      content: "";
+      background-image: url("/img/bg7.jpg");
+      background-size: cover;
+      position: fixed;
+      z-index: 9998;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    &:before {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: block;
+      z-index: 9999;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
