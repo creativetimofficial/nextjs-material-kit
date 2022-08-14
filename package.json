@@ -1,6 +1,6 @@
 {
   "name": "next-material-kit",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "NextJS Version of Material Kit React by Creative Tim (https://creative-tim.com)",
   "main": "index.js",
   "scripts": {
@@ -36,20 +36,20 @@
     "@material-ui/core": "4.11.4",
     "@material-ui/icons": "4.11.2",
     "classnames": "2.3.1",
-    "moment": "2.29.1",
-    "next": "10.2.0",
-    "next-compose-plugins": "2.2.1",
-    "next-images": "1.7.0",
-    "nextjs-redirect": "5.0.2",
-    "node-sass": "5.0.0",
+    "moment": "2.29.4",
+    "next": "12.2.5",
     "nouislider": "15.1.0",
-    "path": "0.12.7",
-    "prop-types": "15.7.2",
-    "react": "17.0.2",
-    "react-datetime": "3.0.4",
-    "react-dom": "17.0.2",
-    "react-slick": "0.28.1",
-    "styled-components": "5.3.0",
-    "webpack": "4.46.0"
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-datetime": "3.1.1",
+    "react-dom": "18.2.0",
+    "react-slick": "0.29.0",
+    "styled-components": "5.3.5",
+    "sass": "1.54.4",
+    "webpack": "5.74.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   }
 }

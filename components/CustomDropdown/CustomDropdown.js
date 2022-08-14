@@ -16,9 +16,9 @@ import Icon from "@material-ui/core/Icon";
 import Popper from "@material-ui/core/Popper";
 
 // core components
-import Button from "components/CustomButtons/Button.js";
+import Button from "/components/CustomButtons/Button.js";
 
-import styles from "styles/jss/nextjs-material-kit/components/customDropdownStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/components/customDropdownStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -56,18 +56,18 @@ export default function CustomDropdown(props) {
     left,
     rtlActive,
     noLiPadding,
-    navDropdown,
+    navDropdown
   } = props;
   const caretClasses = classNames({
     [classes.caret]: true,
     [classes.caretActive]: Boolean(anchorEl),
-    [classes.caretRTL]: rtlActive,
+    [classes.caretRTL]: rtlActive
   });
   const dropdownItem = classNames({
     [classes.dropdownItem]: true,
     [classes[hoverColor + "Hover"]]: true,
     [classes.noLiPadding]: noLiPadding,
-    [classes.dropdownItemRTL]: rtlActive,
+    [classes.dropdownItemRTL]: rtlActive
   });
   let icon = null;
   switch (typeof buttonIcon) {
@@ -113,7 +113,7 @@ export default function CustomDropdown(props) {
         className={classNames({
           [classes.popperClose]: !anchorEl,
           [classes.popperResponsive]: true,
-          [classes.pooperNav]: Boolean(anchorEl) && navDropdown,
+          [classes.pooperNav]: Boolean(anchorEl) && navDropdown
         })}
       >
         {() => (
@@ -169,7 +169,7 @@ export default function CustomDropdown(props) {
 
 CustomDropdown.defaultProps = {
   caret: true,
-  hoverColor: "primary",
+  hoverColor: "primary"
 };
 
 CustomDropdown.propTypes = {
@@ -180,7 +180,7 @@ CustomDropdown.propTypes = {
     "success",
     "warning",
     "danger",
-    "rose",
+    "rose"
   ]),
   buttonText: PropTypes.node,
   buttonIcon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -194,5 +194,5 @@ CustomDropdown.propTypes = {
   noLiPadding: PropTypes.bool,
   navDropdown: PropTypes.bool,
   // function that retuns the selected item
-  onClick: PropTypes.func,
+  onClick: PropTypes.func
 };

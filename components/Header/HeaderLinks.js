@@ -15,10 +15,10 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
-import Button from "components/CustomButtons/Button.js";
+import CustomDropdown from "/components/CustomDropdown/CustomDropdown.js";
+import Button from "/components/CustomButtons/Button.js";
 
-import styles from "styles/jss/nextjs-material-kit/components/headerLinksStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -33,7 +33,7 @@ export default function HeaderLinks(props) {
           buttonText="Components"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent",
+            color: "transparent"
           }}
           buttonIcon={Apps}
           dropdownList={[
@@ -46,7 +46,7 @@ export default function HeaderLinks(props) {
               className={classes.dropdownLink}
             >
               Documentation
-            </a>,
+            </a>
           ]}
         />
       </ListItem>
