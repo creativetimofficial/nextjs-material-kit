@@ -1,8 +1,6 @@
 # [NextJS Material Kit](https://demos.creative-tim.com/nextjs-material-kit?ref=njsmk-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/share?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit%2Fcomponents&text=NextJS%20Material%20Kit&via=Creative%20Tim&hashtags=nextjs%20%23creativetim%20%23materialdesign)
 
-
- ![version](https://img.shields.io/badge/version-1.2.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/nextjs-material-kit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/nextjs-material-kit/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
-
+![version](https://img.shields.io/badge/version-1.2.1-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/nextjs-material-kit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/nextjs-material-kit/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 ![Product Presentation Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit/nextjs-material-kit.jpg)
 
@@ -14,48 +12,42 @@ This new design has elements that have been the result of research regarding ink
 
 **[NextJS Material Kit](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)** was built with the help of [nextjs](https://nextjs.org/?ref=creativetim) and it uses a framework built by our friends from **[Material-UI](https://material-ui.com/?ref=creativetim)**, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
 
-
 ## Table of Contents
 
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
-
+- [Versions](#versions)
+- [Demo](#demo)
+- [Quick Start](#quick-start)
+- [Documentation](#documentation)
+- [File Structure](#file-structure)
+- [Browser Support](#browser-support)
+- [Resources](#resources)
+- [Reporting Issues](#reporting-issues)
+- [Licensing](#licensing)
+- [Useful Links](#useful-links)
 
 ## Versions
 
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nextjs_logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-kit?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-native-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react-native?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/figma-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/material-kit-figma/presentation.html?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/wordpress-logo.jpg?raw=true" width="60" height="60" />](https://themeisle.com/themes/hestia/?ref=creativetim)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/photoshop-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/photoshop)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/sketch)
 
+| React Native                                                                                                                                                                                                                                | Figma                                                                                                                                                                                                                              | WordPress                                                                                                                                                                                                 | NextJS                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Material Kit React Native](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react-native/opt_mkrn_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native?ref=njsmk-readme) | [![Material Kit Figma](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-figma/material-kit-figma.jpg?raw=true)](https://demos.creative-tim.com/material-kit-figma/presentation.html?ref=njsmk-readme) | [![Material Kit WordPress](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-wordpress/opt_smd_thumbnail.jpg?raw=true)](https://themeisle.com/themes/hestia/?ref=creativetim) | [![NextJS Material Kit](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/nextjs-material-kit.jpg?raw=true)](https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme) |
 
-
-| React Native | Figma | WordPress | NextJS |
-| ---  | --- | --- | --- |
-| [![Material Kit React Native](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react-native/opt_mkrn_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native?ref=njsmk-readme) | [![Material Kit Figma](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-figma/material-kit-figma.jpg?raw=true)](https://demos.creative-tim.com/material-kit-figma/presentation.html?ref=njsmk-readme) | [![Material Kit WordPress](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-wordpress/opt_smd_thumbnail.jpg?raw=true)](https://themeisle.com/themes/hestia/?ref=creativetim)  | [![NextJS Material Kit](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/nextjs-material-kit.jpg?raw=true)](https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme)
-
-
-| HTML | React | Vue |
-| --- | --- | --- |
-| [![Material Kit  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit?ref=njsmk-readme)  | [![Material Kit React](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/material-kit-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit-react?ref=njsmk-readme)  | [![Vue Material Kit](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-kit/vue-material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-kit?ref=njsmk-readme)
+| HTML                                                                                                                                                                                                  | React                                                                                                                                                                                                                   | Vue                                                                                                                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Material Kit  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit?ref=njsmk-readme) | [![Material Kit React](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/material-kit-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit-react?ref=njsmk-readme) | [![Vue Material Kit](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-kit/vue-material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-kit?ref=njsmk-readme) |
 
 ## Demo
 
-| Buttons | Inputs | Navbars  |
-| --- | --- | ---  |
-| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/buttons.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)  | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/inputs.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)  | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/navbars.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)  
+| Buttons                                                                                                                                                                                       | Inputs                                                                                                                                                                                      | Navbars                                                                                                                                                                                      |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/buttons.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme) | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/inputs.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme) | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/navbars.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme) |
 
-| Login Page | Landing Page | Profile Page  |
-| --- | --- | ---  |
-| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit/login-page.png)](https://demos.creative-tim.com/nextjs-material-kit/login?ref=njsmk-readme)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/landing-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/landing?ref=njsmk-readme)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/profile-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/profile?ref=njsmk-readme)  
+| Login Page                                                                                                                                                                                                | Landing Page                                                                                                                                                                                                   | Profile Page                                                                                                                                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit/login-page.png)](https://demos.creative-tim.com/nextjs-material-kit/login?ref=njsmk-readme) | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/landing-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/landing?ref=njsmk-readme) | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/profile-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/profile?ref=njsmk-readme) |
 
 [View More](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)
-
 
 ## Quick start
 
@@ -63,14 +55,14 @@ This new design has elements that have been the result of research regarding ink
 - [Download from Creative Tim](https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme).
 - Clone the repo: `git clone https://github.com/creativetimofficial/nextjs-material-kit.git`.
 - `npm i nextjs-material-kit`
-- Install with [Bower](https://bower.io/?ref=creativetim): ```bower install nextjs-material-kit```.
-
+- Install with [Bower](https://bower.io/?ref=creativetim): `bower install nextjs-material-kit`.
 
 ## Documentation
+
 The documentation for the NextJS Material Kit is hosted at our [website](https://demos.creative-tim.com/nextjs-material-kit/documentation/tutorial?ref=njsmk-readme).
 
-
 ## File Structure
+
 Within the download you'll find the following directories and files:
 
 ```
@@ -181,16 +173,14 @@ nextjs-material-kit
         └── WorkSection.js
 ```
 
-
 ## Browser Support
 
 At present, we officially aim to support the last two versions of the following browsers:
 
 <img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
 
-
-
 ## Resources
+
 - Demo: <https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme>
 - Download Page: <https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme>
 - Documentation: <https://demos.creative-tim.com/nextjs-material-kit/documentation/tutorial?ref=njsmk-readme>
@@ -199,13 +189,13 @@ At present, we officially aim to support the last two versions of the following 
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-material-kit/issues)
 - **Dashboards:**
 
-| HTML | React | Vue  | Angular |
-| --- | --- | ---  | ---  |
-| [![Material Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-html/material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard?ref=njsmk-readme) | [![Material Dashboard  React](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-react/material-dashboard-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react?ref=njsmk-readme) | [![Vue Material Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-dashboard/vue-material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard?ref=njsmk-readme)  | [![ Material Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-angular/material-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-angular2?ref=njsmk-readme)
+| HTML                                                                                                                                                                                                                               | React                                                                                                                                                                                                                                            | Vue                                                                                                                                                                                                                                     | Angular                                                                                                                                                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Material Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-html/material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard?ref=njsmk-readme) | [![Material Dashboard  React](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-react/material-dashboard-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react?ref=njsmk-readme) | [![Vue Material Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-dashboard/vue-material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard?ref=njsmk-readme) | [![ Material Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-angular/material-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-angular2?ref=njsmk-readme) |
 
-| HTML Dark | Laravel | Vuetify |
-| --- | --- | --- |
-| [![Material Dashboard Dark](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-dark/material-dashboard-dark.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-dark?ref=njsmk-readme) |[![Material Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-laravel/material-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-laravel?ref=njsmk-readme)| [![Material Dashboard Vuetify](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg?raw=true)](https://www.creative-tim.com/product/vuetify-material-dashboard?ref=njsmk-readme)
+| HTML Dark                                                                                                                                                                                                                                  | Laravel                                                                                                                                                                                                                                                | Vuetify                                                                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [![Material Dashboard Dark](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-dark/material-dashboard-dark.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-dark?ref=njsmk-readme) | [![Material Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-laravel/material-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-laravel?ref=njsmk-readme) | [![Material Dashboard Vuetify](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg?raw=true)](https://www.creative-tim.com/product/vuetify-material-dashboard?ref=njsmk-readme) |
 
 ## Reporting Issues
 
@@ -217,7 +207,7 @@ We use GitHub Issues as the official bug tracker for the NextJS Material Kit. He
 
 ## Licensing
 
-- Copyright 2021 Creative Tim (https://www.creative-tim.com/?ref=njsmk-readme)
+- Copyright 2022 Creative Tim (https://www.creative-tim.com/?ref=njsmk-readme)
 
 - Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/main/LICENSE.md)
 
