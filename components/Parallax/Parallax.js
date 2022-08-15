@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import styles from "styles/jss/nextjs-material-kit/components/parallaxStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/components/parallaxStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -33,22 +33,15 @@ export default function Parallax(props) {
     var windowScrollTop = window.pageYOffset / 3;
     setTransform("translate3d(0," + windowScrollTop + "px,0)");
   };
-  const {
-    filter,
-    className,
-    children,
-    style,
-    image,
-    small,
-    responsive,
-  } = props;
+  const { filter, className, children, style, image, small, responsive } =
+    props;
   const classes = useStyles();
   const parallaxClasses = classNames({
     [classes.parallax]: true,
     [classes.filter]: filter,
     [classes.small]: small,
     [classes.parallaxResponsive]: responsive,
-    [className]: className !== undefined,
+    [className]: className !== undefined
   });
   return (
     <div
@@ -56,7 +49,7 @@ export default function Parallax(props) {
       style={{
         ...style,
         backgroundImage: "url(" + image + ")",
-        transform: transform,
+        transform: transform
       }}
     >
       {children}
@@ -72,5 +65,5 @@ Parallax.propTypes = {
   image: PropTypes.string,
   small: PropTypes.bool,
   // this will add a min-height of 660px on small screens
-  responsive: PropTypes.bool,
+  responsive: PropTypes.bool
 };

@@ -4,8 +4,8 @@ import {
   dangerColor,
   successColor,
   infoColor,
-  roseColor,
-} from "styles/jss/nextjs-material-kit.js";
+  roseColor
+} from "/styles/jss/nextjs-material-kit.js";
 
 const badgeStyle = {
   badge: {
@@ -20,29 +20,29 @@ const badgeStyle = {
     textAlign: "center",
     whiteSpace: "nowrap",
     verticalAlign: "baseline",
-    display: "inline-block",
+    display: "inline-block"
   },
   primary: {
-    backgroundColor: primaryColor,
+    backgroundColor: primaryColor
   },
   warning: {
-    backgroundColor: warningColor,
+    backgroundColor: warningColor
   },
   danger: {
-    backgroundColor: dangerColor,
+    backgroundColor: dangerColor
   },
   success: {
-    backgroundColor: successColor,
+    backgroundColor: successColor
   },
   info: {
-    backgroundColor: infoColor,
+    backgroundColor: infoColor
   },
   rose: {
-    backgroundColor: roseColor,
+    backgroundColor: roseColor
   },
   gray: {
-    backgroundColor: "#6c757d",
-  },
+    backgroundColor: "#6c757d"
+  }
 };
 
 export default badgeStyle;

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-import styles from "styles/jss/nextjs-material-kit/components/badgeStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/components/badgeStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -18,7 +18,7 @@ export default function Badge(props) {
 }
 
 Badge.defaultProps = {
-  color: "gray",
+  color: "gray"
 };
 
 Badge.propTypes = {
@@ -29,7 +29,7 @@ Badge.propTypes = {
     "success",
     "info",
     "rose",
-    "gray",
+    "gray"
   ]),
-  children: PropTypes.node,
+  children: PropTypes.node
 };

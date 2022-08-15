@@ -6,11 +6,11 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import Button from "/components/CustomButtons/Button.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/exampleStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/componentsSections/exampleStyle.js";
 
 const useStyles = makeStyles(styles);
 
