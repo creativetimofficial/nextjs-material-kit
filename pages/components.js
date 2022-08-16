@@ -48,7 +48,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image="/img/nextjs_header.jpg">
+      <Parallax image="https://demos.creative-tim.com/nextjs-material-kit/img/nextjs_header.jpg">
         <div className={classes.container}>
           <GridContainer>
             <GridItem>

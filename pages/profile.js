@@ -43,7 +43,11 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image="/img/profile-bg.jpg" />
+      <Parallax
+        small
+        filter
+        image="https://demos.creative-tim.com/nextjs-material-kit/img/profile-bg.jpg"
+      />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -52,7 +56,7 @@ export default function ProfilePage(props) {
                 <div className={classes.profile}>
                   <div>
                     <img
-                      src="/img/faces/christian.jpg"
+                      src="https://demos.creative-tim.com/nextjs-material-kit/img/faces/christian.jpg"
                       alt="..."
                       className={imageClasses}
                     />
@@ -95,24 +99,24 @@ export default function ProfilePage(props) {
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src="/img/examples/studio-1.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/studio-1.jpg"
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src="/img/examples/studio-2.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/studio-2.jpg"
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src="/img/examples/studio-5.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/studio-5.jpg"
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src="/img/examples/studio-4.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/studio-4.jpg"
                               className={navImageClasses}
                             />
                           </GridItem>
@@ -127,29 +131,29 @@ export default function ProfilePage(props) {
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src="/img/examples/olu-eletu.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/olu-eletu.jpg"
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src="/img/examples/clem-onojeghuo.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/clem-onojeghuo.jpg"
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src="/img/examples/cynthia-del-rio.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/cynthia-del-rio.jpg"
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src="/img/examples/mariya-georgieva.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/mariya-georgieva.jpg"
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src="/img/examples/clem-onojegaw.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/clem-onojegaw.jpg"
                               className={navImageClasses}
                             />
                           </GridItem>
@@ -164,29 +168,29 @@ export default function ProfilePage(props) {
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src="/img/examples/mariya-georgieva.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/mariya-georgieva.jpg"
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src="/img/examples/studio-3.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/studio-3.jpg"
                               className={navImageClasses}
                             />
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
-                              src="/img/examples/clem-onojeghuo.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/clem-onojeghuo.jpg"
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src="/img/examples/olu-eletu.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/olu-eletu.jpg"
                               className={navImageClasses}
                             />
                             <img
                               alt="..."
-                              src="/img/examples/studio-1.jpg"
+                              src="https://demos.creative-tim.com/nextjs-material-kit/img/examples/studio-1.jpg"
                               className={navImageClasses}
                             />
                           </GridItem>

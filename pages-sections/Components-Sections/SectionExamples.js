@@ -31,7 +31,7 @@ export default function SectionExamples() {
             >
               <a className={classes.link}>
                 <img
-                  src="/img/landing.jpg"
+                  src="https://demos.creative-tim.com/nextjs-material-kit/img/landing.jpg"
                   alt="..."
                   className={
                     classes.imgRaised +
@@ -58,7 +58,7 @@ export default function SectionExamples() {
             >
               <a className={classes.link}>
                 <img
-                  src="/img/profile.jpg"
+                  src="https://demos.creative-tim.com/nextjs-material-kit/img/profile.jpg"
                   alt="..."
                   className={
                     classes.imgRaised +

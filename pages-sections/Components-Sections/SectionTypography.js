@@ -149,7 +149,7 @@ export default function SectionTypography() {
             <GridItem xs={12} sm={2}>
               <h4>Rounded Image</h4>
               <img
-                src="/img/faces/avatar.jpg"
+                src="https://demos.creative-tim.com/nextjs-material-kit/img/faces/avatar.jpg"
                 alt="..."
                 className={classes.imgRounded + " " + classes.imgFluid}
               />
@@ -157,7 +157,7 @@ export default function SectionTypography() {
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Circle Image</h4>
               <img
-                src="/img/faces/avatar.jpg"
+                src="https://demos.creative-tim.com/nextjs-material-kit/img/faces/avatar.jpg"
                 alt="..."
                 className={classes.imgRoundedCircle + " " + classes.imgFluid}
               />
@@ -165,7 +165,7 @@ export default function SectionTypography() {
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Rounded Raised</h4>
               <img
-                src="/img/faces/avatar.jpg"
+                src="https://demos.creative-tim.com/nextjs-material-kit/img/faces/avatar.jpg"
                 alt="..."
                 className={
                   classes.imgRaised +
@@ -179,7 +179,7 @@ export default function SectionTypography() {
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Circle Raised</h4>
               <img
-                src="/img/faces/avatar.jpg"
+                src="https://demos.creative-tim.com/nextjs-material-kit/img/faces/avatar.jpg"
                 alt="..."
                 className={
                   classes.imgRaised +

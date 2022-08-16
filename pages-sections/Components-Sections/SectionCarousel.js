@@ -33,7 +33,7 @@ export default function SectionCarousel() {
               <Carousel {...settings}>
                 <div>
                   <img
-                    src="/img/bg.jpg"
+                    src="https://demos.creative-tim.com/nextjs-material-kit/img/bg.jpg"
                     alt="First slide"
                     className="slick-image"
                   />
@@ -46,7 +46,7 @@ export default function SectionCarousel() {
                 </div>
                 <div>
                   <img
-                    src="/img/bg2.jpg"
+                    src="https://demos.creative-tim.com/nextjs-material-kit/img/bg2.jpg"
                     alt="Second slide"
                     className="slick-image"
                   />
@@ -59,7 +59,7 @@ export default function SectionCarousel() {
                 </div>
                 <div>
                   <img
-                    src="/img/bg3.jpg"
+                    src="https://demos.creative-tim.com/nextjs-material-kit/img/bg3.jpg"
                     alt="Third slide"
                     className="slick-image"
                   />

@@ -306,7 +306,7 @@ export default function SectionNavbars() {
                     dropdownHeader="Dropdown Header"
                     buttonText={
                       <img
-                        src="/img/faces/avatar.jpg"
+                        src="https://demos.creative-tim.com/nextjs-material-kit/img/faces/avatar.jpg"
                         className={classes.img}
                         alt="profile"
                       />
