@@ -8,11 +8,11 @@ import Schedule from "@material-ui/icons/Schedule";
 import List from "@material-ui/icons/List";
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import NavPills from "components/NavPills/NavPills.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import NavPills from "/components/NavPills/NavPills.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/pillsStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/componentsSections/pillsStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -62,7 +62,7 @@ export default function SectionPills() {
                           installed base benefits.
                         </p>
                       </span>
-                    ),
+                    )
                   },
                   {
                     tabButton: "Schedule",
@@ -84,7 +84,7 @@ export default function SectionPills() {
                           B2C users after installed base benefits.
                         </p>
                       </span>
-                    ),
+                    )
                   },
                   {
                     tabButton: "Tasks",
@@ -113,8 +113,8 @@ export default function SectionPills() {
                           installed base benefits.
                         </p>
                       </span>
-                    ),
-                  },
+                    )
+                  }
                 ]}
               />
             </GridItem>
@@ -123,7 +123,7 @@ export default function SectionPills() {
                 color="rose"
                 horizontal={{
                   tabsGrid: { xs: 12, sm: 4, md: 4 },
-                  contentGrid: { xs: 12, sm: 8, md: 8 },
+                  contentGrid: { xs: 12, sm: 8, md: 8 }
                 }}
                 tabs={[
                   {
@@ -153,7 +153,7 @@ export default function SectionPills() {
                           installed base benefits.
                         </p>
                       </span>
-                    ),
+                    )
                   },
                   {
                     tabButton: "Schedule",
@@ -175,8 +175,8 @@ export default function SectionPills() {
                           B2C users after installed base benefits.
                         </p>
                       </span>
-                    ),
-                  },
+                    )
+                  }
                 ]}
               />
             </GridItem>

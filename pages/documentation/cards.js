@@ -1,25 +1,25 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardFooter from "components/Card/CardFooter.js";
-import Button from "components/CustomButtons/Button.js";
-import Quote from "components/Typography/Quote.js";
+import Card from "/components/Card/Card.js";
+import CardBody from "/components/Card/CardBody.js";
+import CardHeader from "/components/Card/CardHeader.js";
+import CardFooter from "/components/Card/CardFooter.js";
+import Button from "/components/CustomButtons/Button.js";
+import Quote from "/components/Typography/Quote.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
-import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "/styles/jss/nextjs-material-kit/imagesStyles.js";
 
 import {
   cardTitle,
   cardLink,
   cardSubtitle
-} from "styles/jss/nextjs-material-kit.js";
+} from "/styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -51,13 +51,13 @@ const codeExample = `import React from "react";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import Button from "components/CustomButtons/Button.js";
+import Card from "/components/Card/Card.js";
+import CardBody from "/components/Card/CardBody.js";
+import Button from "/components/CustomButtons/Button.js";
 
-import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "/styles/jss/nextjs-material-kit/imagesStyles.js";
 
-import { cardTitle } from "styles/jss/nextjs-material-kit.js";
+import { cardTitle } from "/styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -95,10 +95,10 @@ const codeExampleTTL = `import React from "react";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
+import Card from "/components/Card/Card.js";
+import CardBody from "/components/Card/CardBody.js";
 
-import { cardTitle, cardLink, cardSubtitle } from "styles/jss/nextjs-material-kit.js";
+import { cardTitle, cardLink, cardSubtitle } from "/styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -141,12 +141,12 @@ const codeExampleHeader = `import React from "react";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardHeader from "components/Card/CardHeader.js";
-import Button from "components/CustomButtons/Button.js";
+import Card from "/components/Card/Card.js";
+import CardBody from "/components/Card/CardBody.js";
+import CardHeader from "/components/Card/CardHeader.js";
+import Button from "/components/CustomButtons/Button.js";
 
-import { cardTitle } from "styles/jss/nextjs-material-kit.js";
+import { cardTitle } from "/styles/jss/nextjs-material-kit.js";
 
 const styles = {
   cardTitle,
@@ -173,10 +173,10 @@ export default function Cards() {
 
 const codeExampleQuote = `import React from "react";
 // core components
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardHeader from "components/Card/CardHeader.js";
-import Quote from "components/Typography/Quote.js";
+import Card from "/components/Card/Card.js";
+import CardBody from "/components/Card/CardBody.js";
+import CardHeader from "/components/Card/CardHeader.js";
+import Quote from "/components/Typography/Quote.js";
 
 export default function Cards() {
   return (
@@ -198,13 +198,13 @@ const codeExampleCentered = `import React from "react";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardFooter from "components/Card/CardFooter.js";
-import Button from "components/CustomButtons/Button.js";
+import Card from "/components/Card/Card.js";
+import CardBody from "/components/Card/CardBody.js";
+import CardHeader from "/components/Card/CardHeader.js";
+import CardFooter from "/components/Card/CardFooter.js";
+import Button from "/components/CustomButtons/Button.js";
 
-import { cardTitle } from "styles/jss/nextjs-material-kit.js";
+import { cardTitle } from "/styles/jss/nextjs-material-kit.js";
 
 const styles = {
   cardTitle,
@@ -242,11 +242,11 @@ const codeExampleText = `import React from "react";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import Button from "components/CustomButtons/Button.js";
+import Card from "/components/Card/Card.js";
+import CardBody from "/components/Card/CardBody.js";
+import Button from "/components/CustomButtons/Button.js";
 
-import { cardTitle } from "styles/jss/nextjs-material-kit.js";
+import { cardTitle } from "/styles/jss/nextjs-material-kit.js";
 
 const styles = {
   cardTitle,
@@ -302,12 +302,12 @@ const codeExampleCaps = `import React from "react";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
+import Card from "/components/Card/Card.js";
+import CardBody from "/components/Card/CardBody.js";
 
-import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "/styles/jss/nextjs-material-kit/imagesStyles.js";
 
-import { cardTitle } from "styles/jss/nextjs-material-kit.js";
+import { cardTitle } from "/styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -347,11 +347,11 @@ const codeExampleOverlay = `import React from "react";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Card from "components/Card/Card.js";
+import Card from "/components/Card/Card.js";
 
-import imagesStyles from "styles/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyles from "/styles/jss/nextjs-material-kit/imagesStyles.js";
 
-import { cardTitle } from "styles/jss/nextjs-material-kit.js";
+import { cardTitle } from "/styles/jss/nextjs-material-kit.js";
 
 const styles = {
   ...imagesStyles,
@@ -484,14 +484,14 @@ export default function Cards() {
             <a
               href="#pablo"
               className={classes.cardLink}
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Card link
             </a>
             <a
               href="#pablo"
               className={classes.cardLink}
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Another link
             </a>

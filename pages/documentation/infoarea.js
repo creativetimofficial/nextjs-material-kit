@@ -1,14 +1,14 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Timeline from "@material-ui/icons/Timeline";
 // core components
-import InfoAreas from "components/InfoArea/InfoArea.js";
+import InfoAreas from "/components/InfoArea/InfoArea.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -29,7 +29,7 @@ const codeExample = `import React from "react";
 import Timeline from "@material-ui/icons/Timeline";
 
 // core components
-import InfoArea from "components/InfoArea/InfoArea.js";
+import InfoArea from "/components/InfoArea/InfoArea.js";
 
 export default function Example(){
   return (

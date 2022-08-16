@@ -1,13 +1,13 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Button from "components/CustomButtons/Button.js";
-import Badge from "components/Badge/Badge.js";
+import Button from "/components/CustomButtons/Button.js";
+import Badge from "/components/Badge/Badge.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles(styles);
 
 const importExamples = `import Badge from 'components/Badge/Badge.js';`;
 
-const importStylesExamples = `import badgeStyle from "styles/jss/nextjs-material-kit/components/badgeStyle.js"`;
+const importStylesExamples = `import badgeStyle from "/styles/jss/nextjs-material-kit/components/badgeStyle.js"`;
 
 const exampleCode = `<Button color="primary">Notifications{" "}<Badge>4</Badge></Button>`;
 

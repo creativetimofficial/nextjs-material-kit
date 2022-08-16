@@ -1,17 +1,17 @@
 /*eslint-disable*/
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
-import Button from "components/CustomButtons/Button.js";
+import Button from "/components/CustomButtons/Button.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
-import tooltipsStyle from "styles/jss/nextjs-material-kit/tooltipsStyle.js";
+import tooltipsStyle from "/styles/jss/nextjs-material-kit/tooltipsStyle.js";
 
 const styles = {
   ...tooltipsStyle,
@@ -34,10 +34,10 @@ const tooltip = `import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
-import Button from "components/CustomButtons/Button.js";
+import Button from "/components/CustomButtons/Button.js";
 
 
-import styles from "styles/jss/nextjs-material-kit/tooltipsStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/tooltipsStyle.js";
 
 const useStyles = makeStyles(styles);
 

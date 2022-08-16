@@ -1,17 +1,17 @@
 /*eslint-disable*/
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Check from "@material-ui/icons/Check";
 import Warning from "@material-ui/icons/Warning";
 // core components
-import SnackbarContent from "components/Snackbar/SnackbarContent.js";
-import Clearfix from "components/Clearfix/Clearfix.js";
+import SnackbarContent from "/components/Snackbar/SnackbarContent.js";
+import Clearfix from "/components/Clearfix/Clearfix.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -31,8 +31,8 @@ const codeExample = `import React from "react";
 import Check from "@material-ui/icons/Check";
 import Warning from "@material-ui/icons/Warning";
 // core components
-import SnackbarContent from "components/Snackbar/SnackbarContent.js";
-import Clearfix from "components/Clearfix/Clearfix.js";
+import SnackbarContent from "/components/Snackbar/SnackbarContent.js";
+import Clearfix from "/components/Clearfix/Clearfix.js";
 
 export default function Notifications(){
   return (

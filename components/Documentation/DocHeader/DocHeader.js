@@ -4,9 +4,9 @@ import { withStyles, AppBar, Toolbar, Hidden } from "@material-ui/core";
 import { List, Star, CardMembership } from "@material-ui/icons";
 import Link from "next/link";
 
-import Button from "components/CustomButtons/Button.js";
+import Button from "/components/CustomButtons/Button.js";
 
-const style = theme => ({
+const style = (theme) => ({
   appBar: {
     color: "#fff",
     backgroundColor: "#00acc1 !important",
@@ -140,19 +140,19 @@ class DocHeader extends React.Component {
               href="#pablo"
               className={classes.rightLinks}
               target="_blank"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             />
             <a
               href="#pablo"
               className={classes.rightLinks}
               target="_blank"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             />
             <a
               href="#pablo"
               className={classes.rightLinks}
               target="_blank"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             />
             <a
               href="https://github.com/creativetimofficial/nextjs-material-kit?ref=creativetim"

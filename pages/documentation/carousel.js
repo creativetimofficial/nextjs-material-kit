@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 // material-ui components
@@ -9,12 +9,12 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import LocationOn from "@material-ui/icons/LocationOn";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import Card from "/components/Card/Card.js";
 
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -36,9 +36,9 @@ import Carousel from "react-slick";
 // @material-ui/icons
 import LocationOn from "@material-ui/icons/LocationOn";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import Card from "/components/Card/Card.js";
 
 export default function SectionCarousel(){
   const settings = {
@@ -128,7 +128,11 @@ export default function SectionCarousel() {
             <Card>
               <Carousel {...settings}>
                 <div>
-                  <img src="/img/bg.jpg" alt="First slide" className="slick-image" />
+                  <img
+                    src="/img/bg.jpg"
+                    alt="First slide"
+                    className="slick-image"
+                  />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
@@ -150,7 +154,11 @@ export default function SectionCarousel() {
                   </div>
                 </div>
                 <div>
-                  <img src="/img/bg3.jpg" alt="Third slide" className="slick-image" />
+                  <img
+                    src="/img/bg3.jpg"
+                    alt="Third slide"
+                    className="slick-image"
+                  />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />

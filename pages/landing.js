@@ -7,20 +7,20 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Header from "/components/Header/Header.js";
+import Footer from "/components/Footer/Footer.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import Button from "/components/CustomButtons/Button.js";
+import HeaderLinks from "/components/Header/HeaderLinks.js";
+import Parallax from "/components/Parallax/Parallax.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
-import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
-import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
+import ProductSection from "/pages-sections/LandingPage-Sections/ProductSection.js";
+import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
+import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
 
 const dashboardRoutes = [];
 
@@ -39,7 +39,7 @@ export default function LandingPage(props) {
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "white",
+          color: "white"
         }}
         {...rest}
       />

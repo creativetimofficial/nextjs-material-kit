@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // react component plugin for creating a beautiful datetime dropdown picker
 import Datetime from "react-datetime";
 // material-ui components
@@ -11,7 +11,7 @@ import FormControl from "@material-ui/core/FormControl";
 // @material-ui/icons
 // core components
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   label: {

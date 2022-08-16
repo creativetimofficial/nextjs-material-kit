@@ -1,12 +1,12 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { makeStyles } from "@material-ui/core/styles";
 // import { * } from '@material-ui/icons';
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
+import CustomDropdown from "/components/CustomDropdown/CustomDropdown.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   bdExample: {

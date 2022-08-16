@@ -1,15 +1,15 @@
 /*eslint-disable*/
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 // core components
-import Button from "components/CustomButtons/Button.js";
-import popoverStyles from "styles/jss/nextjs-material-kit/popoverStyles.js";
+import Button from "/components/CustomButtons/Button.js";
+import popoverStyles from "/styles/jss/nextjs-material-kit/popoverStyles.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   ...popoverStyles,
@@ -32,9 +32,9 @@ const codeExample = `import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Popover from "@material-ui/core/Popover";
 // core components
-import Button from "components/CustomButtons/Button.js";
+import Button from "/components/CustomButtons/Button.js";
 
-import styles from "styles/jss/nextjs-material-kit/popoverStyles.js";
+import styles from "/styles/jss/nextjs-material-kit/popoverStyles.js";
 
 const useStyles = makeStyles(styles);
 
@@ -164,7 +164,7 @@ export default function Popovers() {
       </p>
       <h2>Example</h2>
       <div className={classes.bdExample}>
-        <Button onClick={event => setAnchorElLeft(event.currentTarget)}>
+        <Button onClick={(event) => setAnchorElLeft(event.currentTarget)}>
           On left
         </Button>
         <Popover
@@ -189,7 +189,7 @@ export default function Popovers() {
             will be some very useful information about his popover.
           </div>
         </Popover>
-        <Button onClick={event => setAnchorElTop(event.currentTarget)}>
+        <Button onClick={(event) => setAnchorElTop(event.currentTarget)}>
           On top
         </Button>
         <Popover
@@ -213,7 +213,7 @@ export default function Popovers() {
             Here will be some very useful information about his popover.
           </div>
         </Popover>
-        <Button onClick={event => setAnchorElBottom(event.currentTarget)}>
+        <Button onClick={(event) => setAnchorElBottom(event.currentTarget)}>
           On bottom
         </Button>
         <Popover
@@ -237,7 +237,7 @@ export default function Popovers() {
             Here will be some very useful information about his popover.
           </div>
         </Popover>
-        <Button onClick={event => setAnchorElRight(event.currentTarget)}>
+        <Button onClick={(event) => setAnchorElRight(event.currentTarget)}>
           On right
         </Button>
         <Popover

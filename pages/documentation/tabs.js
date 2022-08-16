@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -9,9 +9,9 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import CustomTabs from "/components/CustomTabs/CustomTabs.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   textCenter: {
@@ -39,7 +39,7 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import CustomTabs from "/components/CustomTabs/CustomTabs.js";
 
 const styles = {
   textCenter: {

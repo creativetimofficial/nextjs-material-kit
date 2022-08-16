@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React from "react";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 export default function BuildTools() {
   return (

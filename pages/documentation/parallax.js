@@ -1,10 +1,10 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
-const codeImport = `import Parallax from "components/Parallax/Parallax.js";`;
+const codeImport = `import Parallax from "/components/Parallax/Parallax.js";`;
 const codeExample = `<Parallax filter image={require("path/to/your/image")} />`;
 const codeProps = `Parallax.propTypes = {
   className: PropTypes.string,

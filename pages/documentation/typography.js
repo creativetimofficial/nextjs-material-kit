@@ -1,18 +1,18 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Quote from "components/Typography/Quote.js";
-import Muted from "components/Typography/Muted.js";
-import Primary from "components/Typography/Primary.js";
-import Info from "components/Typography/Info.js";
-import Success from "components/Typography/Success.js";
-import Warning from "components/Typography/Warning.js";
-import Danger from "components/Typography/Danger.js";
+import Quote from "/components/Typography/Quote.js";
+import Muted from "/components/Typography/Muted.js";
+import Primary from "/components/Typography/Primary.js";
+import Info from "/components/Typography/Info.js";
+import Success from "/components/Typography/Success.js";
+import Warning from "/components/Typography/Warning.js";
+import Danger from "/components/Typography/Danger.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -42,7 +42,7 @@ const codeExampleP = `<p>
 </p>`;
 const codeExampleQ = `import React from 'react';
 // core components
-import Quote from "components/Typography/Quote.js";
+import Quote from "/components/Typography/Quote.js";
 
 export default function Typography(){
   return (
@@ -54,12 +54,12 @@ export default function Typography(){
 }`;
 const codeExampleC = `import React from 'react';
 // core components
-import Muted from "components/Typography/Muted.js";
-import Primary from "components/Typography/Primary.js";
-import Info from "components/Typography/Info.js";
-import Success from "components/Typography/Success.js";
-import Warning from "components/Typography/Warning.js";
-import Danger from "components/Typography/Danger.js";
+import Muted from "/components/Typography/Muted.js";
+import Primary from "/components/Typography/Primary.js";
+import Info from "/components/Typography/Info.js";
+import Success from "/components/Typography/Success.js";
+import Warning from "/components/Typography/Warning.js";
+import Danger from "/components/Typography/Danger.js";
 
 export default function Typography(){
   return (

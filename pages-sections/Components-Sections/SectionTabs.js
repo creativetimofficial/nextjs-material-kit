@@ -7,11 +7,11 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import CustomTabs from "/components/CustomTabs/CustomTabs.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/componentsSections/tabsStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -44,7 +44,7 @@ export default function SectionTabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
-                    ),
+                    )
                   },
                   {
                     tabName: "Messages",
@@ -60,7 +60,7 @@ export default function SectionTabs() {
                         possibilities, to show people, this is the level that
                         things could be at.
                       </p>
-                    ),
+                    )
                   },
                   {
                     tabName: "Settings",
@@ -76,8 +76,8 @@ export default function SectionTabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
-                    ),
-                  },
+                    )
+                  }
                 ]}
               />
             </GridItem>
@@ -102,7 +102,7 @@ export default function SectionTabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
-                    ),
+                    )
                   },
                   {
                     tabName: "Updates",
@@ -117,7 +117,7 @@ export default function SectionTabs() {
                         possibilities, to show people, this is the level that
                         things could be at.
                       </p>
-                    ),
+                    )
                   },
                   {
                     tabName: "History",
@@ -132,8 +132,8 @@ export default function SectionTabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
-                    ),
-                  },
+                    )
+                  }
                 ]}
               />
             </GridItem>

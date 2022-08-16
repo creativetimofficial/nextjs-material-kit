@@ -1,13 +1,13 @@
 /*eslint-disable*/
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import NavPillss from "components/NavPills/NavPills.js";
+import NavPillss from "/components/NavPills/NavPills.js";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
 const styles = {
   bdExample: {
@@ -24,7 +24,7 @@ const styles = {
 
 const codeExample = `import React from 'react';
 
-import NavPills from "components/NavPills/NavPills.js";
+import NavPills from "/components/NavPills/NavPills.js";
 
 export default function Example(){
   return (

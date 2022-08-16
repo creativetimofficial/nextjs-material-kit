@@ -8,16 +8,16 @@ import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import Button from "components/CustomButtons/Button.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import NavPills from "components/NavPills/NavPills.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Header from "/components/Header/Header.js";
+import Footer from "/components/Footer/Footer.js";
+import Button from "/components/CustomButtons/Button.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import HeaderLinks from "/components/Header/HeaderLinks.js";
+import NavPills from "/components/NavPills/NavPills.js";
+import Parallax from "/components/Parallax/Parallax.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -39,7 +39,7 @@ export default function ProfilePage(props) {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "white",
+          color: "white"
         }}
         {...rest}
       />
@@ -117,7 +117,7 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      ),
+                      )
                     },
                     {
                       tabButton: "Work",
@@ -154,7 +154,7 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      ),
+                      )
                     },
                     {
                       tabButton: "Favorite",
@@ -191,8 +191,8 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      ),
-                    },
+                      )
+                    }
                   ]}
                 />
               </GridItem>

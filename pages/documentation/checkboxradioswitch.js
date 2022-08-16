@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 import classNames from "classnames";
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
@@ -13,9 +13,9 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Check from "@material-ui/icons/Check";
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 // layout for page
-import Documentation from "layouts/Documentation.js";
+import Documentation from "/layouts/Documentation.js";
 
-import style from "styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
+import style from "/styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
 
 const styles = {
   ...style,
@@ -42,7 +42,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import Check from "@material-ui/icons/Check";
 
-import styles from "styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
+import styles from "/styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
 
 const useStyles = makeStyles(styles);
 
@@ -151,7 +151,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 
-import styles from "styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
+import styles from "/styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
 
 const useStyles = makeStyles(styles);
 
@@ -288,7 +288,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Switch from "@material-ui/core/Switch";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
-import styles from "styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
+import styles from "/styles/jss/nextjs-material-kit/customCheckboxRadioSwitch.js";
 
 const useStyles = makeStyles(styles);
 
@@ -356,7 +356,7 @@ export default function CheckboxRadioSwitch() {
     classes.checkboxAndRadio,
     classes.checkboxAndRadioHorizontal
   );
-  const handleToggle = value => {
+  const handleToggle = (value) => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
@@ -575,7 +575,7 @@ export default function CheckboxRadioSwitch() {
             control={
               <Switch
                 checked={checkedA}
-                onChange={event => setCheckedA(event.target.checked)}
+                onChange={(event) => setCheckedA(event.target.checked)}
                 value="checkedA"
                 classes={{
                   switchBase: classes.switchBase,
@@ -597,7 +597,7 @@ export default function CheckboxRadioSwitch() {
             control={
               <Switch
                 checked={checkedB}
-                onChange={event => setCheckedB(event.target.checked)}
+                onChange={(event) => setCheckedB(event.target.checked)}
                 value="checkedB"
                 classes={{
                   switchBase: classes.switchBase,
