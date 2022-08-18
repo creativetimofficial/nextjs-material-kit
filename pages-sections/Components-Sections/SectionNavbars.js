@@ -134,7 +134,10 @@ export default function SectionNavbars() {
       <div id="navbar" className={classes.navbar}>
         <div
           className={classes.navigation}
-          style={{ backgroundImage: "url('/img/bg.jpg')" }}
+          style={{
+            backgroundImage:
+              "url('https://demos.creative-tim.com/nextjs-material-kit/img/bg.jpg')"
+          }}
         >
           <Header
             brand="Brand"

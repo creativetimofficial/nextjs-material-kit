@@ -12,7 +12,8 @@ const loginStyle = {
     border: "0",
     display: "flex",
     alignItems: "center",
-    backgroundImage: "url('/img/sign.jpg')"
+    backgroundImage:
+      "url('https://demos.creative-tim.com/nextjs-material-kit/img/sign.jpg')"
   },
   container,
   form: {
