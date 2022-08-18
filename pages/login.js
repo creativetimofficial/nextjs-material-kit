@@ -42,7 +42,8 @@ export default function LoginPage(props) {
       <div
         className={classes.pageHeader}
         style={{
-          backgroundImage: "url('/img/bg7.jpg')",
+          backgroundImage:
+            "url('https://demos.creative-tim.com/nextjs-material-kit/img/bg7.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "top center"
         }}
