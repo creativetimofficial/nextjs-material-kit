@@ -30,7 +30,7 @@ export default function HeaderLinks(props) {
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="Components"
+          buttonText="Технологии"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
@@ -39,6 +39,9 @@ export default function HeaderLinks(props) {
           dropdownList={[
             <Link href="/components" className={classes.dropdownLink}>
               All components
+            </Link>,
+            <Link href="/components" className={classes.dropdownLink}>
+              Как это работает
             </Link>,
           ]}
         />

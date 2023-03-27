@@ -3,7 +3,7 @@ import Router from "next/router";
 
 export default class _error extends Component {
   componentDidMount = () => {
-    Router.push("/components");
+    Router.push("/landing");
   };
 
   render() {
