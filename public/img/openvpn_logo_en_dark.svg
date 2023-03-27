@@ -8,12 +8,12 @@
         <style type="text/css">
             <![CDATA[
             .fil1 {
-                fill: #e7dfdf;
+                fill: #5B5B5B;
                 fill-rule: nonzero
             }
 
             .fil0 {
-                fill: #fff;
+                fill: #898989;
                 fill-rule: nonzero
             }
 

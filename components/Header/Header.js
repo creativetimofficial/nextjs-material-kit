@@ -9,13 +9,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "/styles/jss/nextjs-material-kit/components/headerStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(styles);
 
@@ -45,7 +45,37 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+
+      document.body
+        .getElementsByClassName("logoDark")[0]
+        .classList.add(classes.logoShow);
+      document.body
+        .getElementsByClassName("logoDark")[0]
+        .classList.remove(classes.logoHide);
+
+      document.body
+        .getElementsByClassName("logoWhite")[0]
+        .classList.add(classes.logoHide);
+      document.body
+        .getElementsByClassName("logoWhite")[0]
+        .classList.remove(classes.logoShow);
     } else {
+      //console.log("white");
+
+      document.body
+        .getElementsByClassName("logoWhite")[0]
+        .classList.add(classes.logoShow);
+      document.body
+        .getElementsByClassName("logoWhite")[0]
+        .classList.remove(classes.logoHide);
+
+      document.body
+        .getElementsByClassName("logoDark")[0]
+        .classList.add(classes.logoHide);
+      document.body
+        .getElementsByClassName("logoDark")[0]
+        .classList.remove(classes.logoShow);
+
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[color]);
@@ -64,7 +94,20 @@ export default function Header(props) {
   const brandComponent = (
     <Link href="/landing" as="/landing">
       {/* <Button className={classes.title}>{brand}</Button> */}
-      <img src="/img/openvpn_logo_en.svg" alt="..." />
+      <Image
+        src="/img/openvpn_logo_en.svg"
+        alt="openvpn service"
+        width="220"
+        height="45"
+        className={classNames(classes.logoShow, "logoWhite")}
+      />
+      <Image
+        src="/img/openvpn_logo_en_dark.svg"
+        alt="openvpn service"
+        width="220"
+        height="45"
+        className={classNames(classes.logoHide, "logoDark")}
+      />
     </Link>
   );
   return (
