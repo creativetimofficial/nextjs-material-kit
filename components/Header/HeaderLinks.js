@@ -37,16 +37,9 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
+            <Link href="/components" className={classes.dropdownLink}>
+              All components
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/nextjs-material-kit/#/documentation?ref=njsmk-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>,
           ]}
         />
       </ListItem>

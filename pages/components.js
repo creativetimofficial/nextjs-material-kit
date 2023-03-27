@@ -44,7 +44,7 @@ export default function Components(props) {
         color="transparent"
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
@@ -75,12 +75,10 @@ export default function Components(props) {
         <SectionCompletedExamples />
         <SectionLogin />
         <GridItem md={12} className={classes.textCenter}>
-          <Link href="/login">
-            <a className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                View Login Page
-              </Button>
-            </a>
+          <Link href="/login" className={classes.link}>
+            <Button color="primary" size="lg" simple>
+              View Login Page
+            </Button>
           </Link>
         </GridItem>
         <SectionExamples />
