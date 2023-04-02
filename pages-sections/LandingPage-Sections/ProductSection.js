@@ -4,7 +4,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 import Chat from "@material-ui/icons/Chat";
+import VpnKeyIcon from "@material-ui/icons/VpnKey";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
+import AnnouncementIcon from "@material-ui/icons/Announcement";
 import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
@@ -21,13 +23,16 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>Добро пожаловать!</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            На нашем сайте вы можете приобрести подписки на <strong>VPN</strong>{" "}
+            по технологиям <strong>OpenVPN</strong> и <strong>PPTP</strong>{" "}
+            сроком от 2х недель и более. Вы также можете получить{" "}
+            <strong>бесплатный тестовый</strong> доступ к любому нашему серверу{" "}
+            <strong>VPN на 20 минут.</strong>
+          </h5>
+          <h5 className={classes.description}>
+            С дополнительными вопросами обращайтесь к нашей поддержке.
           </h5>
         </GridItem>
       </GridContainer>
@@ -35,9 +40,10 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="Временно не доступна оплата на сайте"
+              description="Уважаемые клиенты,
+оплата на сайте временно не доступна. Для оплаты, обращайтесь в чат поддержки на сайте."
+              icon={AnnouncementIcon}
               iconColor="info"
               vertical
             />
@@ -53,9 +59,9 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Новый релиз OpenVPN Portable"
+              description="Уважаемые клиенты, доступа новая версия решения OpenVPN Portable"
+              icon={VpnKeyIcon}
               iconColor="danger"
               vertical
             />
