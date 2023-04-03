@@ -28,14 +28,18 @@ const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
   const classes = useStyles();
-  const { ...rest } = props;
+  const {
+    data: { menu },
+    ...rest
+  } = props;
+  console.log("menu", menu);
   return (
     <div>
       <Header
         color="transparent"
         routes={dashboardRoutes}
         brand="Openvpn.ru"
-        rightLinks={<HeaderLinks />}
+        rightLinks={<HeaderLinks menu={menu} />}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -78,4 +82,19 @@ export default function LandingPage(props) {
       <Footer />
     </div>
   );
+}
+
+//Another option using getserversideprops, but must pass {data} to the page
+export async function getServerSideProps(context) {
+  const getData = {
+    method: "Get",
+    headers: { "Content-Type": "application/json" },
+  };
+  const res = await fetch(
+    `http://localhost:3000/api/getdata-routes-menu`,
+    getData
+  );
+  const data = await res.json();
+
+  return { props: { data } };
 }

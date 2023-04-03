@@ -39,7 +39,7 @@ export default function ProfilePage(props) {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
@@ -47,7 +47,7 @@ export default function ProfilePage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
-            <GridContainer justify="center">
+            <GridContainer justifyContent="center">
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div>
@@ -81,7 +81,7 @@ export default function ProfilePage(props) {
                 feel with a solid groove structure.{" "}
               </p>
             </div>
-            <GridContainer justify="center">
+            <GridContainer justifyContent="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
@@ -91,7 +91,7 @@ export default function ProfilePage(props) {
                       tabButton: "Studio",
                       tabIcon: Camera,
                       tabContent: (
-                        <GridContainer justify="center">
+                        <GridContainer justifyContent="center">
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
@@ -117,13 +117,13 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      )
+                      ),
                     },
                     {
                       tabButton: "Work",
                       tabIcon: Palette,
                       tabContent: (
-                        <GridContainer justify="center">
+                        <GridContainer justifyContent="center">
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
@@ -154,13 +154,13 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      )
+                      ),
                     },
                     {
                       tabButton: "Favorite",
                       tabIcon: Favorite,
                       tabContent: (
-                        <GridContainer justify="center">
+                        <GridContainer justifyContent="center">
                           <GridItem xs={12} sm={12} md={4}>
                             <img
                               alt="..."
@@ -191,8 +191,8 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      )
-                    }
+                      ),
+                    },
                   ]}
                 />
               </GridItem>

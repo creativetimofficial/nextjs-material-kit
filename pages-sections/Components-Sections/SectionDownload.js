@@ -80,7 +80,7 @@ export default function SectionDownload() {
           </GridItem>
         </GridContainer>
         <div className={classes.textCenter + " " + classes.sharingArea}>
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <h3>Thank you for supporting us!</h3>
           </GridContainer>
           <Button color="twitter">

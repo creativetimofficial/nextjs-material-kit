@@ -25,7 +25,7 @@ export default function SectionLogin() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer justify="center">
+        <GridContainer justifyContent="center">
           <GridItem xs={12} sm={6} md={4}>
             <Card>
               <form className={classes.form}>
@@ -71,7 +71,7 @@ export default function SectionLogin() {
                     labelText="First Name..."
                     id="first"
                     formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
                     }}
                     inputProps={{
                       type: "text",
@@ -79,14 +79,14 @@ export default function SectionLogin() {
                         <InputAdornment position="end">
                           <People className={classes.inputIconsColor} />
                         </InputAdornment>
-                      )
+                      ),
                     }}
                   />
                   <CustomInput
                     labelText="Email..."
                     id="email"
                     formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
                     }}
                     inputProps={{
                       type: "email",
@@ -94,14 +94,14 @@ export default function SectionLogin() {
                         <InputAdornment position="end">
                           <Email className={classes.inputIconsColor} />
                         </InputAdornment>
-                      )
+                      ),
                     }}
                   />
                   <CustomInput
                     labelText="Password"
                     id="pass"
                     formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
                     }}
                     inputProps={{
                       type: "password",
@@ -112,7 +112,7 @@ export default function SectionLogin() {
                           </Icon>
                         </InputAdornment>
                       ),
-                      autoComplete: "off"
+                      autoComplete: "off",
                     }}
                   />
                 </CardBody>

@@ -16,7 +16,7 @@ export default function SectionCompletedExamples() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer justify="center">
+        <GridContainer justifyContent="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2>Completed with examples</h2>
             <h4>

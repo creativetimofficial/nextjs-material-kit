@@ -24,10 +24,10 @@ const useStyles = makeStyles(styles);
 export default function Page(props) {
   const classes = useStyles();
   const {
-    data: { page },
+    data: { page, menu },
     ...rest
   } = props;
-  console.log("...rest", ...rest);
+  ///console.log("menu===", menu);
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
@@ -39,7 +39,7 @@ export default function Page(props) {
       <Header
         color="transparent"
         brand="NextJS Material Kit"
-        rightLinks={<HeaderLinks />}
+        rightLinks={<HeaderLinks menu={menu} />}
         fixed
         changeColorOnScroll={{
           height: 200,
@@ -51,14 +51,13 @@ export default function Page(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
-            <GridContainer justify="center">
+            <GridContainer justifyContent="center">
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div>
                     <img
                       src="/img/pages/how-it-works.jpg"
                       alt="..."
-                      wiasd
                       className={imageClasses}
                     />
                   </div>
@@ -85,7 +84,7 @@ export default function Page(props) {
                 своей личности в сети Интернет.
               </p>
             </div>
-            <GridContainer justify="center">
+            <GridContainer justifyContent="center">
               <GridItem xs={12} md={6}>
                 {ReactHtmlParser(page.content_page)}
               </GridItem>
@@ -108,11 +107,19 @@ export async function getServerSideProps(context) {
       route,
     }),
   };
-  const res = await fetch(
+  let res = await fetch(
     `http://localhost:3000/api/getdata-route-page`,
     postData
   );
   const data = await res.json();
 
-  return { props: { data } };
+  //console.log("process.env.REACT_APP_BASEHOST", process.env.REACT_APP_BASEHOST);
+  const getData = {
+    method: "Get",
+    headers: { "Content-Type": "application/json" },
+  };
+  res = await fetch(`http://localhost:3000/api/getdata-routes-menu`, getData);
+  const data1 = await res.json();
+
+  return { props: { data: { ...data, ...data1 } } };
 }
