@@ -12,6 +12,10 @@ This new design has elements that have been the result of research regarding ink
 
 **[NextJS Material Kit](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)** was built with the help of [nextjs](https://nextjs.org/?ref=creativetim) and it uses a framework built by our friends from **[Material-UI](https://material-ui.com/?ref=creativetim)**, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
 
+Special thanks go to:
+
+- [Nepcha Analytics](https://nepcha.com?ref=readme) for the analytics tool. Nepcha is already integrated with Next.js Material Kit. You can use it to gain insights into your sources of traffic.
+
 ## Table of Contents
 
 - [Versions](#versions)
@@ -187,6 +191,7 @@ At present, we officially aim to support the last two versions of the following 
 - License Agreement: <https://www.creative-tim.com/license?ref=njsmk-readme>
 - Support: <https://www.creative-tim.com/contact-us?ref=njsmk-readme>
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-material-kit/issues)
+- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
 - **Dashboards:**
 
 | HTML                                                                                                                                                                                                                               | React                                                                                                                                                                                                                                            | Vue                                                                                                                                                                                                                                     | Angular                                                                                                                                                                                                                                                  |
